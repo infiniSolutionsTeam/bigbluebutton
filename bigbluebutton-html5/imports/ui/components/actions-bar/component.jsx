@@ -93,26 +93,6 @@ class ActionsBar extends PureComponent {
           }}
           />
         </div>
-
-        <div className={cx(actionBarClasses)}>
-          <AudioControlsContainer />
-          {enableVideo
-            ? (
-              <JoinVideoOptionsContainer />
-            )
-            : null}
-          <DesktopShare {...{
-            handleShareScreen,
-            handleUnshareScreen,
-            isVideoBroadcasting,
-            amIPresenter,
-            screenSharingCheck,
-            screenShareEndAlert,
-            isMeteorConnected,
-            screenshareDataSavingSetting,
-          }}
-          />
-        </div>
         <div className={styles.right}>
           {isLayoutSwapped
             ? (
