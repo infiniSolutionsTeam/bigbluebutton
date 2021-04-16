@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import cx from 'classnames';
+import Button from '@material-ui/core/Button';
 import { styles } from './styles.scss';
 import DesktopShare from './desktop-share/component';
 import ActionsDropdown from './actions-dropdown/component';
@@ -8,6 +9,8 @@ import AudioControlsContainer from '../audio/audio-controls/container';
 import JoinVideoOptionsContainer from '../video-provider/video-button/container';
 import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions/container';
 import PresentationOptionsContainer from './presentation-options/component';
+// added by chata start
+// added by chata stop
 
 class ActionsBar extends PureComponent {
   render() {
@@ -92,11 +95,14 @@ class ActionsBar extends PureComponent {
             screenshareDataSavingSetting,
           }}
           />
-          <AudioControlsContainer />
+          {/* Added by chata start */}
 
           <div>
-            <button>this is a button</button>
+            <Button variant="contained" color="secondary">
+              End
+            </Button>
           </div>
+          {/* Added by chata stop */}
         </div>
         <div className={styles.right}>
           {isLayoutSwapped
