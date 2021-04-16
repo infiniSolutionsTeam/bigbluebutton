@@ -267,6 +267,7 @@ class App extends Component {
 
     return (
       <section
+        style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         className={styles.media}
         aria-label={intl.formatMessage(intlMessages.mediaLabel)}
         aria-hidden={this.shouldAriaHide()}
@@ -305,7 +306,8 @@ class App extends Component {
       <ActivityCheckContainer
         inactivityCheck={inactivityCheck}
         responseDelay={responseDelay}
-      />) : null);
+      />
+    ) : null);
   }
 
   renderUserInformation() {
@@ -316,7 +318,8 @@ class App extends Component {
         UserInfo={UserInfo}
         requesterUserId={User.userId}
         meetingId={User.meetingId}
-      />) : null);
+      />
+    ) : null);
   }
 
   render() {
