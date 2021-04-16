@@ -267,7 +267,6 @@ class App extends Component {
 
     return (
       <section
-        style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         className={styles.media}
         aria-label={intl.formatMessage(intlMessages.mediaLabel)}
         aria-hidden={this.shouldAriaHide()}
@@ -288,6 +287,7 @@ class App extends Component {
 
     return (
       <section
+        style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         className={styles.actionsbar}
         aria-label={intl.formatMessage(intlMessages.actionsBarLabel)}
         aria-hidden={this.shouldAriaHide()}
