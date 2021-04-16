@@ -92,6 +92,11 @@ class ActionsBar extends PureComponent {
             screenshareDataSavingSetting,
           }}
           />
+          <AudioControlsContainer />
+
+          <div>
+            <button>this is a button</button>
+          </div>
         </div>
         <div className={styles.right}>
           {isLayoutSwapped
