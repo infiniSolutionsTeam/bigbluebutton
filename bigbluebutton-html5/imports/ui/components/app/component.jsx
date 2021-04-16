@@ -286,14 +286,24 @@ class App extends Component {
     if (!actionsbar) return null;
 
     return (
-      <section
-        style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
-        className={styles.actionsbar}
-        aria-label={intl.formatMessage(intlMessages.actionsBarLabel)}
-        aria-hidden={this.shouldAriaHide()}
-      >
-        {actionsbar}
-      </section>
+      <>
+        <section
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
+          className={styles.actionsbar}
+          aria-label={intl.formatMessage(intlMessages.actionsBarLabel)}
+          aria-hidden={this.shouldAriaHide()}
+        >
+          {actionsbar}
+        </section>
+        <section
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
+          className={styles.actionsbar}
+          aria-label={intl.formatMessage(intlMessages.actionsBarLabel)}
+          aria-hidden={this.shouldAriaHide()}
+        >
+          {actionsbar}
+        </section>
+      </>
     );
   }
 
