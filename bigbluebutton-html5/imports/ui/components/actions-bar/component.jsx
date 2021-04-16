@@ -67,15 +67,33 @@ class ActionsBar extends PureComponent {
                   parseCurrentSlideContent,
                 }}
               />
-            ) : null
-          }
+            ) : null}
           {isCaptionsAvailable
             ? (
               <CaptionsButtonContainer {...{ intl }} />
             )
-            : null
-          }
+            : null}
         </div>
+        <div className={cx(actionBarClasses)}>
+          <AudioControlsContainer />
+          {enableVideo
+            ? (
+              <JoinVideoOptionsContainer />
+            )
+            : null}
+          <DesktopShare {...{
+            handleShareScreen,
+            handleUnshareScreen,
+            isVideoBroadcasting,
+            amIPresenter,
+            screenSharingCheck,
+            screenShareEndAlert,
+            isMeteorConnected,
+            screenshareDataSavingSetting,
+          }}
+          />
+        </div>
+
         <div className={cx(actionBarClasses)}>
           <AudioControlsContainer />
           {enableVideo
@@ -103,8 +121,7 @@ class ActionsBar extends PureComponent {
                 isThereCurrentPresentation={isThereCurrentPresentation}
               />
             )
-            : null
-          }
+            : null}
         </div>
       </div>
     );
