@@ -18,12 +18,14 @@
 }
 
 .chat {
-  background-color: rgba($color: #d9d9d9, $alpha: 0.5);
+  // background-color: rgba($color: #d9d9d9, $alpha: 0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
+    url("chat.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("chat.jpg");
+
   padding: var(--md-padding-x) var(--md-padding-y) var(--md-padding-x)
     var(--md-padding-x);
 
