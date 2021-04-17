@@ -40,7 +40,7 @@ class UserList extends PureComponent {
     } = this.props;
 
     return (
-      // TODO react styles err
+
       <div className={styles.userList}>
         {
           showBranding
