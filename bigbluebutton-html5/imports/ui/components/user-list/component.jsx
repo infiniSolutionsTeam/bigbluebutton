@@ -40,7 +40,8 @@ class UserList extends PureComponent {
     } = this.props;
 
     return (
-      <div className={styles.userList} style="--image: url('c.jpg')">
+      // TODO react styles err
+      <div className={styles.userList}>
         {
           showBranding
             && !compact
