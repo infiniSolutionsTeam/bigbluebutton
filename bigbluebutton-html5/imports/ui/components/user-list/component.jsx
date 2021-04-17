@@ -40,14 +40,14 @@ class UserList extends PureComponent {
     } = this.props;
 
     return (
-      <div className={styles.userList}>
+      <div className={styles.userList} style="--image: url('c.jpg')">
         {
           showBranding
             && !compact
             && CustomLogoUrl
             ? <CustomLogo CustomLogoUrl={CustomLogoUrl} /> : null
         }
-        {<UserContentContainer
+        <UserContentContainer
           {...{
             intl,
             activeChats,
@@ -59,7 +59,7 @@ class UserList extends PureComponent {
             requestUserInformation,
           }
           }
-        />}
+        />
       </div>
     );
   }
