@@ -1,13 +1,16 @@
 @import "../../../stylesheets/variables/_all";
-@import '/imports/ui/stylesheets/mixins/_indicators';
+@import "/imports/ui/stylesheets/mixins/_indicators";
 @import "../../../stylesheets/variables/typography";
 
 .visuallyHidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 %recordingControl {
@@ -48,12 +51,12 @@
 .recordingControlOFF {
   @extend %recordingControl;
 
-  padding: 7px;
-  border: var(--border-size-small) solid var(--color-white);
-  
+  // padding: 7px;
+  // border: var(--border-size-small) solid var(--color-white);
+
   &:focus {
     padding: 5px;
-    border: var(--border-size-large) solid var(--color-white);
+    // border: var(--border-size-large) solid var(--color-white);
     box-shadow: none;
   }
 }
@@ -73,7 +76,7 @@
   text-overflow: ellipsis;
   max-width: 30vw;
 
-  [dir="rtl"]  & {
+  [dir="rtl"] & {
     margin-left: 0;
     margin-right: var(--sm-padding-x);
   }
