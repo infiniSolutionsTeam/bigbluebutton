@@ -33,6 +33,8 @@
   font-weight: var(--btn-font-weight);
   padding: var(--font-size-base);
   margin-bottom: var(--line-height-computed);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .avatarWrapper {
