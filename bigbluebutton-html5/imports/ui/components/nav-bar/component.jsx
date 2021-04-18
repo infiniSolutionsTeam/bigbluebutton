@@ -13,7 +13,6 @@ import RecordingIndicator from './recording-indicator/container';
 import TalkingIndicatorContainer from '/imports/ui/components/nav-bar/talking-indicator/container';
 import SettingsDropdownContainer from './settings-dropdown/container';
 
-
 const intlMessages = defineMessages({
   toggleUserListLabel: {
     id: 'app.navBar.userListToggleBtnLabel',
@@ -80,7 +79,6 @@ class NavBar extends PureComponent {
       amIModerator,
     } = this.props;
 
-
     const toggleBtnClasses = {};
     toggleBtnClasses[styles.btn] = true;
     toggleBtnClasses[styles.btnWithNotificationDot] = hasUnreadMessages;
@@ -93,8 +91,7 @@ class NavBar extends PureComponent {
         <div className={styles.top}>
           <div className={styles.left}>
             {!isExpanded ? null
-              : <Icon iconName="left_arrow" className={styles.arrowLeft} />
-            }
+              : <Icon iconName="left_arrow" className={styles.arrowLeft} />}
             <Button
               data-test="userListToggleButton"
               onClick={NavBar.handleToggleUserList}
@@ -109,16 +106,18 @@ class NavBar extends PureComponent {
               accessKey={TOGGLE_USERLIST_AK}
             />
             {isExpanded ? null
-              : <Icon iconName="right_arrow" className={styles.arrowRight} />
-            }
+              : <Icon iconName="right_arrow" className={styles.arrowRight} />}
           </div>
           <div className={styles.center}>
-            <h1 className={styles.presentationTitle}>{presentationTitle}</h1>
+            <div>
+              <h1>this</h1>
+              <h1 className={styles.presentationTitle}>{presentationTitle}</h1>
 
-            <RecordingIndicator
-              mountModal={mountModal}
-              amIModerator={amIModerator}
-            />
+              <RecordingIndicator
+                mountModal={mountModal}
+                amIModerator={amIModerator}
+              />
+            </div>
           </div>
           <div className={styles.right}>
             <SettingsDropdownContainer amIModerator={amIModerator} />
