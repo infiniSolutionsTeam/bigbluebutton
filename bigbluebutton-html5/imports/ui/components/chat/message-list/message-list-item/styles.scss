@@ -27,7 +27,7 @@
 }
 
 .systemMessage {
-  background: rgba($color: #ffffff, $alpha: 0.5);
+  background: rgba($color: #ffffff, $alpha: 0.4);
   border: 1px solid var(--systemMessage-border-color);
   border-radius: 20px;
   font-weight: var(--btn-font-weight);
@@ -141,6 +141,10 @@
   margin-bottom: 0;
   color: var(--color-text);
   word-wrap: break-word;
+  // added by chata start
+  background-color: rgba($color: #ffffff, $alpha: 0.5);
+
+  //added by chata end
 }
 
 .hyperlink {
