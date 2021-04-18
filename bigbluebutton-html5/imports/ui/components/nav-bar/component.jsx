@@ -109,8 +109,7 @@ class NavBar extends PureComponent {
               : <Icon iconName="right_arrow" className={styles.arrowRight} />}
           </div>
           <div className={styles.center}>
-            <div>
-              <h1>this</h1>
+            <div className={styles.recordAndTitle}>
               <h1 className={styles.presentationTitle}>{presentationTitle}</h1>
 
               <RecordingIndicator
