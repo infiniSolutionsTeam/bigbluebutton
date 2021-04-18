@@ -61,10 +61,13 @@
 }
 
 .recordAndTitle {
-  background-color: #3a43b9;
+  background-color: rgba($color: #3a43b9, $alpha: 0.3);
   max-width: 40vw;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .btnWithNotificationDot {
