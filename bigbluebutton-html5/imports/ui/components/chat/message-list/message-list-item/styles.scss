@@ -139,11 +139,13 @@
   flex: 1;
   margin-top: calc(var(--line-height-computed) / 3);
   margin-bottom: 0;
-  color: var(--color-text);
+  color: #575454;
   word-wrap: break-word;
   // added by chata start
   background-color: rgba($color: #ffffff, $alpha: 0.5);
-
+  border-radius: 20px;
+  font-weight: var(--btn-font-weight);
+  padding: var(--font-size-base);
   //added by chata end
 }
 
