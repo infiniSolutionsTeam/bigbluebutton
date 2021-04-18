@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import cx from 'classnames';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import { styles } from './styles.scss';
 import DesktopShare from './desktop-share/component';
 import ActionsDropdown from './actions-dropdown/component';
@@ -96,12 +96,12 @@ class ActionsBar extends PureComponent {
           }}
           />
           {/* Added by chata start */}
-
-          <div>
+          {/* //TODO this is bottom app bar  */}
+          {/* <div>
             <Button variant="contained" color="secondary">
               End
             </Button>
-          </div>
+          </div> */}
           {/* Added by chata stop */}
         </div>
         <div className={styles.right}>
