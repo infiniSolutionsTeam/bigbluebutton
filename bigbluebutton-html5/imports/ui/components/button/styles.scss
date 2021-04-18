@@ -10,9 +10,9 @@
   --btn-default-bg: var(--color-white);
   --btn-default-border: var(--color-white);
 
-  --btn-primary-color: var(--color-white);
-  --btn-primary-bg: var(--color-primary);
-  --btn-primary-border: var(--color-primary);
+  --btn-primary-color: var(--color-primary);
+  --btn-primary-bg: var(--color-white);
+  --btn-primary-border: var(--color-white);
 
   --btn-success-color: var(--color-white);
   --btn-success-bg: var(--color-success);
@@ -29,15 +29,15 @@
   --btn-border-size: var(--border-size);
   --btn-border-radius: var(--border-radius);
   --btn-font-weight: 600;
-  --btn-spacing: .35rem;
+  --btn-spacing: 0.35rem;
 
-  --btn-sm-font-size: calc(var(--font-size-small) * .85);
+  --btn-sm-font-size: calc(var(--font-size-small) * 0.85);
   --btn-sm-padding: var(--sm-padding-y) var(--sm-padding-x);
 
-  --btn-md-font-size: calc(var(--font-size-base) * .85);
+  --btn-md-font-size: calc(var(--font-size-base) * 0.85);
   --btn-md-padding: var(--md-padding-y) var(--md-padding-x);
 
-  --btn-lg-font-size: calc(var(--font-size-large) * .85);
+  --btn-lg-font-size: calc(var(--font-size-large) * 0.85);
   --btn-lg-padding: var(--lg-padding-y) var(--lg-padding-x);
 
   --btn-jumbo-font-size: 3rem;
@@ -79,7 +79,7 @@
 
   &[aria-disabled="true"] {
     cursor: not-allowed;
-    opacity: .65;
+    opacity: 0.65;
     box-shadow: none;
   }
 
@@ -131,14 +131,14 @@
 
   &[aria-disabled="true"] > span {
     cursor: not-allowed;
-    opacity: .65;
+    opacity: 0.65;
     box-shadow: none;
   }
 }
 
 .label {
   .buttonWrapper & {
-    opacity: .85;
+    opacity: 0.85;
     display: block;
     margin-top: var(--btn-spacing);
     color: #fff;
@@ -150,10 +150,10 @@
 
   .buttonWrapper.sm & {
     display: inline-block;
-    margin: 0 0 0var(--btn-spacing);
+    margin: 0 0 0var (--btn-spacing);
 
     [dir="rtl"] & {
-      margin:0 var(--btn-spacing) 0 0;
+      margin: 0 var(--btn-spacing) 0 0;
     }
   }
 
@@ -166,7 +166,7 @@
     }
   }
   &:hover {
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -178,7 +178,6 @@
   padding: 0 !important;
   overflow: hidden;
   display: none !important;
-  
 }
 
 .icon {
@@ -197,7 +196,7 @@
     }
   }
   .buttonWrapper:hover & {
-    opacity: .75;
+    opacity: 0.75;
   }
 }
 
@@ -247,23 +246,43 @@
 }
 
 .default {
-  @include button-variant(var(--btn-default-color), var(--btn-default-bg), var(--btn-primary-border));
+  @include button-variant(
+    var(--btn-default-color),
+    var(--btn-default-bg),
+    var(--btn-primary-border)
+  );
 }
 
 .primary {
-  @include button-variant(var(--btn-primary-color), var(--btn-primary-bg), var(--btn-primary-border));
+  @include button-variant(
+    var(--btn-primary-color),
+    var(--btn-primary-bg),
+    var(--btn-primary-border)
+  );
 }
 
 .success {
-  @include button-variant(var(--btn-success-color), var(--btn-success-bg), var(--btn-success-border));
+  @include button-variant(
+    var(--btn-success-color),
+    var(--btn-success-bg),
+    var(--btn-success-border)
+  );
 }
 
 .danger {
-  @include button-variant(var(--btn-danger-color), var(--btn-danger-bg), var(--btn-danger-border));
+  @include button-variant(
+    var(--btn-danger-color),
+    var(--btn-danger-bg),
+    var(--btn-danger-border)
+  );
 }
 
 .dark {
-  @include button-variant(var(--btn-dark-color), var(--btn-dark-bg), var(--btn-dark-border));
+  @include button-variant(
+    var(--btn-dark-color),
+    var(--btn-dark-bg),
+    var(--btn-dark-border)
+  );
 }
 
 /* Styles
@@ -277,19 +296,31 @@
 
 .ghost {
   &.default {
-    @include button-ghost-variant(var(--btn-default-bg), var(--btn-default-color));
+    @include button-ghost-variant(
+      var(--btn-default-bg),
+      var(--btn-default-color)
+    );
   }
 
   &.primary {
-    @include button-ghost-variant(var(--btn-primary-bg), var(--btn-primary-color));
+    @include button-ghost-variant(
+      var(--btn-primary-bg),
+      var(--btn-primary-color)
+    );
   }
 
   &.success {
-    @include button-ghost-variant(var(--btn-success-bg), var(--btn-success-color));
+    @include button-ghost-variant(
+      var(--btn-success-bg),
+      var(--btn-success-color)
+    );
   }
 
   &.danger {
-    @include button-ghost-variant(var(--btn-danger-bg), var(--btn-danger-color));
+    @include button-ghost-variant(
+      var(--btn-danger-bg),
+      var(--btn-danger-color)
+    );
   }
 
   &.dark {
