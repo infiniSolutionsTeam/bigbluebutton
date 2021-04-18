@@ -7,12 +7,12 @@ public:
     listenOnlyMode: true
     forceListenOnly: false
     skipCheck: false
-    clientTitle: BigBlueButton
-    appName: BigBlueButton HTML5 Client
+    clientTitle: Iris Meet
+    appName: Iris Meet HTML5 Client
     bbbServerVersion: 2.2
-    copyright: "©2021 BigBlueButton Inc."
+    copyright: "©2021 Infini Solutions"
     html5ClientBuild: HTML5_CLIENT_VERSION
-    helpLink: https://bigbluebutton.org/html5/
+    helpLink: https://meet.irisincorp.com/html5/
     lockOnJoin: true
     cdn: ""
     basename: "/html5client"
