@@ -54,7 +54,7 @@ const UserAvatar = ({
       [styles.noVoice]: noVoice && !listenOnly,
     }, className)}
     style={{
-      backgroundColor: color,
+      backgroundColor: '#DED5F8',
       color, // We need the same color on both for the border
     }}
   >
@@ -63,7 +63,6 @@ const UserAvatar = ({
       [styles.talking]: (talking && !muted),
     })}
     />
-
 
     <div className={styles.content}>
       {children}
