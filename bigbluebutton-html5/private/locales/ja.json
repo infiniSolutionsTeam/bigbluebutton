@@ -628,7 +628,7 @@
     "app.whiteboard.toolbar.multiUserOff": "マルチユーザーモードを外す",
     "app.whiteboard.toolbar.fontSize": "フォントサイズ一覧",
     "app.feedback.title": "セッションからログアウトしました",
-    "app.feedback.subtitle": "BigBlueButtonの感想は？（任意）",
+    "app.feedback.subtitle": "IRIS Meetの感想は？（任意）",
     "app.feedback.textarea": "改善案をお聞かせください。",
     "app.feedback.sendFeedback": "フィードバックを送る",
     "app.feedback.sendFeedbackDesc": "フィードバックを送り、会議から退室する",
