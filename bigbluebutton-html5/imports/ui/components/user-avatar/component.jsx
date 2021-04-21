@@ -55,7 +55,6 @@ const UserAvatar = ({
     }, className)}
     style={{
       backgroundColor: '#DED5F8',
-      color, // We need the same color on both for the border
     }}
   >
 
