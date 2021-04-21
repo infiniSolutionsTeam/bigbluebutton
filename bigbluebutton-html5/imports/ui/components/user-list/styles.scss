@@ -62,10 +62,10 @@
     margin-top: 0;
   }
 
-  &:hover {
-    @include highContrastOutline();
-    background-color: var(--list-item-bg-hover);
-  }
+  // &:hover {
+  //   @include highContrastOutline();
+  //   background-color: var(--list-item-bg-hover);
+  // }
 
   &:active,
   &:focus {
