@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '/imports/ui/components/icon/component';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { styles } from './styles';
+
 
 const propTypes = {
   icon: PropTypes.string.isRequired,
@@ -10,10 +13,10 @@ const propTypes = {
 const defaultProps = {
 };
 
-const ChatIcon = (props) => (
+const ChatIcon = props => (
   <div className={styles.chatThumbnail}>
     {/* TODO icon here */}
-    <i className="fas fa-comment-dots" />
+    <FontAwesomeIcon icon={faCoffee} />
     {/* <Icon iconName={props.icon} /> */}
   </div>
 );
