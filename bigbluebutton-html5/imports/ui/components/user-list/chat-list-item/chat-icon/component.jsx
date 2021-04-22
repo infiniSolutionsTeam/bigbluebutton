@@ -10,8 +10,10 @@ const propTypes = {
 const defaultProps = {
 };
 
-const ChatIcon = props => (
+const ChatIcon = (props) => (
   <div className={styles.chatThumbnail}>
+    {/* TODO icon here */}
+    <p>icon</p>
     <Icon iconName={props.icon} />
   </div>
 );
