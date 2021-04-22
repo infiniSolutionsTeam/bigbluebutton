@@ -69,7 +69,7 @@
 
 .hideBtn {
   position: relative;
-  background-color: var(--color-white);
+  background-color: transparent;
   display: block;
   margin: var(--border-size-large);
   margin-bottom: var(--border-size);
@@ -95,7 +95,7 @@
   }
 
   &:hover {
-    background-color: var(--color-white);
+    background-color: transparent;
   }
 }
 
