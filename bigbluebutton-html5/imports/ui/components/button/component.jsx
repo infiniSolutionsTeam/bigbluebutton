@@ -212,7 +212,7 @@ export default class Button extends BaseButton {
 
     if (iconName) {
       if(iconName === 'plus'){
-        <FontAwesomeIcon icon={faPlusCircle} />
+        return (<FontAwesomeIcon icon={faPlusCircle} />);
       }else{
         return (<Icon className={styles.icon} iconName={iconName} />);
       }
