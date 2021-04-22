@@ -13,8 +13,8 @@ const defaultProps = {
 const ChatIcon = (props) => (
   <div className={styles.chatThumbnail}>
     {/* TODO icon here */}
-    <p>icon</p>
-    <Icon iconName={props.icon} />
+    <i className="fas fa-comment-dots" />
+    {/* <Icon iconName={props.icon} /> */}
   </div>
 );
 
