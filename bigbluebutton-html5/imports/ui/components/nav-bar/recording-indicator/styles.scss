@@ -38,9 +38,9 @@
 .recordingControlON {
   @extend %recordingControl;
 
-  padding: 5px;
-  background-color: var(--color-primary);
-  border: var(--border-size-large) solid var(--color-primary);
+  // padding: 5px;
+  // background-color: var(--color-primary);
+  // border: var(--border-size-large) solid var(--color-primary);
 
   &:focus {
     background-clip: padding-box;
