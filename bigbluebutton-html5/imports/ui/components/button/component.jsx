@@ -4,7 +4,7 @@ import cx from 'classnames';
 import Tooltip from '/imports/ui/components/tooltip/component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faPlus, faBars, faVideo, faVideoSlash,
+  faPlus, faBars, faVideo, faVideoSlash,faMicrophone,faMicrophoneSlash
 } from '@fortawesome/free-solid-svg-icons';
 import { styles } from './styles';
 import Icon from '../icon/component';
@@ -222,7 +222,13 @@ export default class Button extends BaseButton {
       if (iconName === 'video') {
         return (<FontAwesomeIcon icon={faVideo} size="lg" />);
       } if (iconName === 'video_off') {
-        return (<FontAwesomeIcon icon={faVideoSlash}  />);
+        return (<FontAwesomeIcon icon={faVideoSlash} size="sm" />);
+      }
+      if(iconName === 'unmute'){
+        return (<FontAwesomeIcon icon={faMicrophone} size="sm" />);
+      }
+      if(iconName === 'mute'){
+        return (<FontAwesomeIcon icon={faMicrophoneSlash} size="sm" />);
       }
 
       return (<Icon className={styles.icon} iconName={iconName} />);
