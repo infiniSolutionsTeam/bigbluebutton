@@ -222,7 +222,7 @@ export default class Button extends BaseButton {
       if (iconName === 'video') {
         return (<FontAwesomeIcon icon={faVideo} size="lg" />);
       } if (iconName === 'video_off') {
-        return (<FontAwesomeIcon icon={faVideoSlash} size="lg" />);
+        return (<FontAwesomeIcon icon={faVideoSlash}  />);
       }
 
       return (<Icon className={styles.icon} iconName={iconName} />);
