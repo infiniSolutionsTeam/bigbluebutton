@@ -16,10 +16,11 @@
   // padding-bottom: var(--lg-padding-y);
   // padding-left: var(--lg-padding-y);
   // padding-right: 0;
+  border: solid 1px #d4d6f1;
   margin-left: var(--border-size);
   margin-top: var(--border-size);
   margin-bottom: var(--border-size);
-  margin-right: 0;
+  margin-right: var(--border-size);
 
   // [dir="rtl"] & {
   //   padding-left: 0;
