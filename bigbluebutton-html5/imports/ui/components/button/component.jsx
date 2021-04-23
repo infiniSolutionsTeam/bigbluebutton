@@ -213,7 +213,7 @@ export default class Button extends BaseButton {
     if (iconName) {
       if (iconName === 'plus') {
         // TODO last here
-        return (<FontAwesomeIcon icon={faPlus} />);
+        return (<FontAwesomeIcon icon={faPlus} size="2x" />);
       } if (iconName === 'more') {
         return (<FontAwesomeIcon icon={faBars} size="2x" />);// <i class="fas fa-bars"></i>
       }
