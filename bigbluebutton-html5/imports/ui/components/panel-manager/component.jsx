@@ -43,8 +43,8 @@ const propTypes = {
 const DEFAULT_PANEL_WIDTH = 340;
 
 // Variables for resizing user-list.
-const USERLIST_MIN_WIDTH_PX = 150;
-const USERLIST_MAX_WIDTH_PX = 240;
+const USERLIST_MIN_WIDTH_PX = 250;
+const USERLIST_MAX_WIDTH_PX = 370;
 
 // Variables for resizing chat.
 const CHAT_MIN_WIDTH = 150;
@@ -84,7 +84,7 @@ class PanelManager extends PureComponent {
     this.state = {
       chatWidth: DEFAULT_PANEL_WIDTH,
       pollWidth: DEFAULT_PANEL_WIDTH,
-      userlistWidth: 180,
+      userlistWidth: 250,
       noteWidth: DEFAULT_PANEL_WIDTH,
       captionsWidth: DEFAULT_PANEL_WIDTH,
       waitingWidth: DEFAULT_PANEL_WIDTH,
