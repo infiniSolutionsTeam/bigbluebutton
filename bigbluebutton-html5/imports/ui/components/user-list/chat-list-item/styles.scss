@@ -4,29 +4,13 @@
 @import "/imports/ui/stylesheets/mixins/_indicators";
 
 .chatListItem {
-  @extend %list-item;
   cursor: pointer;
   text-decoration: none;
   flex-grow: 1;
   line-height: 0;
   color: #575454;
   background-color: #d4d6f1;
-  padding: 5px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  // padding-top: var(--lg-padding-y);
-  // padding-bottom: var(--lg-padding-y);
-  // padding-left: var(--lg-padding-y);
-  // padding-right: 0;
-  border: solid 1px #d4d6f1;
-  margin-left: var(--border-size);
-  margin-top: var(--border-size);
-  margin-bottom: var(--border-size);
-  margin-right: var(--border-size);
+  border: solid 1px #3a44c7;
 
   // [dir="rtl"] & {
   //   padding-left: 0;
