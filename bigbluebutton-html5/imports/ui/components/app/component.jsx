@@ -239,7 +239,7 @@ class App extends Component {
     if (!sidebar) return null;
 
     return (
-      <aside className={styles.sidebar}>
+      <aside className={styles.sidebar} style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}>
         {sidebar}
       </aside>
     );
