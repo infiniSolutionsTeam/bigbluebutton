@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import Tooltip from '/imports/ui/components/tooltip/component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faBars,faVideo,faVideoSlash } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPlus, faBars, faVideo, faVideoSlash,
+} from '@fortawesome/free-solid-svg-icons';
 import { styles } from './styles';
 import Icon from '../icon/component';
 import BaseButton from './base/component';
@@ -214,18 +216,16 @@ export default class Button extends BaseButton {
       if (iconName === 'plus') {
         // TODO last here
         return (<FontAwesomeIcon icon={faPlus} size="lg" />);
-      }else if (iconName === 'more') {
+      } if (iconName === 'more') {
         return (<FontAwesomeIcon icon={faBars} size="2x" />);// <i class="fas fa-bars"></i>
       }
-      else if(iconName === 'video'){
-        <FontAwesomeIcon icon={faVideo} />
-      }else if(iconName === 'video_off'){
-        <FontAwesomeIcon icon={faVideoSlash} />
+      if (iconName === 'video') {
+        return (<FontAwesomeIcon icon={faVideo} />);
+      } if (iconName === 'video_off') {
+        return (<FontAwesomeIcon icon={faVideoSlash} />);
       }
-      else{
-        return (<Icon className={styles.icon} iconName={iconName} />);
-      }
-      
+
+      return (<Icon className={styles.icon} iconName={iconName} />);
     } if (customIcon) {
       return customIcon;
     }
