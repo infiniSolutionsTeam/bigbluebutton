@@ -16,7 +16,7 @@ const defaultProps = {
 const ChatIcon = props => (
   <div className={styles.chatThumbnail}>
     {/* TODO icon here */}
-    <FontAwesomeIcon icon={faCommentDots} flip="horizontal" />
+    <FontAwesomeIcon icon={faCommentDots} flip="horizontal" color="#707070" />
     {/* <Icon iconName={props.icon} /><i class="fas fa-comment-dots"></i> */}
   </div>
 );
