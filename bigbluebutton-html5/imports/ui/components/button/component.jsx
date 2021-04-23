@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import Tooltip from '/imports/ui/components/tooltip/component';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import { styles } from './styles';
 import Icon from '../icon/component';
 import BaseButton from './base/component';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 
 const SIZES = [
   'jumbo', 'lg', 'md', 'sm',
@@ -211,12 +211,11 @@ export default class Button extends BaseButton {
     } = this.props;
 
     if (iconName) {
-      if(iconName === 'plus'){
+      if (iconName === 'plus') {
+        // TODO last here
         return (<FontAwesomeIcon icon={faPlusCircle} />);
-      }else{
-        return (<Icon className={styles.icon} iconName={iconName} />);
       }
-      
+      return (<Icon className={styles.icon} iconName={iconName} />);
     } if (customIcon) {
       return customIcon;
     }
