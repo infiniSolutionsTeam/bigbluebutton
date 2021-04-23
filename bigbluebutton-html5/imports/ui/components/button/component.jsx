@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import Tooltip from '/imports/ui/components/tooltip/component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faBars,faVideo,faVideoSlash } from '@fortawesome/free-solid-svg-icons';
 import { styles } from './styles';
 import Icon from '../icon/component';
 import BaseButton from './base/component';
@@ -214,10 +214,18 @@ export default class Button extends BaseButton {
       if (iconName === 'plus') {
         // TODO last here
         return (<FontAwesomeIcon icon={faPlus} size="lg" />);
-      } if (iconName === 'more') {
+      }else if (iconName === 'more') {
         return (<FontAwesomeIcon icon={faBars} size="2x" />);// <i class="fas fa-bars"></i>
       }
-      return (<Icon className={styles.icon} iconName={iconName} />);
+      else if(iconName === 'video'){
+        <FontAwesomeIcon icon={faVideo} />
+      }else if(iconName === 'video_off'){
+        <FontAwesomeIcon icon={faVideoSlash} />
+      }
+      else{
+        return (<Icon className={styles.icon} iconName={iconName} />);
+      }
+      
     } if (customIcon) {
       return customIcon;
     }
