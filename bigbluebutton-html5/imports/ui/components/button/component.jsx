@@ -220,9 +220,9 @@ export default class Button extends BaseButton {
         return (<FontAwesomeIcon icon={faBars} size="2x" />);// <i class="fas fa-bars"></i>
       }
       if (iconName === 'video') {
-        return (<FontAwesomeIcon icon={faVideo} />);
+        return (<FontAwesomeIcon icon={faVideo} size="lg" />);
       } if (iconName === 'video_off') {
-        return (<FontAwesomeIcon icon={faVideoSlash} />);
+        return (<FontAwesomeIcon icon={faVideoSlash} size="lg" />);
       }
 
       return (<Icon className={styles.icon} iconName={iconName} />);
