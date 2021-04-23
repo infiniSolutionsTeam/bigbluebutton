@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import Tooltip from '/imports/ui/components/tooltip/component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faBars } from '@fortawesome/free-solid-svg-icons';
 import { styles } from './styles';
 import Icon from '../icon/component';
 import BaseButton from './base/component';
@@ -215,7 +215,7 @@ export default class Button extends BaseButton {
         // TODO last here
         return (<FontAwesomeIcon icon={faPlus} />);
       } if (iconName === 'more') {
-        return (<p>h</p>);
+        return (<FontAwesomeIcon icon={faBars} />);// <i class="fas fa-bars"></i>
       }
       return (<Icon className={styles.icon} iconName={iconName} />);
     } if (customIcon) {
