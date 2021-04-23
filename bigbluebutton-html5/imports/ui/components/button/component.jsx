@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import Tooltip from '/imports/ui/components/tooltip/component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { styles } from './styles';
 import Icon from '../icon/component';
 import BaseButton from './base/component';
@@ -213,7 +213,7 @@ export default class Button extends BaseButton {
     if (iconName) {
       if (iconName === 'plus') {
         // TODO last here
-        return (<FontAwesomeIcon icon={faPlusCircle} />);
+        return (<FontAwesomeIcon icon={faPlus} />);
       }
       return (<Icon className={styles.icon} iconName={iconName} />);
     } if (customIcon) {
