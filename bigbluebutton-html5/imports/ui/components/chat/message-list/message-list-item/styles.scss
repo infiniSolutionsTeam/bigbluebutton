@@ -76,6 +76,7 @@
   flex-flow: row;
   line-height: 1;
   letter-spacing: 0px;
+  opacity: 0.7;
   color: rgba(232, 232, 232, 1);
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
   font-size: 13px;
@@ -102,10 +103,6 @@
   :first-child {
     @extend %text-elipsis;
   }
-}
-
-.name {
-  color: var(--color-heading);
 }
 
 .logout {
