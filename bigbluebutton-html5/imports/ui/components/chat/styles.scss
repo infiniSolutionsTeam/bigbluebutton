@@ -63,8 +63,8 @@
   border-bottom-right-radius: 27px;
   box-shadow: none;
   width: 506px;
-  height: 1070px;
-  left: 384px;
+  height: 100vh;
+  // left: 384px;
   top: 0px;
   //added by chata
 
@@ -81,7 +81,7 @@
   // flex-direction: column;
   // justify-content: space-around;
   // overflow: hidden;
-  // height: 100vh;
+  //
 
   :global(.browser-chrome) & {
     transform: translateZ(0);
