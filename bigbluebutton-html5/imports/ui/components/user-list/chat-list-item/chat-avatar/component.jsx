@@ -17,14 +17,21 @@ const ChatAvatar = (props) => {
   } = props;
   return (
 
-    <UserAvatar
-      moderator={isModerator}
-      color={color}
-    >
-      {' '}
-      {fromWhere === 'chatBtn' ? "h":''}
-      {name.toLowerCase().slice(0, 2)}
-    </UserAvatar>
+    <>
+      {fromWhere === 'chatBtn' ? 
+      // TODO 
+        'TT'
+        :
+        <UserAvatar
+        moderator={isModerator}
+        color={color}
+      >
+        {' '}
+        
+        {name.toLowerCase().slice(0, 2)}
+      </UserAvatar>
+      }
+    </>
   );
 };
 
