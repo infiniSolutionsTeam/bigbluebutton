@@ -43,7 +43,7 @@
   border-top-color: rgba(112, 112, 112, 1);
   border-top-style: none;
   border-top-width: 1px;
-
+  font-weight: 500;
   box-shadow: none;
   height: 30px;
 
@@ -54,11 +54,25 @@
   //   margin-right: var(--border-size);
   // }
   &:hover {
-    background-color: white;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
+    color: rgba(68, 68, 68, 1);
+
+    background-color: rgba(212, 214, 241, 1);
+    border-bottom-color: rgba(112, 112, 112, 1);
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    border-left-color: rgba(112, 112, 112, 1);
+    border-left-style: none;
+    border-left-width: 1px;
+    border-right-color: rgba(112, 112, 112, 1);
+    border-right-style: none;
+    border-right-width: 1px;
+    border-top-color: rgba(112, 112, 112, 1);
+    border-top-style: none;
+    border-top-width: 1px;
   }
 }
 
