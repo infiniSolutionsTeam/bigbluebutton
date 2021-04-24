@@ -77,15 +77,15 @@
     background-color: rgba(167, 179, 189, 0.25);
   }
 
-  &:hover {
-    @include highContrastOutline();
-  }
+  // &:hover {
+  //   @include highContrastOutline();
+  // }
 
-  &:active,
-  &:focus {
-    @include highContrastOutline();
-    outline-style: none;
-  }
+  // &:active,
+  // &:focus {
+  //   @include highContrastOutline();
+  //   outline-style: none;
+  // }
 }
 
 .sendButton {
