@@ -118,7 +118,7 @@
   margin-bottom: var(--border-size);
   padding-left: 0;
   padding-right: inherit;
-
+  color: rgba(68, 68, 68, 1) !important;
   [dir="rtl"] & {
     padding-left: inherit;
     padding-right: 0;
