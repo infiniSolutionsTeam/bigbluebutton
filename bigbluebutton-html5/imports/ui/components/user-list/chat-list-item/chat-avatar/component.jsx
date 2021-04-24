@@ -20,18 +20,23 @@ const ChatAvatar = (props) => {
   return (
 
     <>
-      {fromWhere === 'chatBtn' ? 
-      // TODO 
-        <FontAwesomeIcon icon={faCommentDots} flip="horizontal" size="2x" />
-        :
-        <UserAvatar
-        moderator={isModerator}
-        color={color}
-      >
-        {' '}
-        
-        {name.toLowerCase().slice(0, 2)}
-      </UserAvatar>
+      {fromWhere === 'chatBtn'
+      // TODO
+        ? (
+          <div style={{ fontSize: '175%' }}>
+            <FontAwesomeIcon icon={faCommentDots} flip="horizontal" />
+          </div>
+        )
+        : (
+          <UserAvatar
+            moderator={isModerator}
+            color={color}
+          >
+            {' '}
+
+            {name.toLowerCase().slice(0, 2)}
+          </UserAvatar>
+        )
       }
     </>
   );
