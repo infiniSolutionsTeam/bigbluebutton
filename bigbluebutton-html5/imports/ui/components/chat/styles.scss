@@ -24,20 +24,64 @@
   //     rgba(217, 217, 217, 0.5) 100%
   //   ),
   //   url("chat.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
 
-  padding: var(--md-padding-x) var(--md-padding-y) var(--md-padding-x)
-    var(--md-padding-x);
+  //aded by chata
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.5;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(217, 217, 217, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 1px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 1px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+  box-shadow: none;
+  width: 506px;
+  height: 1070px;
+  left: 384px;
+  top: 0px;
+  //added by chata
 
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: space-around;
-  overflow: hidden;
-  height: 100vh;
+  // background-size: 100% 100%;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-attachment: fixed;
+
+  // padding: var(--md-padding-x) var(--md-padding-y) var(--md-padding-x)
+  //   var(--md-padding-x);
+
+  // display: flex;
+  // flex-grow: 1;
+  // flex-direction: column;
+  // justify-content: space-around;
+  // overflow: hidden;
+  // height: 100vh;
 
   :global(.browser-chrome) & {
     transform: translateZ(0);
