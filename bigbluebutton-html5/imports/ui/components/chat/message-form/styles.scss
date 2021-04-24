@@ -54,9 +54,18 @@
   }
 }
 
+.lineBar {
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linecap: butt;
+  box-shadow: none;
+  width: 1px;
+  height: 27px;
+}
+
 .input {
   // @include inputFocus(var(--color-blue-light));
-
+  outline: none;
   flex: 1;
   background: #fff;
   background-clip: padding-box;

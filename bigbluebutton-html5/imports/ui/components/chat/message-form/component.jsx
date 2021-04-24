@@ -296,7 +296,7 @@ class MessageForm extends PureComponent {
             onChange={this.handleMessageChange}
             onKeyDown={this.handleMessageKeyDown}
           />
-          {/* <svg data-layer="e69cfffe-f89a-4092-b256-8329494eaf27" preserveAspectRatio="none" viewBox="-0.5 0 1 27" className="line23"><path d="M 0 0 L 0 27" /></svg> */}
+          <svg data-layer="e69cfffe-f89a-4092-b256-8329494eaf27" preserveAspectRatio="none" viewBox="-0.5 0 1 27" className={styles.lineBar}><path d="M 0 0 L 0 27" /></svg>
           <Button
             hideLabel
             circle
@@ -310,7 +310,7 @@ class MessageForm extends PureComponent {
             onClick={() => {}}
             data-test="sendMessageButton"
           />
-          
+
         </div>
 
       </form>
