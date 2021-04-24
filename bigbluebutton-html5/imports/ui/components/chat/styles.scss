@@ -139,8 +139,8 @@
   > i {
     color: rgba(214, 205, 212, 1);
     font-size: smaller;
-
-    [dir="rtl"] & {
+    font-weight: 700;
+    ss [dir="rtl"] & {
       -webkit-transform: scale(-1, 1);
       -moz-transform: scale(-1, 1);
       -ms-transform: scale(-1, 1);
@@ -150,7 +150,7 @@
   }
 
   &:hover {
-    background-color: transparent;
+    color: white;
   }
 }
 
