@@ -22,7 +22,7 @@ const ChatAvatar = (props) => {
       color={color}
     >
       {' '}
-      {fromWhere}
+      {fromWhere === 'chatBtn' ? "h":''}
       {name.toLowerCase().slice(0, 2)}
     </UserAvatar>
   );
