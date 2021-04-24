@@ -51,6 +51,14 @@
 .avatar {
   font-size: 0.85rem;
   filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.1607843137254902));
+  font-weight: 700;
+  font-style: normal;
+  font-family: Calibri, Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
 }
 
 .content {
@@ -67,7 +75,18 @@
   flex: 1;
   flex-flow: row;
   line-height: 1;
-
+  letter-spacing: 0px;
+  color: rgba(232, 232, 232, 1);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: Calibri, Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
   & + .message {
     margin-top: 0;
   }
