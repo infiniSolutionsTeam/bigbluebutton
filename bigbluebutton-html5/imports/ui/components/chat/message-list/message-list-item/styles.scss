@@ -27,6 +27,13 @@
 }
 
 .systemMessage {
+  color: rgba(87, 84, 84, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  font-family: Calibri, Arial;
+  letter-spacing: 0.18000000000000002;
+  text-decoration: none;
   background: rgba($color: #ffffff, $alpha: 0.4);
   border: 1px solid var(--systemMessage-border-color);
   border-radius: 20px;
