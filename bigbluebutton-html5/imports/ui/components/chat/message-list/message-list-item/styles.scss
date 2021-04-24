@@ -157,13 +157,24 @@
   flex: 1;
   margin-top: calc(var(--line-height-computed) / 3);
   margin-bottom: 0;
-  color: #575454;
   word-wrap: break-word;
   // added by chata start
   background-color: rgba($color: #ffffff, $alpha: 0.5);
   border-radius: 20px;
-  font-weight: var(--btn-font-weight);
   padding: var(--font-size-base);
+  text-align: left;
+  letter-spacing: 0px;
+  color: rgba(87, 84, 84, 1);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: Calibri, Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
   //added by chata end
 }
 
