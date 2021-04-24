@@ -275,9 +275,10 @@ class MessageForm extends PureComponent {
         ref={(ref) => { this.form = ref; }}
         className={cx(className, styles.form)}
         onSubmit={this.handleSubmit}
-      >
+      > 
+        <TypingIndicatorContainer {...{ error }} />
         <div className={styles.wrapper}>
-          <TypingIndicatorContainer {...{ error }} />
+          
           <TextareaAutosize
             className={styles.input}
             id="message-input"
