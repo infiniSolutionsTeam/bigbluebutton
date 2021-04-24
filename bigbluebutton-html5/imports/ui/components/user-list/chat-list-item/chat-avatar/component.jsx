@@ -22,7 +22,7 @@ const ChatAvatar = (props) => {
     <>
       {fromWhere === 'chatBtn' ? 
       // TODO 
-        <FontAwesomeIcon icon={faCommentDots} flip="horizontal" />
+        <FontAwesomeIcon icon={faCommentDots} flip="horizontal" size="2x" />
         :
         <UserAvatar
         moderator={isModerator}
