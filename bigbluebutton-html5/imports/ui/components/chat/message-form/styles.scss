@@ -55,7 +55,7 @@
 }
 
 .input {
-  @include inputFocus(var(--color-blue-light));
+  // @include inputFocus(var(--color-blue-light));
 
   flex: 1;
   background: #fff;
@@ -69,6 +69,7 @@
   font-size: var(--font-size-base);
   min-height: 2.5rem;
   max-height: 10rem;
+  border: none;
 
   &:disabled,
   &[disabled] {
