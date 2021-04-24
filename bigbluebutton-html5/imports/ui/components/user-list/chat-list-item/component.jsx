@@ -75,6 +75,7 @@ const ChatListItem = (props) => {
   linkClasses[styles.active] = isCurrentChat;
 
   return (
+    <>
     <div
       data-test="chatButton"
       role="button"
@@ -117,6 +118,9 @@ const ChatListItem = (props) => {
           : null}
       </div>
     </div>
+    <h1>this is text</h1>
+    <hr/>
+    </>
   );
 };
 
