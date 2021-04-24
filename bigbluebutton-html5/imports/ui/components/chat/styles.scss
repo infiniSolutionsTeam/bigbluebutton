@@ -119,6 +119,18 @@
   padding-left: 0;
   padding-right: inherit;
   color: rgba(68, 68, 68, 1) !important;
+  letter-spacing: 0.68px;
+  color: rgba(68, 68, 68, 1);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: Calibri, Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
   [dir="rtl"] & {
     padding-left: inherit;
     padding-right: 0;
