@@ -78,7 +78,7 @@
   letter-spacing: 0px;
   color: rgba(232, 232, 232, 1);
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 400;
   font-style: normal;
   font-family: Calibri, Arial;
@@ -124,7 +124,6 @@
 }
 
 .offline {
-  color: #ffffff;
   font-weight: 100;
   text-transform: lowercase;
   font-style: italic;
@@ -137,7 +136,6 @@
   flex-shrink: 0;
   flex-grow: 0;
   flex-basis: 3.5rem;
-  color: #ffffff;
   text-transform: uppercase;
   font-size: 75%;
   margin: 0 0 0 calc(var(--line-height-computed) / 2);
