@@ -4,12 +4,52 @@
 @import "/imports/ui/stylesheets/mixins/_indicators";
 
 .chatListItem {
-  cursor: pointer;
-  text-decoration: none;
-  flex-grow: 1;
-  line-height: 0;
-  color: #575454;
-  background-color: #d4d6f1;
+  // cursor: pointer;
+  // text-decoration: none;
+  // flex-grow: 1;
+  // line-height: 0;
+  // color: #575454;
+  // background-color: #d4d6f1;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(212, 214, 241, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 1px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 1px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  box-shadow: none;
+  width: 362px;
+  height: 51px;
+  left: 11px;
+  top: 94px;
 
   // [dir="rtl"] & {
   //   padding-left: 0;
