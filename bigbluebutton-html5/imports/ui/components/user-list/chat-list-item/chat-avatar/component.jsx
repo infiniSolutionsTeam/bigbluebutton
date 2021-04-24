@@ -23,7 +23,7 @@ const ChatAvatar = (props) => {
       {fromWhere === 'chatBtn'
       // TODO
         ? (
-          <div style={{ fontSize: '175%' }}>
+          <div style={{ fontSize: '165%' }}>
             <FontAwesomeIcon icon={faUser} flip="horizontal" />
           </div>
         )
