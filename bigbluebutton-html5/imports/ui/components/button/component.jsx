@@ -213,23 +213,23 @@ export default class Button extends BaseButton {
     } = this.props;
 
     if (iconName) {
-      if (iconName === 'plus') {
-        // TODO last here
-        return (<FontAwesomeIcon icon={faPlus} size="lg" />);
-      } if (iconName === 'more') {
-        return (<FontAwesomeIcon icon={faBars} size="2x" />);// <i class="fas fa-bars"></i>
-      }
-      if (iconName === 'video') {
-        return (<FontAwesomeIcon icon={faVideo} size="lg" />);
-      } if (iconName === 'video_off') {
-        return (<FontAwesomeIcon icon={faVideoSlash} size="sm" />);
-      }
-      if (iconName === 'unmute') {
-        return (<FontAwesomeIcon icon={faMicrophone} size="sm" />);
-      }
-      if (iconName === 'mute') {
-        return (<FontAwesomeIcon icon={faMicrophoneSlash} size="sm" />);
-      }
+      // if (iconName === 'plus') {
+      //   // TODO last here
+      //   return (<FontAwesomeIcon icon={faPlus} size="lg" />);
+      // } if (iconName === 'more') {
+      //   return (<FontAwesomeIcon icon={faBars} size="2x" />);// <i class="fas fa-bars"></i>
+      // }
+      // if (iconName === 'video') {
+      //   return (<FontAwesomeIcon icon={faVideo} size="lg" />);
+      // } if (iconName === 'video_off') {
+      //   return (<FontAwesomeIcon icon={faVideoSlash} size="sm" />);
+      // }
+      // if (iconName === 'unmute') {
+      //   return (<FontAwesomeIcon icon={faMicrophone} size="sm" />);
+      // }
+      // if (iconName === 'mute') {
+      //   return (<FontAwesomeIcon icon={faMicrophoneSlash} size="sm" />);
+      // }
 
       return (<Icon className={styles.icon} iconName={iconName} />);
     } if (customIcon) {
