@@ -35,6 +35,7 @@
   margin-bottom: var(--line-height-computed);
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+  margin-right: 5px;
 }
 
 .avatarWrapper {
@@ -87,7 +88,6 @@
   box-shadow: none;
   overflow-x: unset;
   overflow-y: unset;
-  white-space: pre;
   & + .message {
     margin-top: 0;
   }
