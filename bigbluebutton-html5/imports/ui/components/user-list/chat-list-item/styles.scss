@@ -20,7 +20,7 @@
   -webkit-transform-origin: center;
   transform-origin: center;
   opacity: 1;
-  cursor: default;
+  cursor: pointer;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
@@ -31,8 +31,8 @@
   padding-left: 5px;
   color: white;
   background-color: transparent;
-  border-bottom-color: rgba(112, 112, 112, 1);
-  border-bottom-style: none;
+  border-bottom-color: rgba(172, 172, 172, 1);
+  border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgba(112, 112, 112, 1);
   border-left-style: none;
@@ -43,10 +43,7 @@
   border-top-color: rgba(112, 112, 112, 1);
   border-top-style: none;
   border-top-width: 1px;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  border-bottom-left-radius: 9px;
-  border-bottom-right-radius: 9px;
+
   box-shadow: none;
   height: 30px;
 
@@ -57,7 +54,11 @@
   //   margin-right: var(--border-size);
   // }
   &:hover {
-    background-color: red;
+    background-color: white;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
   }
 }
 
