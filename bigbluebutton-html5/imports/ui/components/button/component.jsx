@@ -216,9 +216,10 @@ export default class Button extends BaseButton {
       // if (iconName === 'plus') {
       //   // TODO last here
       //   return (<FontAwesomeIcon icon={faPlus} size="lg" />);
-      // } if (iconName === 'more') {
-      //   return (<FontAwesomeIcon icon={faBars} size="2x" />);// <i class="fas fa-bars"></i>
-      // }
+      // } 
+      if (iconName === 'more') {
+        return (<FontAwesomeIcon icon={faBars} size="2x" />);// <i class="fas fa-bars"></i>
+      }
       // if (iconName === 'video') {
       //   return (<FontAwesomeIcon icon={faVideo} size="lg" />);
       // } if (iconName === 'video_off') {
