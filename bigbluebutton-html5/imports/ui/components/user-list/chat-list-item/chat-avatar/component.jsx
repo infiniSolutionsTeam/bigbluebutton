@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import UserAvatar from '/imports/ui/components/user-avatar/component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const propTypes = {
   isModerator: PropTypes.bool.isRequired,
@@ -24,7 +24,7 @@ const ChatAvatar = (props) => {
       // TODO
         ? (
           <div style={{ fontSize: '175%' }}>
-            <FontAwesomeIcon icon={faCommentDots} flip="horizontal" />
+            <FontAwesomeIcon icon={faUser} flip="horizontal" />
           </div>
         )
         : (
