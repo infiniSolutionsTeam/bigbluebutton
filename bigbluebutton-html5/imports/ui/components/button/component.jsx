@@ -194,6 +194,9 @@ export default class Button extends BaseButton {
 
     return (
       <BaseButton
+        style={{
+          width: '50px', height: '50px', fontSize: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px',
+        }}
         className={cx(styles[size], styles.buttonWrapper, className)}
         {...remainingProps}
       >
@@ -250,9 +253,6 @@ export default class Button extends BaseButton {
     return (
       <span
         className={cx(classNames)}
-        style={{
-          width: '50px', height: '50px', fontSize: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px',
-        }}
       >
         {label}
         {this.props.children}
