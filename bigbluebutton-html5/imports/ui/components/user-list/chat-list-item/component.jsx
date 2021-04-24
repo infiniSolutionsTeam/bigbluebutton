@@ -97,6 +97,7 @@ const ChatListItem = (props) => {
                   isModerator={chat.isModerator}
                   color={chat.color}
                   name={chat.name.toLowerCase().slice(0, 2)}
+                  fromWhere="helloo"
                 />
               )}
           </div>
