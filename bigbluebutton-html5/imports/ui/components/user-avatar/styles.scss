@@ -125,8 +125,8 @@
   &:after {
     content: "\00a0\e931\00a0";
     background-color: var(--user-indicator-voice-bg);
-    top: 1.375rem;
-    left: 1.375rem;
+    top: 2.5rem;
+    left: 2.5rem;
     right: auto;
 
     [dir="rtl"] & {
@@ -146,7 +146,7 @@
 
     [dir="rtl"] & {
       left: auto;
-      right: 1.375rem;
+      right: 2.5rem;
     }
   }
 }
