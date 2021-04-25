@@ -8,8 +8,8 @@
 :root {
   --user-avatar-border: var(--color-gray-light);
   --user-avatar-text: var(--color-white);
-  --user-indicator-voice-bg: var(--color-success);
-  --user-indicator-muted-bg: var(--color-danger);
+  --user-indicator-voice-bg: #42dc47;
+  --user-indicator-muted-bg: #eb4848;
   --user-list-bg: var(--color-off-white);
   --user-color: currentColor; //picks the current color reference in the class
 }
@@ -41,7 +41,7 @@
     left: auto;
     bottom: var(--user-indicators-offset);
     right: var(--user-indicators-offset);
-    border: 1.5px solid var(--user-list-bg);
+    border: 2px solid var(--user-list-bg);
     border-radius: 50%;
     background-color: var(--user-indicator-voice-bg);
     color: var(--user-avatar-text);
