@@ -538,6 +538,7 @@ class UserDropdown extends PureComponent {
         voice={voiceUser.isVoiceUser}
         noVoice={!voiceUser.isVoiceUser}
         color={user.color}
+        className={styles.newAvatar}
       >
         {
         userInBreakout

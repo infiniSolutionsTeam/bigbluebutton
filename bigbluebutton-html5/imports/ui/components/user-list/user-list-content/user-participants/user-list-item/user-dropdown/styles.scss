@@ -90,6 +90,11 @@
     inset 1px 0 0 1px var(--item-focus-border);
 }
 
+.newAvatar {
+  color: red !important;
+  font-size: 50px !important;
+}
+
 .usertListItemWithMenu {
   //TODO user list back color
   // @include highContrastOutline();
