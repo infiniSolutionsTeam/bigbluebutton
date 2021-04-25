@@ -597,6 +597,8 @@ class UserDropdown extends PureComponent {
         <div className={styles.userItemContents}>
           <div className={styles.userAvatar}>
             {this.renderUserAvatar()}
+            {' '}
+A
           </div>
           {<UserName
             {...{
