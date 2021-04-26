@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import cx from 'classnames';
-// import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 import { styles } from './styles.scss';
 import DesktopShare from './desktop-share/component';
 import ActionsDropdown from './actions-dropdown/component';
