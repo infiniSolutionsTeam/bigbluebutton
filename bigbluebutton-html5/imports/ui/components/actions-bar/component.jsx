@@ -16,6 +16,10 @@ import Modal from '@material-ui/core/Modal';
 // added by chata stop
 
 class ActionsBar extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {open:false};
+  }
   render() {
     const {
       amIPresenter,
@@ -92,12 +96,12 @@ class ActionsBar extends PureComponent {
           {/* Added by chata start */}
           {/* //TODO this is bottom app bar  */}
           <div>
-          <button type="button">
+          <button type="button" onClick={()=>this.setState({open:true})}>
             Open Modal
           </button>
           <Modal
-            open={true}
-            onClose={()=>alert('this is close')}
+            open={this.state.open}
+            onClose={()=>this.setState({open:true})}
             aria-labelledby="simple-modal-title"
             aria-describedby="simple-modal-description"
           >
