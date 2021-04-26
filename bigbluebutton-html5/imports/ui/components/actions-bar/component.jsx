@@ -107,11 +107,11 @@ class ActionsBar extends PureComponent {
           {/* Added by chata start */}
           {/* //TODO this is bottom app bar  */}
           <div>
-            <button label={'leave'}
-            description={'leave'} type="button" onClick={this.leaveSession}>
+            {/* <button label={'leave'}
+            description={'leave'} type="button" >
               Leave
-            </button>
-            <IconButton color="secondary" aria-label="add an alarm">
+            </button> */}
+            <IconButton color="secondary" aria-label="add an alarm" onClick={this.leaveSession}>
               <CallEndIcon fontSize="large"/>
             </IconButton>
           </div>
