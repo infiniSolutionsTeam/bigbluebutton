@@ -19,6 +19,7 @@ class ActionsBar extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {open:false};
+    this.LOGOUT_CODE = '680';
   }
   leaveSession() {
     makeCall('userLeftMeeting');
@@ -105,13 +106,15 @@ class ActionsBar extends PureComponent {
           <div>
           <button label={'leave'}
           description={'leave'} type="button" onClick={this.leaveSession}>
-            Leave
+            Leave 1
           </button>
 
           <button onClick={()=>this.leaveSession}>
-            h
+            Leave 2
           </button>
-          <button onClick={()=>{this.leaveSession}}></button>
+          <button onClick={()=>{this.leaveSession}}>
+            Leave 3
+          </button>
           
               
           
