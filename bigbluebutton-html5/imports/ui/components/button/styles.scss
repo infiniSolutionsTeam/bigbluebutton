@@ -296,7 +296,10 @@
 
 .ghost {
   &.default {
-    @include button-ghost-variant(var(white), var(--btn-default-color));
+    @include button-ghost-variant(
+      var(--btn-default-bg),
+      var(--btn-default-color)
+    );
   }
 
   &.primary {
@@ -304,6 +307,7 @@
       var(--btn-primary-bg),
       var(--btn-primary-color)
     );
+    background-color: white;
   }
 
   &.success {
