@@ -12,13 +12,20 @@ import PresentationOptionsContainer from './presentation-options/component';
 import EndMeetingConfirmationContainer from '/imports/ui/components/end-meeting-confirmation/container';
 // import Modal from '@material-ui/core/Modal';
 // added by chata start
-
+import { makeCall } from '/imports/ui/services/api';
 // added by chata stop
 
 class ActionsBar extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {open:false};
+  }
+  leaveSession() {
+    makeCall('userLeftMeeting');
+    // we don't check askForFeedbackOnLogout here,
+    // it is checked in meeting-ended component
+    Session.set('codeError', this.LOGOUT_CODE);
+    // mountModal(<MeetingEndedComponent code={LOGOUT_CODE} />);
   }
   render() {
     const {
@@ -96,19 +103,12 @@ class ActionsBar extends PureComponent {
           {/* Added by chata start */}
           {/* //TODO this is bottom app bar  */}
           <div>
-          <button type="button" onClick={()=>this.setState({open:true})}>
-            Open Modal
+          <button type="button" onClick={() => this.leaveSession()}>
+            Leave
           </button>
-              
-              {
-                this.state.open ? <EndMeetingConfirmationContainer /> :
-                null
-              }
-            
           
-            {/* <Button variant="contained" color="secondary" onClick={() => mountModal(<EndMeetingConfirmationContainer />)}>
-              End
-            </Button> */}
+              
+          
           </div>
           {/* Added by chata stop */}
         </div>
