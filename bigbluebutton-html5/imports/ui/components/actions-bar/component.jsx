@@ -19,13 +19,13 @@ class ActionsBar extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {open:false};
-    this.LOGOUT_CODE = '680';
+    // this.LOGOUT_CODE = '680';
   }
   leaveSession() {
     makeCall('userLeftMeeting');
     // we don't check askForFeedbackOnLogout here,
     // it is checked in meeting-ended component
-    Session.set('codeError', this.LOGOUT_CODE);
+    Session.set('codeError', '680');
     // mountModal(<MeetingEndedComponent code={LOGOUT_CODE} />);
   }
   render() {
