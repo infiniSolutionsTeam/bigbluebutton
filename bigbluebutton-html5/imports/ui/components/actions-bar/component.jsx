@@ -84,17 +84,7 @@ class ActionsBar extends PureComponent {
               <JoinVideoOptionsContainer />
             )
             : null}
-          <DesktopShare {...{
-            handleShareScreen,
-            handleUnshareScreen,
-            isVideoBroadcasting,
-            amIPresenter,
-            screenSharingCheck,
-            screenShareEndAlert,
-            isMeteorConnected,
-            screenshareDataSavingSetting,
-          }}
-          />
+          
           {/* Added by chata start */}
           {/* //TODO this is bottom app bar  */}
           {/* <div>
@@ -114,7 +104,18 @@ class ActionsBar extends PureComponent {
             )
             : null}
 
-          <p>Buttons</p>
+          <DesktopShare {...{
+            handleShareScreen,
+            handleUnshareScreen,
+            isVideoBroadcasting,
+            amIPresenter,
+            screenSharingCheck,
+            screenShareEndAlert,
+            isMeteorConnected,
+            screenshareDataSavingSetting,
+          }}
+          />
+          
         </div>
         {/* //TODO by chata */}
 
