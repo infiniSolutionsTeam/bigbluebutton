@@ -10,6 +10,8 @@ import JoinVideoOptionsContainer from '../video-provider/video-button/container'
 import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions/container';
 import PresentationOptionsContainer from './presentation-options/component';
 import EndMeetingConfirmationContainer from '/imports/ui/components/end-meeting-confirmation/container';
+import IconButton from '@material-ui/core/IconButton';
+import AlarmIcon from '@material-ui/icons/Alarm';
 // import Modal from '@material-ui/core/Modal';
 // added by chata start
 import { makeCall } from '/imports/ui/services/api';
@@ -108,6 +110,9 @@ class ActionsBar extends PureComponent {
             description={'leave'} type="button" onClick={this.leaveSession}>
               Leave
             </button>
+            <IconButton color="secondary" aria-label="add an alarm">
+              <AlarmIcon />
+            </IconButton>
           </div>
           {/* Added by chata stop */}
         </div>
