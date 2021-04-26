@@ -9,6 +9,7 @@ import AudioControlsContainer from '../audio/audio-controls/container';
 import JoinVideoOptionsContainer from '../video-provider/video-button/container';
 import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions/container';
 import PresentationOptionsContainer from './presentation-options/component';
+import EndMeetingConfirmationContainer from '/imports/ui/components/end-meeting-confirmation/container';
 import { withModalMounter } from '/imports/ui/components/modal/service';
 // added by chata start
 import PropTypes from 'prop-types';
