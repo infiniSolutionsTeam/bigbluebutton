@@ -11,7 +11,9 @@ import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions
 import PresentationOptionsContainer from './presentation-options/component';
 import EndMeetingConfirmationContainer from '/imports/ui/components/end-meeting-confirmation/container';
 import IconButton from '@material-ui/core/IconButton';
+import PanToolIcon from '@material-ui/icons/PanTool';
 import AlarmIcon from '@material-ui/icons/Alarm';
+import Auth from '/imports/ui/services/auth';
 // import Modal from '@material-ui/core/Modal';
 // added by chata start
 import { makeCall } from '/imports/ui/services/api';
@@ -30,6 +32,10 @@ class ActionsBar extends PureComponent {
     // it is checked in meeting-ended component
     Session.set('codeError', '680');
     // mountModal(<MeetingEndedComponent code={LOGOUT_CODE} />);
+  }
+
+  setHand(){
+    makeCall('setEmojiStatus', Auth.userID, 'hand');
   }
   render() {
     const {
@@ -139,7 +145,9 @@ class ActionsBar extends PureComponent {
             screenshareDataSavingSetting,
           }}
           />
-
+            <IconButton color="secondary" aria-label="add an alarm" onClick={this.setHand}>
+              <PanToolIcon fontSize="large"/>
+            </IconButton>
         </div>
         {/* //TODO by chata */}
 
