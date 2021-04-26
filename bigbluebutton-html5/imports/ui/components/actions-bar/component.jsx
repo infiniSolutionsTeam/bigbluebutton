@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import cx from 'classnames';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import { styles } from './styles.scss';
 import DesktopShare from './desktop-share/component';
 import ActionsDropdown from './actions-dropdown/component';
@@ -10,20 +10,9 @@ import JoinVideoOptionsContainer from '../video-provider/video-button/container'
 import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions/container';
 import PresentationOptionsContainer from './presentation-options/component';
 import EndMeetingConfirmationContainer from '/imports/ui/components/end-meeting-confirmation/container';
-import { withModalMounter } from '/imports/ui/components/modal/service';
+import Modal from '@material-ui/core/Modal';
 // added by chata start
-import PropTypes from 'prop-types';
 
-const propTypes = {
-  // intl: intlShape.isRequired,
-  handleToggleFullscreen: PropTypes.func.isRequired,
-  mountModal: PropTypes.func.isRequired,
-  noIOSFullscreen: PropTypes.bool,
-  amIModerator: PropTypes.bool,
-  shortcuts: PropTypes.string,
-  isBreakoutRoom: PropTypes.bool,
-  isMeteorConnected: PropTypes.bool.isRequired,
-};
 // added by chata stop
 
 class ActionsBar extends PureComponent {
@@ -103,9 +92,20 @@ class ActionsBar extends PureComponent {
           {/* Added by chata start */}
           {/* //TODO this is bottom app bar  */}
           <div>
-            <Button variant="contained" color="secondary" onClick={() => mountModal(<EndMeetingConfirmationContainer />)}>
+          <button type="button">
+            Open Modal
+          </button>
+          <Modal
+            open={true}
+            onClose={()=>alert('this is close')}
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+          >
+            <EndMeetingConfirmationContainer />
+          </Modal>
+            {/* <Button variant="contained" color="secondary" onClick={() => mountModal(<EndMeetingConfirmationContainer />)}>
               End
-            </Button>
+            </Button> */}
           </div>
           {/* Added by chata stop */}
         </div>
