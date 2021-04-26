@@ -103,7 +103,8 @@ class ActionsBar extends PureComponent {
           {/* Added by chata start */}
           {/* //TODO this is bottom app bar  */}
           <div>
-          <button type="button" onClick={() => this.leaveSession()}>
+          <button label={'leave'}
+          description={'leave'} type="button" onClick={() => this.leaveSession()}>
             Leave
           </button>
           
