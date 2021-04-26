@@ -14,7 +14,7 @@ import PresentationOptionsContainer from './presentation-options/component';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-  intl: intlShape.isRequired,
+  // intl: intlShape.isRequired,
   handleToggleFullscreen: PropTypes.func.isRequired,
   mountModal: PropTypes.func.isRequired,
   noIOSFullscreen: PropTypes.bool,
