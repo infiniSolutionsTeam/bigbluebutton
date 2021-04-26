@@ -15,6 +15,7 @@ import AlarmIcon from '@material-ui/icons/Alarm';
 // import Modal from '@material-ui/core/Modal';
 // added by chata start
 import { makeCall } from '/imports/ui/services/api';
+import CallEndIcon from '@material-ui/icons/CallEnd';
 // added by chata stop
 
 class ActionsBar extends PureComponent {
@@ -111,7 +112,7 @@ class ActionsBar extends PureComponent {
               Leave
             </button>
             <IconButton color="secondary" aria-label="add an alarm">
-              <AlarmIcon />
+              <CallEndIcon fontSize="large"/>
             </IconButton>
           </div>
           {/* Added by chata stop */}
