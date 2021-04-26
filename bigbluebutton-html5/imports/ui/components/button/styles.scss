@@ -227,9 +227,9 @@
 @mixin button-ghost-variant($color, $variant) {
   color: $color;
   background-image: none;
-  background-color: white;
+  background-color: transparent;
   border: var(--border-size-large) solid transparent;
-
+  margin-right: 10px;
   &:focus,
   .buttonWrapper:focus & {
     color: $color;
@@ -296,10 +296,7 @@
 
 .ghost {
   &.default {
-    @include button-ghost-variant(
-      var(--btn-default-bg),
-      var(--btn-default-color)
-    );
+    @include button-ghost-variant(var(white), var(--btn-default-color));
   }
 
   &.primary {
