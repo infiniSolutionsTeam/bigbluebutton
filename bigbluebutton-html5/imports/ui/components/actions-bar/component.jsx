@@ -9,7 +9,20 @@ import AudioControlsContainer from '../audio/audio-controls/container';
 import JoinVideoOptionsContainer from '../video-provider/video-button/container';
 import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions/container';
 import PresentationOptionsContainer from './presentation-options/component';
+
 // added by chata start
+import PropTypes from 'prop-types';
+
+const propTypes = {
+  intl: intlShape.isRequired,
+  handleToggleFullscreen: PropTypes.func.isRequired,
+  mountModal: PropTypes.func.isRequired,
+  noIOSFullscreen: PropTypes.bool,
+  amIModerator: PropTypes.bool,
+  shortcuts: PropTypes.string,
+  isBreakoutRoom: PropTypes.bool,
+  isMeteorConnected: PropTypes.bool.isRequired,
+};
 // added by chata stop
 
 class ActionsBar extends PureComponent {
@@ -87,11 +100,11 @@ class ActionsBar extends PureComponent {
           
           {/* Added by chata start */}
           {/* //TODO this is bottom app bar  */}
-          {/* <div>
-            <Button variant="contained" color="secondary">
+          <div>
+            <Button variant="contained" color="secondary" onClick={() => mountModal(<EndMeetingConfirmationContainer />)}>
               End
             </Button>
-          </div> */}
+          </div>
           {/* Added by chata stop */}
         </div>
         <div className={styles.right}>
@@ -115,7 +128,7 @@ class ActionsBar extends PureComponent {
             screenshareDataSavingSetting,
           }}
           />
-          
+
         </div>
         {/* //TODO by chata */}
 
