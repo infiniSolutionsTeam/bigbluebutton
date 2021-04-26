@@ -104,7 +104,7 @@ class ActionsBar extends PureComponent {
           {/* //TODO this is bottom app bar  */}
           <div>
           <button label={'leave'}
-          description={'leave'} type="button" onClick={() => this.leaveSession()}>
+          description={'leave'} type="button" onClick={() => leaveSession()}>
             Leave
           </button>
           
