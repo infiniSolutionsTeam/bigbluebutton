@@ -227,7 +227,7 @@
 @mixin button-ghost-variant($color, $variant) {
   color: $color;
   background-image: none;
-  background-color: transparent;
+  background-color: white;
   border: var(--border-size-large) solid transparent;
 
   &:focus,
@@ -303,7 +303,10 @@
   }
 
   &.primary {
-    @include button-ghost-variant(var(#ffffff), var(--btn-primary-color));
+    @include button-ghost-variant(
+      var(--btn-primary-bg),
+      var(--btn-primary-color)
+    );
   }
 
   &.success {
