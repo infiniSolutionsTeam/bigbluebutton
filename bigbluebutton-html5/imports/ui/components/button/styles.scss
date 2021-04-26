@@ -303,10 +303,7 @@
   }
 
   &.primary {
-    @include button-ghost-variant(
-      var(--btn-primary-bg),
-      var(--btn-primary-color)
-    );
+    @include button-ghost-variant(var(#ffffff), var(--btn-primary-color));
   }
 
   &.success {
