@@ -114,6 +114,17 @@ class ActionsBar extends PureComponent {
             )
             : null}
         </div>
+        {/* //TODO by chata */}
+        <div className={styles.right}>
+          {isLayoutSwapped
+            ? (
+              <PresentationOptionsContainer
+                toggleSwapLayout={toggleSwapLayout}
+                isThereCurrentPresentation={isThereCurrentPresentation}
+              />
+            )
+            : null}
+        </div>
       </div>
     );
   }

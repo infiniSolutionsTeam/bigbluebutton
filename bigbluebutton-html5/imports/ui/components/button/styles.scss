@@ -229,7 +229,7 @@
   background-image: none;
   background-color: transparent;
   border: var(--border-size-large) solid transparent;
-  margin-right: 10px;
+
   &:focus,
   .buttonWrapper:focus & {
     color: $color;
@@ -308,6 +308,7 @@
       var(--btn-primary-color)
     );
     background-color: white;
+    margin-right: 10px;
   }
 
   &.success {
