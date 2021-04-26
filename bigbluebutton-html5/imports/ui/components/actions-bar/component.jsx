@@ -101,7 +101,7 @@ class ActionsBar extends PureComponent {
           </button>
           <Modal
             open={this.state.open}
-            onClose={()=>this.setState({open:true})}
+            onClose={()=>this.setState({open:false})}
             aria-labelledby="simple-modal-title"
             aria-describedby="simple-modal-description"
           >
