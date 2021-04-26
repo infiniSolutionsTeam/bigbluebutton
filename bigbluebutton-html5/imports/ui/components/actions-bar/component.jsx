@@ -10,7 +10,7 @@ import JoinVideoOptionsContainer from '../video-provider/video-button/container'
 import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions/container';
 import PresentationOptionsContainer from './presentation-options/component';
 import EndMeetingConfirmationContainer from '/imports/ui/components/end-meeting-confirmation/container';
-import Modal from '@material-ui/core/Modal';
+// import Modal from '@material-ui/core/Modal';
 // added by chata start
 
 // added by chata stop
@@ -99,14 +99,13 @@ class ActionsBar extends PureComponent {
           <button type="button" onClick={()=>this.setState({open:true})}>
             Open Modal
           </button>
-          <Modal
-            open={this.state.open}
-            onClose={()=>this.setState({open:false})}
-            aria-labelledby="simple-modal-title"
-            aria-describedby="simple-modal-description"
-          >
-            <EndMeetingConfirmationContainer />
-          </Modal>
+              
+              {
+                this.state.open ? <EndMeetingConfirmationContainer /> :
+                null
+              }
+            
+          
             {/* <Button variant="contained" color="secondary" onClick={() => mountModal(<EndMeetingConfirmationContainer />)}>
               End
             </Button> */}
