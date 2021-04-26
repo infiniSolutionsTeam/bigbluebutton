@@ -104,6 +104,14 @@ class ActionsBar extends PureComponent {
             )
             : null}
           
+          {isLayoutSwapped
+            ? (
+              <PresentationOptionsContainer
+                toggleSwapLayout={toggleSwapLayout}
+                isThereCurrentPresentation={isThereCurrentPresentation}
+              />
+            )
+            : null}
           {/* Added by chata start */}
           {/* //TODO this is bottom app bar  */}
           <div>
@@ -118,14 +126,7 @@ class ActionsBar extends PureComponent {
           {/* Added by chata stop */}
         </div>
         <div className={styles.right}>
-          {isLayoutSwapped
-            ? (
-              <PresentationOptionsContainer
-                toggleSwapLayout={toggleSwapLayout}
-                isThereCurrentPresentation={isThereCurrentPresentation}
-              />
-            )
-            : null}
+          
 
           <DesktopShare {...{
             handleShareScreen,
