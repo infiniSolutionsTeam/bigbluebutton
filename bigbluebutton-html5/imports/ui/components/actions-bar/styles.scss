@@ -119,4 +119,10 @@
   background-color: transparent !important;
   fill: white;
   color: white !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 10px;
+  cursor: pointer;
 }

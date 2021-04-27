@@ -147,11 +147,11 @@ class ActionsBar extends PureComponent {
             screenshareDataSavingSetting,
           }}
           />
-          <IconButton color="#FFFFFF" aria-label="add an alarm" onClick={this.setHand}>
+          {/* <IconButton color="#FFFFFF" aria-label="add an alarm" onClick={this.setHand}>
             <PanToolIcon fontSize="large" />
-          </IconButton>
+          </IconButton> */}
 
-          <div onClick={this.setHand} className={styles.setStatusBtn}>
+          <div onClick={this.setHand} className={styles.setStatusBtn} onClick={this.setHand}>
             <PanToolIcon fontSize="large" />
             Set Status
           </div>
