@@ -150,8 +150,14 @@ class ActionsBar extends PureComponent {
           <IconButton color="#FFFFFF" aria-label="add an alarm" onClick={this.setHand}>
             <PanToolIcon fontSize="large" />
           </IconButton>
+
+          <div onClick={this.setHand} className={styles.setStatusBtn}>
+            <PanToolIcon fontSize="large" />
+            Set Status
+          </div>
         </div>
         {/* //TODO by chata */}
+
 
       </div>
     );
