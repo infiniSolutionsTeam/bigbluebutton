@@ -1,6 +1,10 @@
 import React, { PureComponent } from 'react';
 import cx from 'classnames';
 // import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import PanToolIcon from '@material-ui/icons/PanTool';
+import AlarmIcon from '@material-ui/icons/Alarm';
+import CallEndIcon from '@material-ui/icons/CallEnd';
 import { styles } from './styles.scss';
 import DesktopShare from './desktop-share/component';
 import ActionsDropdown from './actions-dropdown/component';
@@ -10,22 +14,19 @@ import JoinVideoOptionsContainer from '../video-provider/video-button/container'
 import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions/container';
 import PresentationOptionsContainer from './presentation-options/component';
 import EndMeetingConfirmationContainer from '/imports/ui/components/end-meeting-confirmation/container';
-import IconButton from '@material-ui/core/IconButton';
-import PanToolIcon from '@material-ui/icons/PanTool';
-import AlarmIcon from '@material-ui/icons/Alarm';
 import Auth from '/imports/ui/services/auth';
 // import Modal from '@material-ui/core/Modal';
 // added by chata start
 import { makeCall } from '/imports/ui/services/api';
-import CallEndIcon from '@material-ui/icons/CallEnd';
 // added by chata stop
 
 class ActionsBar extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = {open:false};
+    this.state = { open: false };
     // this.LOGOUT_CODE = '680';
   }
+
   leaveSession() {
     makeCall('userLeftMeeting');
     // we don't check askForFeedbackOnLogout here,
@@ -34,9 +35,10 @@ class ActionsBar extends PureComponent {
     // mountModal(<MeetingEndedComponent code={LOGOUT_CODE} />);
   }
 
-  setHand(){
+  setHand() {
     makeCall('setEmojiStatus', Auth.userID, 'hand');
   }
+
   render() {
     const {
       amIPresenter,
@@ -109,7 +111,7 @@ class ActionsBar extends PureComponent {
               <JoinVideoOptionsContainer />
             )
             : null}
-          
+
           {isLayoutSwapped
             ? (
               <PresentationOptionsContainer
@@ -125,14 +127,14 @@ class ActionsBar extends PureComponent {
             description={'leave'} type="button" >
               Leave
             </button> */}
-            <IconButton color="secondary" aria-label="add an alarm" className={styles.newBtn} onClick={this.leaveSession}>
-              <CallEndIcon fontSize="large"/>
+            <IconButton aria-label="add an alarm" className={styles.newBtn} onClick={this.leaveSession}>
+              <CallEndIcon fontSize="large" />
             </IconButton>
           </div>
           {/* Added by chata stop */}
         </div>
         <div className={styles.right}>
-          
+
 
           <DesktopShare {...{
             handleShareScreen,
@@ -145,9 +147,9 @@ class ActionsBar extends PureComponent {
             screenshareDataSavingSetting,
           }}
           />
-            <IconButton color="secondary" aria-label="add an alarm" onClick={this.setHand}>
-              <PanToolIcon fontSize="large"/>
-            </IconButton>
+          <IconButton color="#FFFFFF" aria-label="add an alarm" onClick={this.setHand}>
+            <PanToolIcon fontSize="large" />
+          </IconButton>
         </div>
         {/* //TODO by chata */}
 
