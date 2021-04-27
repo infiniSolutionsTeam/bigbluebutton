@@ -23,7 +23,7 @@ import { makeCall } from '/imports/ui/services/api';
 class ActionsBar extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = { status: false };
+    this.state = { status: true };
     // this.LOGOUT_CODE = '680';
   }
 
@@ -37,14 +37,15 @@ class ActionsBar extends PureComponent {
   }
 
   setHand() {
-    if(this.state.status){
-      this.setState({status:false});
-      makeCall('setEmojiStatus', Auth.userID, 'none');
-    }
-    else{
-      this.setState({status:true});
-      makeCall('setEmojiStatus', Auth.userID, 'hand');
-    }
+    console.log('from chata ',state.status);
+    // if(this.state.status){
+    //   this.setState({status:false});
+    //   makeCall('setEmojiStatus', Auth.userID, 'none');
+    // }
+    // else{
+    //   this.setState({status:true});
+    //   makeCall('setEmojiStatus', Auth.userID, 'hand');
+    // }
     
   }
 
