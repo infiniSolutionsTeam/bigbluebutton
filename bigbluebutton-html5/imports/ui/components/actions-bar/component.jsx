@@ -125,7 +125,7 @@ class ActionsBar extends PureComponent {
             description={'leave'} type="button" >
               Leave
             </button> */}
-            <IconButton color="secondary" aria-label="add an alarm" onClick={this.leaveSession}>
+            <IconButton color="secondary" aria-label="add an alarm" className={styles.newBtn} onClick={this.leaveSession}>
               <CallEndIcon fontSize="large"/>
             </IconButton>
           </div>
