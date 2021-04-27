@@ -23,11 +23,12 @@ import { makeCall } from '/imports/ui/services/api';
 class ActionsBar extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = { open: false };
+    this.state = { status: false };
     // this.LOGOUT_CODE = '680';
   }
 
   leaveSession() {
+    
     makeCall('userLeftMeeting');
     // we don't check askForFeedbackOnLogout here,
     // it is checked in meeting-ended component
@@ -36,7 +37,15 @@ class ActionsBar extends PureComponent {
   }
 
   setHand() {
-    makeCall('setEmojiStatus', Auth.userID, 'hand');
+    if(this.state.status){
+      this.setState({status:false});
+      makeCall('setEmojiStatus', Auth.userID, 'none');
+    }
+    else{
+      this.setState({status:true});
+      makeCall('setEmojiStatus', Auth.userID, 'hand');
+    }
+    
   }
 
   render() {
@@ -152,8 +161,11 @@ class ActionsBar extends PureComponent {
           </IconButton> */}
 
           <div onClick={this.setHand} className={styles.setStatusBtn} onClick={this.setHand}>
-            <PanToolIcon fontSize="large" />
-            Set Status
+            <PanToolIcon fontSize="default" />
+            
+            {
+              this.state.status ? 'Rest Status':'Set Status'
+            }
           </div>
         </div>
         {/* //TODO by chata */}
