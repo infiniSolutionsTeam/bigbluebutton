@@ -9,18 +9,18 @@
     bottom: auto;
     right: auto;
     border-radius: 5px;
-    background-color: var(--color-primary);
+    background-color: #3a46ee;
 
     [dir="rtl"] & {
       left: auto;
       right: var(--user-indicators-offset);
-      letter-spacing: -.33rem;
+      letter-spacing: -0.33rem;
     }
   }
 
   :global(.browser-chrome) &:before,
   :global(.browser-firefox) &:before {
-    padding: .45rem;
+    padding: 0.45rem;
   }
 
   :global(.browser-edge) &:before {
