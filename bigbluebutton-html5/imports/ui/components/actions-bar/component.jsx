@@ -36,17 +36,22 @@ class ActionsBar extends PureComponent {
     // mountModal(<MeetingEndedComponent code={LOGOUT_CODE} />);
   }
 
-  setHand() {
-    console.log('from chata ',this.state.handUp);
-    if(this.state.handUp){
-      this.setState({handUp:false});
-      makeCall('setEmojiStatus', Auth.userID, 'none');
-    }
-    else{
-      this.setState({handUp:true});
-      makeCall('setEmojiStatus', Auth.userID, 'hand');
-    }
+  // setHand() {
+  //   console.log('from chata ',this.state.handUp);
+  //   if(this.state.handUp){
+  //     this.setState({handUp:false});
+  //     makeCall('setEmojiStatus', Auth.userID, 'none');
+  //   }
+  //   else{
+  //     this.setState({handUp:true});
+  //     makeCall('setEmojiStatus', Auth.userID, 'hand');
+  //   }
     
+  // }
+
+  setHand = () => {
+    console.log('from chata ', this.state.handUp);
+    this.setState({handUp: !this.state.handUp});
   }
 
   render() {
