@@ -177,7 +177,7 @@ class ActionsBar extends PureComponent {
             <PanToolIcon fontSize="default" />
             
             {
-              this.state.handUp ? 'Rest Status':'Set Status'
+              this.state.handUp ? 'Reset Status':'Set Status'
             }
           </div>
         </div>
