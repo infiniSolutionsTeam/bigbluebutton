@@ -40,7 +40,8 @@
   padding-right: 0px;
   padding-bottom: 10px;
   padding-left: 10px;
-  background-color: #6d6f73;
+  // background-color: #6d6f73;
+  background-color: rgba(255, 255, 255, 0.4);
   border-bottom-color: rgba(112, 112, 112, 0.5);
   border-bottom-style: none;
   border-bottom-width: 1px;
@@ -89,6 +90,7 @@
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    background-color: #6d6f73;
   }
 }
 
