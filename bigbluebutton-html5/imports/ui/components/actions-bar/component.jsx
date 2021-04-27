@@ -50,8 +50,15 @@ class ActionsBar extends PureComponent {
   // }
 
   setHand = () => {
-    console.log('from chata ', this.state.handUp);
-    this.setState({handUp: !this.state.handUp});
+        console.log('from chata ', this.state.handUp);
+    
+        if(this.state.handUp){
+          makeCall('setEmojiStatus', Auth.userID, 'none');
+        }
+        else{
+          makeCall('setEmojiStatus', Auth.userID, 'hand');
+        }
+        this.setState({handUp: !this.state.handUp});
   }
 
   render() {
