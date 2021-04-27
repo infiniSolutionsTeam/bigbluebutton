@@ -80,7 +80,7 @@ class ActionsBar extends PureComponent {
     actionBarClasses[styles.centerWithActions] = amIPresenter;
     actionBarClasses[styles.center] = true;
     actionBarClasses[styles.mobileLayoutSwapped] = isLayoutSwapped && amIPresenter;
-
+    const {status} = this.state;
     return (
       <div className={styles.actionsbar}>
         <div className={styles.left}>
@@ -164,7 +164,7 @@ class ActionsBar extends PureComponent {
             <PanToolIcon fontSize="default" />
             
             {
-              this.state.status ? 'Rest Status':'Set Status'
+              status ? 'Rest Status':'Set Status'
             }
           </div>
         </div>
