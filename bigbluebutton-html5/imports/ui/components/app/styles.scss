@@ -127,7 +127,7 @@
   @include mq($small-only) {
     top: var(--navbar-height);
     // background-color: rgba(1, 0, 29, 1);
-    background-color: rgba(92, 92, 149, 0.9);
+    background-color: rgba(92, 92, 149, 0.95);
   }
 
   @include mq($medium-up) {
