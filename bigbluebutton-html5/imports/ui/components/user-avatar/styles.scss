@@ -138,7 +138,7 @@
     &:after {
       content: "\00a0\e931\00a0";
       background-color: var(--user-indicator-voice-bg);
-      top: 0.2rem;
+      top: 2.2rem;
       left: 2.2rem;
       right: auto;
 
@@ -161,6 +161,20 @@
     [dir="rtl"] & {
       left: auto;
       right: 2.5rem;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    &:after {
+      content: "";
+      background-color: var(--color-off-white);
+      top: 2.2rem;
+      left: 2.2rem;
+      right: auto;
+
+      [dir="rtl"] & {
+        left: auto;
+        right: 2.5rem;
+      }
     }
   }
 }
