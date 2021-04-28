@@ -13,7 +13,7 @@
 .container {
   display: flex;
   align-items: center;
-  margin-bottom: var(--lg-padding-y);
+  // margin-bottom: var(--lg-padding-y);
   margin-top: var(--sm-padding-x);
 }
 
@@ -22,7 +22,7 @@
   @include scrollbox-vertical(var(--user-list-bg));
   @include highContrastOutline();
   background-color: rgba(92, 92, 149, 0.5);
-  margin: 2px;
+  margin: 6px;
   padding-top: 10px;
   border-radius: 10px;
   &:focus-within,

@@ -131,22 +131,22 @@
     background: -moz-linear-gradient(
       160deg,
       rgba(172, 108, 109, 1) -20%,
-      rgba(59, 59, 144, 1) 30%,
-      rgba(10, 10, 79, 1) 78%
+      rgba(55, 55, 113, 1) 33%,
+      rgba(1, 0, 29, 1) 75%
     );
     background: -webkit-linear-gradient(
       160deg,
       rgba(172, 108, 109, 1) -20%,
-      rgba(59, 59, 144, 1) 30%,
-      rgba(10, 10, 79, 1) 78%
+      rgba(55, 55, 113, 1) 33%,
+      rgba(1, 0, 29, 1) 75%
     );
     background: linear-gradient(
       160deg,
       rgba(172, 108, 109, 1) -20%,
-      rgba(59, 59, 144, 1) 30%,
-      rgba(10, 10, 79, 1) 78%
+      rgba(55, 55, 113, 1) 33%,
+      rgba(1, 0, 29, 1) 75%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ac6c6d",endColorstr="#0a0a4f",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ac6c6d",endColorstr="#01001d",GradientType=1);
   }
 
   @include mq($medium-up) {

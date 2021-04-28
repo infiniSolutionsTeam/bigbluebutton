@@ -36,7 +36,7 @@
   -webkit-transform-origin: center;
   transform-origin: center;
   cursor: default;
-  padding-top: 30px;
+  padding-top: 19px;
   padding-right: 0px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -54,10 +54,10 @@
   border-top-color: rgba(112, 112, 112, 0.5);
   border-top-style: none;
   border-top-width: 1px;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   box-shadow: none;
   // width: 506px;
   height: calc(100vh-20px);
@@ -144,7 +144,7 @@
   letter-spacing: 0.68px;
   color: rgba(68, 68, 68, 1);
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 700;
   font-style: normal;
   font-family: Calibri, Arial;
