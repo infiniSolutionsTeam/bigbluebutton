@@ -125,10 +125,9 @@
   align-content: center;
   margin-top: 10px;
   cursor: pointer;
-}
-.setStatusIcon {
-  font-size: 20px;
+  font-size: 15px;
   @include mq($xsmall-only) {
-    font-size: 15px;
+    display: none;
+    // TODO temporaly disabled in mobile menu
   }
 }
