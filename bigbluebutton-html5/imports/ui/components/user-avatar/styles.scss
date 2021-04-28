@@ -133,10 +133,19 @@
       left: auto;
       right: 1.375rem;
     }
-    @include mq($small-only) {
-      top: 2rem;
-      left: 2rem;
+  }
+  @include mq($small-only) {
+    &:after {
+      content: "\00a0\e931\00a0";
+      background-color: var(--user-indicator-voice-bg);
+      top: 2.2rem;
+      left: 2.2rem;
       right: auto;
+
+      [dir="rtl"] & {
+        left: auto;
+        right: 1.375rem;
+      }
     }
   }
 }
