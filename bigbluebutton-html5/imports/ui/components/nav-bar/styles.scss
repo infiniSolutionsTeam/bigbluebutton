@@ -72,6 +72,9 @@
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 30px;
+  @include mq($small-only) {
+    max-width: 60vw;
+  }
 }
 
 .btnWithNotificationDot {
