@@ -126,3 +126,9 @@
   margin-top: 10px;
   cursor: pointer;
 }
+.setStatusIcon {
+  font-size: 20px;
+  @include mq($xsmall-only) {
+    font-size: 15px;
+  }
+}

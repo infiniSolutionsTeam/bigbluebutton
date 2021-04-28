@@ -174,7 +174,7 @@ class ActionsBar extends PureComponent {
           </IconButton> */}
 
           <div onClick={this.setHand} className={styles.setStatusBtn} onClick={this.setHand}>
-            <PanToolIcon fontSize="default" />
+            <PanToolIcon fontSize="inherit" className={styles.setStatusIcon} />
             
             {
               this.state.handUp ? 'Reset Status':'Set Status'
