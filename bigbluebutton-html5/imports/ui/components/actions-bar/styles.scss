@@ -126,6 +126,9 @@
   margin-top: 10px;
   cursor: pointer;
   font-size: 15px;
+  @include mq($small-only) {
+    font-size: 10px;
+  }
   @include mq($xsmall-only) {
     display: none;
     // TODO temporaly disabled in mobile menu
