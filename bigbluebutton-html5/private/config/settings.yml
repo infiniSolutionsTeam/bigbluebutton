@@ -473,7 +473,7 @@ private:
     pencilChunkLength: 100
     loadSlidesFromHttpAlways: false
   etherpad:
-    apikey: ETHERPAD_APIKEY
+    apikey: 270b028578a2794e1fa4c425e57cb79b6ba481de73ba939cc2686b7235ba45e4
     version: 1.2.13
     host: 127.0.0.1
     port: 9001
