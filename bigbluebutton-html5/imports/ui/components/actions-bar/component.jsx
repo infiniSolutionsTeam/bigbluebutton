@@ -173,13 +173,13 @@ class ActionsBar extends PureComponent {
             <PanToolIcon fontSize="large" />
           </IconButton> */}
 
-          <div onClick={this.setHand} className={styles.setStatusBtn} onClick={this.setHand}>
+          {amIPresenter ? '' :<div onClick={this.setHand} className={styles.setStatusBtn} onClick={this.setHand}>
             <PanToolIcon fontSize="default"/>
             
             {
               this.state.handUp ? 'Reset Status':'Set Status'
             }
-          </div>
+          </div>}
         </div>
         {/* //TODO by chata */}
 
