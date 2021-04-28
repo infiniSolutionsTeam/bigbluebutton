@@ -18,7 +18,7 @@
 }
 
 .scrollableList {
-  @include elementFocus(var(--list-item-bg-hover));
+  // @include elementFocus(var(--list-item-bg-hover));
   @include scrollbox-vertical(var(--user-list-bg));
   @include highContrastOutline();
   background-color: rgba(92, 92, 149, 0.5);
