@@ -48,8 +48,8 @@
 
 .unreadButton {
   flex-shrink: 0;
-  width: 100%;
+  width: 98%;
   text-transform: uppercase;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   @extend %text-elipsis;
 }
