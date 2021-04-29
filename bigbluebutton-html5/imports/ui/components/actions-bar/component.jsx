@@ -151,7 +151,7 @@ class ActionsBar extends PureComponent {
             </button> */}
             <IconButton aria-label="add an alarm" className={styles.newBtn} onClick={this.leaveSession}>
               {/* //TODO icon font size */}
-              <CallEndIcon fontSize="large" />
+              <CallEndIcon style={{ fontSize: '1.8rem' }} />
             </IconButton>
           </div>
           {/* Added by chata stop */}
