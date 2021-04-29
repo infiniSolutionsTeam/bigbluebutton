@@ -150,6 +150,7 @@ class ActionsBar extends PureComponent {
               Leave
             </button> */}
             <IconButton aria-label="add an alarm" className={styles.newBtn} onClick={this.leaveSession}>
+              {/* //TODO icon font size */}
               <CallEndIcon fontSize="large" />
             </IconButton>
           </div>
