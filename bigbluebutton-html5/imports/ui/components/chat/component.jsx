@@ -69,7 +69,8 @@ const Chat = (props) => {
             className={styles.hideBtn}
           />
         </div>
-        {
+        {/* //TODO chat options removed */}
+        {/* {
           chatID !== 'public'
             ? (
               <Button
@@ -89,7 +90,7 @@ const Chat = (props) => {
               />
             )
             : <ChatDropdown {...{ meetingIsBreakout, isMeteorConnected, amIModerator }} />
-        }
+        } */}
       </header>
       <MessageList
         id={ELEMENT_ID}
