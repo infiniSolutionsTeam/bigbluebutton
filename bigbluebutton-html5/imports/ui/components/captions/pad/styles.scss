@@ -19,10 +19,7 @@
 
 .pad {
   background-color: var(--color-white);
-  padding:
-    var(--md-padding-x)
-    var(--md-padding-y)
-    var(--md-padding-x)
+  padding: var(--md-padding-x) var(--md-padding-y) var(--md-padding-x)
     var(--md-padding-x);
 
   display: flex;
@@ -54,14 +51,15 @@
   @extend %text-elipsis;
   flex: 1;
 
-  & > button, button:hover {
+  & > button,
+  button:hover {
     max-width: var(--toast-content-width);
   }
 }
 
 .hideBtn {
   position: relative;
-  background-color: var(--color-white);
+  background-color: transparent;
   display: block;
   margin: var(--border-size-large);
   margin-bottom: var(--border-size);
