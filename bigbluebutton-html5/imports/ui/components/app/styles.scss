@@ -225,7 +225,6 @@
   border-bottom-right-radius: 12px;
   box-shadow: none;
   min-width: var(--poll-pane-min-width);
-  padding: 1rem;
   @include mq($small-only) {
     transform: none !important;
     border-top-left-radius: 0px;
