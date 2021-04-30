@@ -226,6 +226,33 @@
   box-shadow: none;
   min-width: var(--poll-pane-min-width);
   padding: 1rem;
+  @include mq($small-only) {
+    transform: none !important;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background: rgb(215, 176, 177);
+    background: -moz-linear-gradient(
+      160deg,
+      rgba(215, 176, 177, 1) -20%,
+      rgba(215, 215, 237, 1) 16%,
+      rgba(176, 176, 211, 1) 95%
+    );
+    background: -webkit-linear-gradient(
+      160deg,
+      rgba(215, 176, 177, 1) -20%,
+      rgba(215, 215, 237, 1) 16%,
+      rgba(176, 176, 211, 1) 95%
+    );
+    background: linear-gradient(
+      160deg,
+      rgba(215, 176, 177, 1) -20%,
+      rgba(215, 215, 237, 1) 16%,
+      rgba(176, 176, 211, 1) 95%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d7b0b1",endColorstr="#b0b0d3",GradientType=1);
+  }
 }
 
 .breakoutRoom {
