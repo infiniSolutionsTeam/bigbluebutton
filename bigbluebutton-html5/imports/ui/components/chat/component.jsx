@@ -70,7 +70,7 @@ const Chat = (props) => {
           />
         </div>
         {/* //TODO chat options removed */}
-        {/* {
+        {
           chatID !== 'public'
             ? (
               <Button
@@ -89,8 +89,9 @@ const Chat = (props) => {
                 accessKey={CLOSE_CHAT_AK}
               />
             )
-            : <ChatDropdown {...{ meetingIsBreakout, isMeteorConnected, amIModerator }} />
-        } */}
+            : ''
+            // : <ChatDropdown {...{ meetingIsBreakout, isMeteorConnected, amIModerator }} />
+        }
       </header>
       <MessageList
         id={ELEMENT_ID}

@@ -96,7 +96,7 @@ class NavBar extends PureComponent {
               data-test="userListToggleButton"
               onClick={NavBar.handleToggleUserList}
               ghost
-              circle
+              // circle
               hideLabel
               label={intl.formatMessage(intlMessages.toggleUserListLabel)}
               aria-label={ariaLabel}
