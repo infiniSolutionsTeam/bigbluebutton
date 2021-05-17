@@ -4,7 +4,7 @@
 @import "/imports/ui/stylesheets/variables/placeholders";
 
 :root {
-  --dropdown-bg: var(--color-white);
+  --dropdown-bg: var(--color-iris-secondary);
   --dropdown-color: var(--color-text);
   --caret-shadow-color: var(--color-gray);
 
@@ -31,7 +31,7 @@
   position: absolute;
   background: var(--dropdown-bg);
   border-radius: var(--border-radius);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   border: 0;
   padding: calc(var(--line-height-computed) / 2);
 
@@ -41,7 +41,7 @@
 
   &:after,
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 0;
@@ -110,7 +110,7 @@
 
 // removes transform on tethered dropdown for small screen sizes.
 // prevents the user-list-item dropdown breaking on mobile.
-:global(.tether-out-of-bounds)  {
+:global(.tether-out-of-bounds) {
   @include mq($small-only) {
     transform: none !important;
   }
@@ -188,8 +188,6 @@
   }
 
   &:before {
-
-    
     border-left: var(--dropdown-caret-height) solid var(--caret-shadow-color);
     border-right: 0;
 
@@ -309,7 +307,8 @@
   @extend %horz-center-caret;
 }
 
-.top-left, [dir="rtl"] .top-right {
+.top-left,
+[dir="rtl"] .top-right {
   @extend %down-caret;
   @extend %horz-right-caret;
   min-width: 18rem;
@@ -335,12 +334,14 @@
   @extend %horz-center-caret;
 }
 
-.bottom-left, [dir="rtl"] .bottom-right {
+.bottom-left,
+[dir="rtl"] .bottom-right {
   @extend %up-caret;
   @extend %horz-right-caret;
 }
 
-.bottom-right, [dir="rtl"] .bottom-left  {
+.bottom-right,
+[dir="rtl"] .bottom-left {
   @extend %up-caret;
   @extend %horz-left-caret;
   min-width: 10rem;
@@ -350,12 +351,14 @@
   }
 }
 
-.left, [dir="rtl"] .right {
+.left,
+[dir="rtl"] .right {
   @extend %right-caret;
   @extend %vert-center-caret;
 }
 
-.left-top, [dir="rtl"] .right-top {
+.left-top,
+[dir="rtl"] .right-top {
   @extend %right-caret;
   @extend %vert-top-caret;
   transform: translateX(-100%) translateY(0);
@@ -367,18 +370,19 @@
   transform: translateX(-100%) translateY(0);
 }
 
-[dir="rtl"] .right-bottom  {
+[dir="rtl"] .right-bottom {
   @extend %right-caret;
   @extend %vert-bottom-caret;
   transform: translateX(-110%) translateY(0);
 }
 
-.right, [dir="rtl"] .left {
+.right,
+[dir="rtl"] .left {
   @extend %left-caret;
   @extend %vert-center-caret;
 }
 
-.right-top  {
+.right-top {
   @extend %left-caret;
   @extend %vert-top-caret;
   transform: translateX(100%) translateY(0);
@@ -394,7 +398,8 @@
   transform: translateX(125%) translateY(-25%);
 }
 
-.right-bottom, [dir="rtl"] .left-bottom {
+.right-bottom,
+[dir="rtl"] .left-bottom {
   @extend %left-caret;
   @extend %vert-bottom-caret;
   transform: translateX(100%) translateY(0);
