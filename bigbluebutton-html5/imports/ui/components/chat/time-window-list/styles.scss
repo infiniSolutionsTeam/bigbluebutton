@@ -25,7 +25,7 @@
 }
 
 .messageList {
-  //@include scrollbox-vertical();
+  @include scrollbox-vertical();
   flex-flow: column;
   flex-grow: 1;
   flex-shrink: 1;

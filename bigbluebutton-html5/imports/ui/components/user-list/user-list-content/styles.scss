@@ -183,7 +183,7 @@
 }
 
 .scrollStyle {
-  //@include scrollbox-vertical($bg-color: #f3f6f9);
+  @include scrollbox-vertical($bg-color: #f3f6f9);
   outline: none;
 }
 
