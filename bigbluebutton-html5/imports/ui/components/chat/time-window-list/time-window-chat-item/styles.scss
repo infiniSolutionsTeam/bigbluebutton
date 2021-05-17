@@ -1,14 +1,15 @@
 @import "/imports/ui/stylesheets/variables/placeholders";
 
 :root {
-  --systemMessage-background-color: #F9FBFC;
-  --systemMessage-border-color: #C5CDD4;
-  --systemMessage-font-color: var(--color-dark-grey);
-  --chat-poll-margin-sm: .5rem;
+  --systemMessage-background-color: var(--color-iris-primary);
+  --systemMessage-border-color: #c5cdd4;
+  --systemMessage-font-color: var(--color-gray-dark);
+  --chat-poll-margin-sm: 0.5rem;
 }
 
 .item {
-  padding: calc(var(--line-height-computed) / 4) 0 calc(var(--line-height-computed) / 2) 0;
+  padding: calc(var(--line-height-computed) / 4) 0
+    calc(var(--line-height-computed) / 2) 0;
   font-size: var(--font-size-base);
   pointer-events: auto;
   [dir="rtl"] & {
@@ -21,7 +22,7 @@
   flex-flow: row;
   flex: 1;
   position: relative;
-  margin:var(--border-size) 0 0 var(--border-size);
+  margin: var(--border-size) 0 0 var(--border-size);
 
   [dir="rtl"] & {
     margin: var(--border-size) var(--border-size) 0 0;
@@ -58,7 +59,7 @@
 }
 
 .avatar {
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .content {
@@ -102,11 +103,11 @@
 
   & > span {
     text-align: right;
-    padding: 0 .1rem 0 0;
+    padding: 0 0.1rem 0 0;
 
     [dir="rtl"] & {
       text-align: left;
-      padding: 0 0 0 .1rem;
+      padding: 0 0 0 0.1rem;
     }
   }
 }
@@ -145,7 +146,8 @@
   }
 }
 
-.message, .hyperlink {
+.message,
+.hyperlink {
   flex: 1;
   margin-top: calc(var(--line-height-computed) / 3);
   margin-bottom: 0;
