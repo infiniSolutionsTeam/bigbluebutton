@@ -25,7 +25,7 @@
 }
 
 .messageList {
-  @include scrollbox-vertical();
+  //@include scrollbox-vertical();
   flex-flow: column;
   flex-grow: 1;
   flex-shrink: 1;
@@ -51,7 +51,7 @@
   flex-shrink: 0;
   width: 100%;
   text-transform: uppercase;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   z-index: 3;
   @extend %text-elipsis;
 }
