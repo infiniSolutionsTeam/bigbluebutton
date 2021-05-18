@@ -3,7 +3,7 @@
 :root {
   --systemMessage-background-color: var(--color-iris-primary);
   --systemMessage-border-color: #c5cdd4;
-  --systemMessage-font-color: var(--color-gray-dark);
+  --systemMessage-font-color: var(--color-font-main);
   --chat-poll-margin-sm: 0.5rem;
 }
 
@@ -31,7 +31,6 @@
 
 .systemMessage {
   background: var(--systemMessage-background-color);
-  border: 1px solid var(--systemMessage-border-color);
   border-radius: var(--border-radius);
   font-weight: var(--btn-font-weight);
   padding: var(--font-size-base);
