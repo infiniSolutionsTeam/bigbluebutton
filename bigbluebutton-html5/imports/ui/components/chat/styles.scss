@@ -29,7 +29,7 @@
   justify-content: space-around;
   overflow: hidden;
   height: 100vh;
-
+  border-radius: 10px;
   :global(.browser-chrome) & {
     transform: translateZ(0);
   }
