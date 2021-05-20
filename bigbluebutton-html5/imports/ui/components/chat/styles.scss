@@ -30,6 +30,7 @@
   overflow: hidden;
   height: 100vh;
   border-radius: 10px;
+  margin: 5px;
   :global(.browser-chrome) & {
     transform: translateZ(0);
   }
