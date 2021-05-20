@@ -149,9 +149,12 @@
 .hyperlink {
   flex: 1;
   margin-top: calc(var(--line-height-computed) / 3);
-  margin-bottom: 0;
-  color: var(--color-text);
+  margin-bottom: 10px;
+  color: var(--color-font-main);
   word-wrap: break-word;
+  background-color: var(--color-iris-primary);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .hyperlink {
