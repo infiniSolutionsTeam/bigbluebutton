@@ -239,7 +239,7 @@ class UserParticipants extends Component {
                 rowHeight={this.cache.rowHeight}
                 rowRenderer={this.rowRenderer}
                 rowCount={users.length}
-                height={height - 1}
+                height={height - 2}
                 width={width - 1}
                 className={styles.scrollStyle}
                 overscanRowCount={30}
