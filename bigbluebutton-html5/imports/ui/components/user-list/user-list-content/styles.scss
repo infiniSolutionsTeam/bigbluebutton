@@ -185,6 +185,9 @@
 .scrollStyle {
   @include scrollbox-vertical($bg-color: #000000);
   outline: none;
+  margin: 10px;
+  background-color: var(--color-iris-secondary);
+  overflow-x: hidden;
 }
 
 .noteLock {
