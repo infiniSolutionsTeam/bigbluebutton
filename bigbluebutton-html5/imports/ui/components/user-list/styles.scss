@@ -32,7 +32,8 @@
     @extend %highContrastOutline;
     outline-style: solid;
     background-color: var(--list-item-bg-hover);
-    box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border), inset 1px 0 0 1px var(--item-focus-border);
+    box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border),
+      inset 1px 0 0 1px var(--item-focus-border);
   }
 }
 
@@ -98,7 +99,7 @@
   text-transform: uppercase;
   padding: 0 var(--sm-padding-x);
   margin: 0 0 (var(--lg-padding-x) / 2) 0;
-  color: var(--color-gray);
+  color: #d2d2d2;
 }
 
 .userListColumn {
@@ -115,7 +116,7 @@
 .enterActive,
 .appearActive {
   opacity: 1;
-  
+
   :global(.animationsEnabled) & {
     transition: all 600ms;
   }
