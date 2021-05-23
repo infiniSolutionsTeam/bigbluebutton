@@ -264,7 +264,7 @@
 
 .primary {
   @include button-variant(
-    var(--btn-primary-color),
+    var(--color-iris-primary),
     var(--color-iris-third),
     var(--btn-primary-border)
   );

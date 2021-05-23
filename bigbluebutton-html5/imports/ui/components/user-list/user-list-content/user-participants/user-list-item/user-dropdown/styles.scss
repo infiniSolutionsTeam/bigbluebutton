@@ -1,7 +1,7 @@
 @import "/imports/ui/stylesheets/variables/breakpoints";
 @import "/imports/ui/stylesheets/variables/placeholders";
-@import '/imports/ui/stylesheets/mixins/_indicators';
-@import '/imports/ui/stylesheets/mixins/focus';
+@import "/imports/ui/stylesheets/mixins/_indicators";
+@import "/imports/ui/stylesheets/mixins/focus";
 
 %list-item {
   display: flex;
@@ -24,8 +24,8 @@
   }
 
   &:hover {
-    @extend %highContrastOutline;
-    background-color: var(--list-item-bg-hover);
+    // @extend %highContrastOutline;
+    background-color: var(--color-iris-primary);
   }
 
   &:active,
@@ -33,7 +33,8 @@
     @extend %highContrastOutline;
     outline-style: solid;
     background-color: var(--list-item-bg-hover);
-    box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border), inset 1px 0 0 1px var(--item-focus-border);
+    box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border),
+      inset 1px 0 0 1px var(--item-focus-border);
   }
 }
 
@@ -66,7 +67,7 @@
 .leaveActive {
   opacity: 0;
   max-height: 0rem;
-  
+
   :global(.animationsEnabled) & {
     transition: all 500ms;
   }
@@ -115,14 +116,16 @@
 
 .active {
   background-color: var(--list-item-bg-hover);
-  box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border), inset 1px 0 0 1px var(--item-focus-border);
+  box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border),
+    inset 1px 0 0 1px var(--item-focus-border);
 }
 
 .usertListItemWithMenu {
   @extend %highContrastOutline;
   outline-style: solid;
   background-color: var(--list-item-bg-hover);
-  box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border), inset 1px 0 0 1px var(--item-focus-border);
+  box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border),
+    inset 1px 0 0 1px var(--item-focus-border);
   border-top-left-radius: var(--sm-padding-y);
   border-bottom-left-radius: var(--sm-padding-y);
 
@@ -146,8 +149,8 @@
   flex-grow: 0;
   display: flex;
   flex-flow: row;
-  margin: 0 0 1px var(--lg-padding-y);
-  padding: var(--lg-padding-y) 0 var(--lg-padding-y) var(--lg-padding-y);
+  margin: 0 0 1px 0px;
+  padding: var(--iris-padding);
 
   [dir="rtl"] & {
     padding: var(--lg-padding-y) var(--lg-padding-y) var(--lg-padding-y) 0;
