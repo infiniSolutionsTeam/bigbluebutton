@@ -11,6 +11,10 @@ import AudioControlsContainer from '../audio/audio-controls/container';
 import JoinVideoOptionsContainer from '../video-provider/video-button/container';
 import PresentationOptionsContainer from './presentation-options/component';
 
+
+//by sachitha
+import { makeStyles } from '@material-ui/core/styles';
+import {Button as NewButton} from '@material-ui/core/Button';
 class ActionsBar extends PureComponent {
   render() {
     const {
@@ -77,6 +81,9 @@ class ActionsBar extends PureComponent {
           }}
           />
         </div>
+        <Button variant="contained" color="secondary">
+          Secondary
+        </Button>
         <div className={styles.right}>
           {
             <Button
