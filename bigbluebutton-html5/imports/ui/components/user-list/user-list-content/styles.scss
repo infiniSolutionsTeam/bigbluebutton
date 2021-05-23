@@ -63,7 +63,8 @@
   [dir="rtl"] & {
     margin: 0 var(--md-padding-y) 1px 0;
   }
-  margin-left: 0;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .list {
@@ -185,9 +186,10 @@
 .scrollStyle {
   @include scrollbox-vertical($bg-color: #000000);
   outline: none;
-  margin: 10px;
+  margin: 0px;
   background-color: var(--color-iris-secondary);
   overflow-x: hidden;
+  padding: 10px;
 }
 
 .noteLock {
