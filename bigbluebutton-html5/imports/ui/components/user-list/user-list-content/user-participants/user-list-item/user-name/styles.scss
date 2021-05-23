@@ -7,7 +7,7 @@
   justify-content: center;
   font-size: 0.95rem;
 
-  [dir="rtl"]  & {
+  [dir="rtl"] & {
     margin: 0 var(--sm-padding-x) 0 0;
   }
 }
@@ -19,7 +19,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: 400;
-  color: var(--color-gray-dark);
+  color: var(--iris-username-color);
   display: flex;
   flex-direction: row;
 
@@ -30,7 +30,7 @@
   }
 
   :global(.animationsEnabled) & {
-    transition: all .3s;
+    transition: all 0.3s;
   }
 }
 
