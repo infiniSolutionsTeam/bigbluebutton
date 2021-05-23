@@ -80,10 +80,11 @@ class ActionsBar extends PureComponent {
             isMeteorConnected,
           }}
           />
+          <NewButton variant="contained" color="secondary">
+            End
+          </NewButton>
         </div>
-        <Button variant="contained" color="secondary">
-          Secondary
-        </Button>
+        
         <div className={styles.right}>
           {
             <Button
