@@ -36,6 +36,7 @@ class ActionsBar extends PureComponent {
     } = this.props;
 
     return (
+      <>
       <div
         className={styles.actionsbar}
         style={{
@@ -114,6 +115,85 @@ class ActionsBar extends PureComponent {
           }
         </div>
       </div>
+      <div
+        className={styles.actionsbar}
+        style={{
+          height: ACTIONSBAR_HEIGHT,
+        }}
+      >
+        <div className={styles.left}>
+          <ActionsDropdown {...{
+            amIPresenter,
+            amIModerator,
+            isPollingEnabled,
+            isSelectRandomUserEnabled,
+            allowExternalVideo,
+            handleTakePresenter,
+            intl,
+            isSharingVideo,
+            stopExternalVideoShare,
+            isMeteorConnected,
+          }}
+          />
+          {isCaptionsAvailable
+            ? (
+              <CaptionsButtonContainer {...{ intl }} />
+            )
+            : null
+          }
+        </div>
+        <div className={styles.center}>
+          <AudioControlsContainer />
+          {enableVideo
+            ? (
+              <JoinVideoOptionsContainer />
+            )
+            : null}
+          <ScreenshareButtonContainer {...{
+            amIPresenter,
+            isMeteorConnected,
+          }}
+          />
+        </div>
+        <div className={styles.right}>
+          {
+            <Button
+              icon="hand"
+              label={intl.formatMessage({
+                id: `app.actionsBar.emojiMenu.${
+                  currentUser.emoji === 'raiseHand'
+                    ? 'lowerHandLabel'
+                    : 'raiseHandLabel'
+                }`,
+              })}
+              accessKey={shortcuts.raisehand}
+              color={currentUser.emoji === 'raiseHand' ? 'primary' : 'default'}
+              data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
+              ghost={currentUser.emoji !== 'raiseHand'}
+              className={cx(currentUser.emoji === 'raiseHand' || styles.btn)}
+              hideLabel
+              circle
+              size="lg"
+              onClick={() => {
+                setEmojiStatus(
+                  currentUser.userId,
+                  currentUser.emoji === 'raiseHand' ? 'none' : 'raiseHand',
+                );
+              }}
+            />
+          }
+          {isLayoutSwapped && !isPresentationDisabled
+            ? (
+              <PresentationOptionsContainer
+                toggleSwapLayout={toggleSwapLayout}
+                isThereCurrentPresentation={isThereCurrentPresentation}
+              />
+            )
+            : null
+          }
+        </div>
+      </div>
+      </>
     );
   }
 }
