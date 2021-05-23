@@ -25,12 +25,12 @@
 
   &:hover {
     // @extend %highContrastOutline;
-    background-color: var(--color-iris-primary);
+    background-color: var(--list-item-bg-hover);
   }
 
   &:active,
   &:focus {
-    @extend %highContrastOutline;
+    // @extend %highContrastOutline;
     outline-style: solid;
     background-color: var(--list-item-bg-hover);
     box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border),
