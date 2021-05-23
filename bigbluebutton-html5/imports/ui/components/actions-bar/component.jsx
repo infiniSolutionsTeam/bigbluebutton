@@ -12,9 +12,7 @@ import JoinVideoOptionsContainer from '../video-provider/video-button/container'
 import PresentationOptionsContainer from './presentation-options/component';
 
 
-//by sachitha
-//import { makeStyles } from '@material-ui/core/styles';
-import {Button as NewButton} from '@material-ui/core/Button';
+
 class ActionsBar extends PureComponent {
   render() {
     const {
@@ -80,9 +78,9 @@ class ActionsBar extends PureComponent {
             isMeteorConnected,
           }}
           />
-          <NewButton variant="contained" color="secondary">
+          <Button variant="contained" color="secondary" style={{backgroundColor:"red"}}>
             End
-          </NewButton>
+          </Button>
         </div>
         
         <div className={styles.right}>
