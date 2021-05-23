@@ -66,6 +66,9 @@ class ActionsBar extends PureComponent {
             : null
           }
         </div>
+          <Button variant="contained" color="secondary" style={{backgroundColor:"#FF3131",color:"white",borderRadius:"8px",height:"30px"}}>
+            End
+          </Button>
         <div className={styles.center}>
           <AudioControlsContainer />
           {enableVideo
@@ -78,9 +81,7 @@ class ActionsBar extends PureComponent {
             isMeteorConnected,
           }}
           />
-          <Button variant="contained" color="secondary" style={{backgroundColor:"red"}}>
-            End
-          </Button>
+          
         </div>
         
         <div className={styles.right}>
