@@ -34,6 +34,9 @@
   }
 
   overflow-x: hidden;
+  background-color: var(--color-iris-secondary);
+  margin: var(--iris-margin);
+  border-radius: var(--iris-border-radius);
 }
 
 .virtulizedScrollableList {
@@ -63,8 +66,8 @@
   [dir="rtl"] & {
     margin: 0 var(--md-padding-y) 1px 0;
   }
-  margin: 10px;
-  border-radius: 10px;
+  margin: var(--iris-margin);
+  border-radius: var(--iris-border-radius);
 }
 
 .list {
