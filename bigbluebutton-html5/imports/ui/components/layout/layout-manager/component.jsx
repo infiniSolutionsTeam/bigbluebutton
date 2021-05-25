@@ -14,8 +14,8 @@ const max = (value1, value2) => (value1 >= value2 ? value1 : value2);
 const { isMobile } = deviceInfo;
 
 // values based on sass file
-const USERLIST_MIN_WIDTH = 150;
-const USERLIST_MAX_WIDTH = 240;
+const USERLIST_MIN_WIDTH = 250;
+const USERLIST_MAX_WIDTH = 300;
 const CHAT_MIN_WIDTH = 320;
 const CHAT_MAX_WIDTH = 400;
 const POLL_MIN_WIDTH = 320;
