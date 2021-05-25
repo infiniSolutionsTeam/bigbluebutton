@@ -43,7 +43,7 @@
   flex-grow: 1;
   line-height: 2;
   color: var(--color-gray-dark);
-  background-color: var(--color-off-white);
+  background-color: transparent;
   padding-top: var(--lg-padding-y);
   padding-bottom: var(--lg-padding-y);
   padding-left: var(--lg-padding-y);
@@ -87,7 +87,7 @@
   @extend %text-elipsis;
   font-weight: 400;
   font-size: var(--font-size-small);
-  color: var(--color-gray-dark);
+  color: inherit;
   flex-grow: 1;
   line-height: 2;
   text-align: left;
