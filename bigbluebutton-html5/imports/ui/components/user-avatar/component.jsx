@@ -62,8 +62,8 @@ const UserAvatar = ({
       [styles.noVoice]: noVoice && !listenOnly,
     }, className)}
     style={{
-      backgroundColor: color,
-      color, // We need the same color on both for the border
+      backgroundColor: "#DED5F8",
+      color:"#DED5F8", // We need the same color on both for the border
     }}
   >
 
