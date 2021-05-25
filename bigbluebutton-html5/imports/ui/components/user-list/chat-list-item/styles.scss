@@ -4,17 +4,18 @@
 %list-item {
   display: flex;
   flex-flow: row;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   cursor: pointer;
-
+  background-color: transparent;
+  color: #7080aa;
   [dir="rtl"] & {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   &:first-child {
@@ -22,16 +23,16 @@
   }
 
   &:hover {
-    @extend %highContrastOutline;
     background-color: var(--list-item-bg-hover);
   }
 
   &:active,
   &:focus {
-    @extend %highContrastOutline;
     outline-style: solid;
+    color: #7080aa;
     background-color: var(--list-item-bg-hover);
-    box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border), inset 1px 0 0 1px var(--item-focus-border);
+    box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border),
+      inset 1px 0 0 1px var(--item-focus-border);
   }
 }
 

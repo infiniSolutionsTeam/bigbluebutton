@@ -17,7 +17,7 @@
   min-width: 3.5rem;
   border-radius: 50%;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 1rem;
   border: 2px solid transparent;
 
   :global(.animationsEnabled) & {
@@ -160,7 +160,7 @@
 }
 
 .moderator {
-  border-radius: 5px;
+  border-radius: 12px;
 }
 
 .presenter {
