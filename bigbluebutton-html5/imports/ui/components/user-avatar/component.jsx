@@ -52,7 +52,7 @@ const UserAvatar = ({
   <div
     aria-hidden="true"
     data-test="userAvatar"
-    className={cx(styles.avatar, {
+    className={cx(styles.avatarUserList, {
       [styles.moderator]: moderator,
       [styles.presenter]: presenter,
       [styles.whiteboardAccess]: whiteboardAccess && !presenter,
