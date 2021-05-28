@@ -68,24 +68,35 @@ class ActionsBar extends PureComponent {
         </div>
           
         <div className={styles.center}>
-          <Button variant="contained" color="secondary" style={{backgroundColor:"#FF3131",color:"white",borderRadius:"8px",height:"30px"}}>
-            End
-          </Button>
-          <AudioControlsContainer />
-          {enableVideo
+        {enableVideo
             ? (
               <JoinVideoOptionsContainer />
             )
             : null}
+          <Button variant="contained" color="secondary" style={{backgroundColor:"#FF3131",color:"white",borderRadius:"8px",height:"30px"}}>
+            End
+          </Button>
+          <AudioControlsContainer />
+          
+          
+          
+        </div>
+        
+        <div className={styles.right}>
+          {isLayoutSwapped && !isPresentationDisabled
+            ? (
+              <PresentationOptionsContainer
+                toggleSwapLayout={toggleSwapLayout}
+                isThereCurrentPresentation={isThereCurrentPresentation}
+              />
+            )
+            : null
+          }
           <ScreenshareButtonContainer {...{
             amIPresenter,
             isMeteorConnected,
           }}
           />
-          
-        </div>
-        
-        <div className={styles.right}>
           {
             <Button
               icon="hand"
@@ -112,15 +123,7 @@ class ActionsBar extends PureComponent {
               }}
             />
           }
-          {isLayoutSwapped && !isPresentationDisabled
-            ? (
-              <PresentationOptionsContainer
-                toggleSwapLayout={toggleSwapLayout}
-                isThereCurrentPresentation={isThereCurrentPresentation}
-              />
-            )
-            : null
-          }
+          
         </div>
       </div>
       <div
