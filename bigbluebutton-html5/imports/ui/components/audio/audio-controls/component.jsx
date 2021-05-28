@@ -212,10 +212,12 @@ class AudioControls extends PureComponent {
           }}
           />
         ) : null}
-        {showMute && isVoiceUser ? toggleMuteBtn : null}
-        {
+        {showMute && isVoiceUser ? toggleMuteBtn : this.renderJoinLeaveButton()}
+        {/* sachitha this is toogle mute button */}
+        {/* //hide leave audio button when mic is active */}
+        {/* {
           this.renderJoinLeaveButton()
-        }
+        } */}
       </span>
     );
   }
