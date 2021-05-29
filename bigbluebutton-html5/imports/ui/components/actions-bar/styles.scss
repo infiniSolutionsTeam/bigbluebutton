@@ -32,7 +32,7 @@
 }
 
 .right {
-  justify-content: center;
+  justify-content: flex-end;
   @include mq($small-only) {
     position: relative;
     right: 0;
@@ -60,7 +60,7 @@
 
 .left {
   display: inherit;
-  flex: 0;
+  flex: 1;
   @include mq($small-only) {
     bottom: var(--sm-padding-x);
     left: var(--sm-padding-x);
@@ -74,6 +74,7 @@
 }
 
 .right {
+  flex: 1;
   position: relative;
 
   [dir="rtl"] & {
@@ -114,7 +115,7 @@
 .btn {
   z-index: 3;
 }
-.dropdown{
+.dropdown {
   z-index: 4;
 }
 .presentationItem {
@@ -127,7 +128,6 @@
     @include mq($small-only) {
       max-width: 100%;
     }
-
   }
 }
 
