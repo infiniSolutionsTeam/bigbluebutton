@@ -6,7 +6,7 @@ public:
     autoJoin: true
     listenOnlyMode: true
     forceListenOnly: false
-    skipCheck: false
+    skipCheck: true
     skipCheckOnJoin: false
     #
     # Allow users to change microphone/speaker dinamically
@@ -19,12 +19,12 @@ public:
     clientTitle: BigBlueButton
     appName: BigBlueButton HTML5 Client
     bbbServerVersion: 2.3-dev
-    copyright: '©2021 BigBlueButton Inc.'
+    copyright: "©2021 BigBlueButton Inc."
     html5ClientBuild: HTML5_CLIENT_VERSION
     helpLink: https://bigbluebutton.org/html5/
     lockOnJoin: true
-    cdn: ''
-    basename: '/html5client'
+    cdn: ""
+    basename: "/html5client"
     askForFeedbackOnLogout: false
     # the default logoutUrl matches window.location.origin i.e. bigbluebutton.org for demo.bigbluebutton.org
     # in some cases we want only custom logoutUrl to be used when provided on meeting create. Default value: true
@@ -37,7 +37,7 @@ public:
     enableTalkingIndicator: true
     mirrorOwnWebcam: false
     viewersInWebcam: 8
-    ipv4FallbackDomain: ''
+    ipv4FallbackDomain: ""
     allowLogout: true
     allowFullscreen: true
     preloadNextSlides: 2
@@ -266,7 +266,7 @@ public:
     enableScreensharing: true
     enableVideo: true
     enableVideoMenu: true
-    enableListenOnly: true
+    enableListenOnly: false
     autoShareWebcam: false
     skipVideoPreview: false
     skipVideoPreviewOnFirstJoin: false
@@ -364,8 +364,8 @@ public:
   captions:
     enabled: true
     enableDictation: false
-    backgroundColor: '#000000'
-    fontColor: '#FFFFFF'
+    backgroundColor: "#000000"
+    fontColor: "#FFFFFF"
     fontFamily: Calibri
     fontSize: 24px
     takeOwnership: true
@@ -403,14 +403,14 @@ public:
     hidePresentation: false
     showParticipantsOnLogin: true
   media:
-    stunTurnServersFetchAddress: '/bigbluebutton/api/stuns'
+    stunTurnServersFetchAddress: "/bigbluebutton/api/stuns"
     cacheStunTurnServers: true
-    fallbackStunServer: ''
-    mediaTag: '#remote-media'
+    fallbackStunServer: ""
+    mediaTag: "#remote-media"
     callTransferTimeout: 5000
     callHangupTimeout: 2000
     callHangupMaximumRetries: 10
-    echoTestNumber: 'echo'
+    echoTestNumber: "echo"
     relayOnlyOnReconnect: false
     listenOnlyCallTimeout: 25000
     #Timeout (ms) for gathering ICE candidates. When this timeout expires
@@ -432,7 +432,7 @@ public:
     #Trace sip/audio messages in browser. If not set, default value is false.
     traceSip: false
     # SDP semantics: plan-b|unified-plan
-    sdpSemantics: 'unified-plan'
+    sdpSemantics: "unified-plan"
   stats:
     enabled: true
     interval: 10000
@@ -463,7 +463,7 @@ public:
     defaultPresentationFile: default.pdf
     panZoomThrottle: 32
     restoreOnUpdate: false
-    uploadEndpoint: '/bigbluebutton/presentation/upload'
+    uploadEndpoint: "/bigbluebutton/presentation/upload"
     uploadValidMimeTypes:
       - extension: .pdf
         mime: application/pdf
@@ -523,29 +523,29 @@ public:
       multiUserPenOnly: false
       colors:
         - label: black
-          value: '#000000'
+          value: "#000000"
         - label: white
-          value: '#ffffff'
+          value: "#ffffff"
         - label: red
-          value: '#ff0000'
+          value: "#ff0000"
         - label: orange
-          value: '#ff8800'
+          value: "#ff8800"
         - label: eletricLime
-          value: '#ccff00'
+          value: "#ccff00"
         - label: Lime
-          value: '#00ff00'
+          value: "#00ff00"
         - label: Cyan
-          value: '#00ffff'
+          value: "#00ffff"
         - label: dodgerBlue
-          value: '#0088ff'
+          value: "#0088ff"
         - label: blue
-          value: '#0000ff'
+          value: "#0000ff"
         - label: violet
-          value: '#8800ff'
+          value: "#8800ff"
         - label: magenta
-          value: '#ff00ff'
+          value: "#ff00ff"
         - label: silver
-          value: '#c0c0c0'
+          value: "#c0c0c0"
       thickness:
         - value: 14
         - value: 12
@@ -606,7 +606,7 @@ public:
       method: POST
       throttleInterval: 400
       flushOnClose: true
-      logTag: ''
+      logTag: ""
 private:
   analytics:
     includeChat: true
@@ -622,7 +622,7 @@ private:
     port: 9001
   redis:
     host: 127.0.0.1
-    port: '6379'
+    port: "6379"
     timeout: 5000
     password: null
     debug: false
