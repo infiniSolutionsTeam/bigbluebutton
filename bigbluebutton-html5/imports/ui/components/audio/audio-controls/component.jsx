@@ -193,7 +193,6 @@ class AudioControls extends PureComponent {
         label={label}
         aria-label={label}
         color={!muted ? 'primary' : 'default'}
-        ghost={muted}
         icon={muted ? 'mute' : 'unmute'}
         size="lg"
         accessKey={shortcuts.togglemute}

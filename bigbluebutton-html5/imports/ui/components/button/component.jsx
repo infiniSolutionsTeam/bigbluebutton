@@ -120,6 +120,7 @@ export default class Button extends BaseButton {
     delete remainingProps.ghost;
     delete remainingProps.circle;
     delete remainingProps.block;
+    delete remainingProps.btnnew;
     delete remainingProps.hideLabel;
     delete remainingProps.tooltipLabel;
 
