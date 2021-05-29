@@ -182,7 +182,6 @@ const ScreenshareButton = ({
         color={isVideoBroadcasting ? 'primary' : 'default'}
         ghost={!isVideoBroadcasting}
         hideLabel
-        circle
         size="lg"
         onClick={isVideoBroadcasting
           ? screenshareHasEnded

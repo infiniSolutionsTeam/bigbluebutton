@@ -32,7 +32,7 @@ const PresentationOptionsContainer = ({ intl, toggleSwapLayout, isThereCurrentPr
       description={intl.formatMessage(intlMessages.restorePresentationDesc)}
       color="primary"
       hideLabel
-      circle
+      circle={false}
       size="lg"
       onClick={toggleSwapLayout}
       id="restore-presentation"
