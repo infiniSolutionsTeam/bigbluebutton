@@ -24,7 +24,7 @@
   }
 
   > :last-child {
-    margin-left: var(--sm-padding-x);
+    margin-left: 0;
     margin-right: 0;
 
     @include mq($small-only) {
