@@ -73,9 +73,20 @@ class ActionsBar extends PureComponent {
               <JoinVideoOptionsContainer />
             )
             : null}
-          <Button variant="contained" color="secondary" style={{backgroundColor:"#FF3131",color:"white",borderRadius:"8px",height:"30px"}}>
+            <Button
+              icon="hand"
+              label="end"
+              color={currentUser.emoji === 'raiseHand' ? 'primary' : 'default'}
+              data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
+              ghost={currentUser.emoji !== 'raiseHand'}
+              className={cx(currentUser.emoji === 'raiseHand' || styles.btn)}
+              hideLabel
+              circle={false}
+              size="lg"
+            />
+          {/* <Button variant="contained" color="secondary" style={{backgroundColor:"#FF3131",color:"white",borderRadius:"8px",height:"30px"}}>
             End
-          </Button>
+          </Button> */}
           <AudioControlsContainer />
           
           
