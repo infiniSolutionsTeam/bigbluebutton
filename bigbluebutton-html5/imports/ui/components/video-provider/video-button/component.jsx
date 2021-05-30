@@ -82,7 +82,6 @@ const JoinVideoButton = ({
       hideLabel
       color={hasVideoStream ? 'primary' : 'default'}
       icon={hasVideoStream ? 'video' : 'video_off'}
-      ghost={!hasVideoStream}
       size="lg"
       btnnew
       disabled={!!disableReason}
