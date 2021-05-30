@@ -135,7 +135,7 @@ class ActionsBar extends PureComponent {
           
         </div>
       </div>
-      <div
+      {/* <div
         className={styles.actionsbar}
         style={{
           height: ACTIONSBAR_HEIGHT,
@@ -212,7 +212,7 @@ class ActionsBar extends PureComponent {
             : null
           }
         </div>
-      </div>
+      </div> */}
       </>
     );
   }
