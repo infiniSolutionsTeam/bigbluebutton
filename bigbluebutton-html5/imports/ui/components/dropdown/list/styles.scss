@@ -1,5 +1,5 @@
 @import "/imports/ui/stylesheets/variables/breakpoints";
-@import '/imports/ui/stylesheets/mixins/_indicators';
+@import "/imports/ui/stylesheets/mixins/_indicators";
 @import "/imports/ui/stylesheets/variables/placeholders";
 
 %list {
@@ -52,8 +52,8 @@
   min-height: 1px;
   background-color: var(--color-gray-lighter);
   padding: 0;
-  margin-top: calc(var(--line-height-computed) * .5);
-  margin-bottom: calc(var(--line-height-computed) * .5);
+  margin-top: calc(var(--line-height-computed) * 0.5);
+  margin-bottom: calc(var(--line-height-computed) * 0.5);
 }
 
 .item {
@@ -84,16 +84,16 @@
     color: var(--color-white);
 
     .verticalList & {
-      margin-left: -.25rem;
-      margin-right: -.25rem;
-      padding-left: .25rem;
-      padding-right: .25rem;
+      margin-left: -0.25rem;
+      margin-right: -0.25rem;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
 
       [dir="rtl"] & {
-        margin-right: -.25rem;
-        margin-left: -.25rem;
-        padding-right: .25rem;
-        padding-left: .25rem;
+        margin-right: -0.25rem;
+        margin-left: -0.25rem;
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
       }
     }
 
@@ -125,7 +125,8 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px var(--color-white), 0 0 2px 4px rgba(var(--color-primary), .4);
+    box-shadow: 0 0 0 2px var(--color-white),
+      0 0 2px 4px rgba(var(--color-primary), 0.4);
     outline-style: solid;
   }
 }
@@ -159,7 +160,7 @@
 }
 
 .itemLabel {
-  color: var(--color-gray-dark);
+  color: var(--color-font-main);
   font-size: 90%;
   flex: 1;
 }
