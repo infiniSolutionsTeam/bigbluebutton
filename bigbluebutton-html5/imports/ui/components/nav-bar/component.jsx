@@ -119,12 +119,14 @@ class NavBar extends Component {
             }
           </div>
           <div className={styles.center}>
-            <h1 className={styles.presentationTitle}>{presentationTitle}</h1>
+            <div className={styles.recordDiv}>
+              <h1 className={styles.presentationTitle}>{presentationTitle}</h1>
 
-            <RecordingIndicator
-              mountModal={mountModal}
-              amIModerator={amIModerator}
-            />
+              <RecordingIndicator
+                mountModal={mountModal}
+                amIModerator={amIModerator}
+              />
+            </div>
           </div>
           <div className={styles.right}>
             {ConnectionStatusService.isEnabled() ? <ConnectionStatusButton /> : null}

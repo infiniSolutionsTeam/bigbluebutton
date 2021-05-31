@@ -2,8 +2,8 @@
 
 :root {
   --mobile-nav-height: 5rem;
-  --mobile-margin-top: .25rem;
-  --arrow-l-left: 	1.1rem;
+  --mobile-margin-top: 0.25rem;
+  --arrow-l-left: 1.1rem;
   --arrow-r-left: 2.5rem;
   --arrow-size: 40%;
 }
@@ -63,7 +63,7 @@
   position: relative;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     border-radius: 50%;
     width: 12px;
@@ -95,7 +95,7 @@
   width: var(--md-padding-x);
   left: var(--arrow-r-left);
   [dir="rtl"] & {
-    right: .5rem;
+    right: 0.5rem;
     left: 0;
   }
 }
@@ -115,11 +115,21 @@
     span {
       background-color: transparent !important;
       color: var(--color-white) !important;
-      opacity: .75;
+      opacity: 0.75;
     }
   }
 }
 
-.dropdown{
+.dropdown {
   z-index: 5;
+}
+
+.recordDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  background-color: #333e5f;
+  padding: 0px 15px;
+  border-radius: 30px;
 }
