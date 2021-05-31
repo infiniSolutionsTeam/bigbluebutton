@@ -134,7 +134,7 @@
 .iconRight,
 .itemIcon {
   margin: 0 calc(var(--line-height-computed) / 2) 0 0;
-  color: var(--color-text);
+  color: white;
   flex: 0 0;
 
   [dir="rtl"] & {
@@ -160,7 +160,7 @@
 }
 
 .itemLabel {
-  color: var(--color-font-main);
+  color: white;
   font-size: 90%;
   flex: 1;
 }

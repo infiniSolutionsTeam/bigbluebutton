@@ -58,7 +58,7 @@
   @include mq($small-only) {
     z-index: 1015;
     border-radius: 0;
-    background-color: #fff;
+    background-color: var(--color-iris-secondary);
     box-shadow: none;
     position: fixed;
     top: 0 !important;
