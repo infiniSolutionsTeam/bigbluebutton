@@ -62,9 +62,9 @@
   display: inherit;
   flex: 1;
   @include mq($small-only) {
-    bottom: var(--sm-padding-x);
-    left: var(--sm-padding-x);
-    right: auto;
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
 
     [dir="rtl"] & {
       left: auto;
