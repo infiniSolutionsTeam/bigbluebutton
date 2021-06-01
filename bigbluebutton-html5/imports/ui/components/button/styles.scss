@@ -71,13 +71,13 @@
 
   &:hover,
   &:focus {
-    @extend %highContrastOutline;
+    // @extend %highContrastOutline;
     text-decoration: none;
   }
 
   &:active,
   &:focus {
-    @extend %highContrastOutline;
+    // @extend %highContrastOutline;
     outline-style: solid;
   }
 
@@ -109,7 +109,7 @@
 
   &:focus,
   &:hover {
-    @extend %highContrastOutline;
+    // @extend %highContrastOutline;
   }
 
   &:focus {
@@ -125,7 +125,7 @@
     &:focus {
       span:first-of-type::before {
         border-radius: 50%;
-        @extend %highContrastOutline;
+        // @extend %highContrastOutline;
         outline-style: solid;
       }
     }
