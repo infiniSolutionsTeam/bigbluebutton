@@ -1,0 +1,65 @@
+.wrapper {
+  position: absolute;
+  right: 0;
+  left: auto;
+  background-color: var(--color-transparent);
+  cursor: pointer;
+  border: 0;
+  z-index: 2;
+}
+
+[dir="rtl"] .wrapper {
+  right: auto;
+  left: 0;
+}
+
+[class*="presentationZoomControls"] .wrapper {
+  position: relative !important;
+}
+
+.button, .button:active, .button:hover, .button:focus {
+  background-color: var(--color-transparent) !important;
+  border: none !important;
+}
+
+.button i, .button:active i, .button:hover i, .button:focus i {
+  border: none !important;
+  background-color: var(--color-transparent) !important;
+}
+
+.light {
+  background-color: var(--color-transparent);
+}
+
+.light .button i {
+  color: var(--color-black);
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark .button i {
+  color: var(--color-white);
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.fullScreenButton {
+  padding: 5px;
+}
+
+.fullScreenButton:hover {
+  border: 0;
+}
+
+.fullScreenButton i {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */

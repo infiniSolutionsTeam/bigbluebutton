@@ -1,0 +1,26 @@
+.btn {
+  --icon-offset: -.4em;
+  --square-side-length: 1.56rem;
+  z-index: 3;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0;
+          flex: 0 0;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.btn span:first-child {
+  width: var(--square-side-length);
+  height: var(--square-side-length);
+}
+
+.btn i {
+  color: var(--color-gray-dark) !important;
+  top: var(--icon-offset);
+  left: var(--icon-offset);
+}
+
+.btn:hover > span:first-child, .btn:focus > span:first-child {
+  background-color: transparent !important;
+}
+/*# sourceMappingURL=styles.css.map */

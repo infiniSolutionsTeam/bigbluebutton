@@ -1,0 +1,50 @@
+.userIconsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  -ms-flex-preferred-size: 1rem;
+      flex-basis: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 var(--sm-padding-x)/2;
+}
+
+[dir="rtl"] .userIconsContainer {
+  margin: 0 var(--sm-padding-x)/2 0 0;
+}
+
+:global(.animationsEnabled) .userIconsContainer {
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.userIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 0 var(--sm-padding-x)/2;
+  text-align: right;
+  font-size: 1.25rem;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  color: var(--user-icons-color);
+}
+
+[dir="rtl"] .userIcons {
+  margin: 0 var(--sm-padding-x)/2 0 0;
+  text-align: left;
+}
+/*# sourceMappingURL=styles.css.map */

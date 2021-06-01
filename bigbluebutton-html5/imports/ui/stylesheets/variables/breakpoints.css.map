@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAgBA,gBAAgB;AAEhB,kBAAkB;AAElB,mBAAmB;AAEnB,oBAAoB;AAEpB,oBAAoB;AAEpB,YAAY",
+    "sources": [
+        "breakpoints.scss"
+    ],
+    "names": [],
+    "file": "breakpoints.css"
+}

@@ -1,0 +1,107 @@
+.debugWindowWrapper {
+  position: absolute !important;
+  z-index: 9;
+}
+
+.debugWindow {
+  min-width: 20vw;
+  min-height: 20vh;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 2px solid #06172A;
+}
+
+.debugWindow::after {
+  content: "";
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  right: 2px;
+  bottom: 8px;
+  pointer-events: none;
+  width: 14px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.debugWindow::before {
+  content: "";
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  right: 2px;
+  bottom: 5px;
+  pointer-events: none;
+  width: 8px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.debugWindow .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  cursor: move;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.debugWindow .header .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.debugWindow .header .moveIcon {
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.debugWindow .header .close span i {
+  font-size: 115%;
+}
+
+.debugWindow .debugWindowContent {
+  padding: 10px;
+}
+
+.debugWindow .debugWindowContent .table {
+  display: table;
+  width: 100%;
+}
+
+.debugWindow .debugWindowContent .table .row {
+  display: table-row;
+}
+
+.debugWindow .debugWindowContent .table .cell {
+  display: table-cell;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.debugWindow .debugWindowContent .table .cell .cellContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.debugWindow .debugWindowContent .userAgentInput, .debugWindow .debugWindowContent .autoArrangeToggle {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

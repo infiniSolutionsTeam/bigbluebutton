@@ -1,0 +1,207 @@
+.enter {
+  opacity: 0.01;
+}
+
+.enterActive {
+  opacity: 1;
+}
+
+:global(.animationsEnabled) .enterActive {
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+
+.appear {
+  opacity: 0.01;
+}
+
+.appearActive {
+  opacity: 1;
+}
+
+:global(.animationsEnabled) .appearActive {
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+
+.presentationArea {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.whiteboardSizeAvailable {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.svgContainer {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.presentationToolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: visible;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  position: absolute;
+  bottom: 0;
+}
+
+.svgStyles {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: default;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.presentationContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.innerToastWrapper {
+  width: var(--innerToastWidth);
+}
+
+.toastTextContent {
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--sm-padding-y);
+}
+
+.toastTextContent > div:first-of-type {
+  font-weight: bold;
+}
+
+.presentationName {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.toastMessage {
+  font-size: var(--font-size-small);
+  margin-top: var(--toast-margin);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toastIcon {
+  margin-right: var(--sm-padding-x);
+}
+
+[dir="rtl"] .toastIcon {
+  margin-right: 0;
+  margin-left: var(--sm-padding-x);
+}
+
+.iconWrapper {
+  background-color: var(--color-primary);
+  width: var(--toast-icon-side);
+  height: var(--toast-icon-side);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iconWrapper > i {
+  position: relative;
+  color: var(--color-white);
+  font-size: var(--font-size-larger);
+}
+
+.toastDownload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toastDownload a {
+  color: var(--color-primary);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.toastDownload a:focus, .toastDownload a:hover, .toastDownload a:active {
+  color: var(--color-primary);
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+/*# sourceMappingURL=styles.css.map */

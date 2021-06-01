@@ -1,0 +1,40 @@
+.autoplayOverlayContent {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.title {
+  display: block;
+  font-size: var(--font-size-large);
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-size: var(--font-size-base);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.autoplayOverlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
+  height: 100%;
+  width: 100%;
+  color: var(--color-white);
+  font-size: var(--font-size-large);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 9999;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

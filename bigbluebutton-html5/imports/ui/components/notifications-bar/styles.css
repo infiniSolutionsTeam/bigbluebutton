@@ -1,0 +1,68 @@
+:root {
+  --nb-default-color: var(--color-gray);
+  --nb-default-bg: var(--color-white);
+  --nb-default-border: var(--color-white);
+  --nb-primary-color: var(--color-white);
+  --nb-primary-bg: var(--color-primary);
+  --nb-primary-border: var(--color-primary);
+  --nb-success-color: var(--color-white);
+  --nb-success-bg: var(--color-success);
+  --nb-success-border: var(--color-success);
+  --nb-danger-color: var(--color-white);
+  --nb-danger-bg: var(--color-danger);
+  --nb-danger-border: var(--color-danger);
+}
+
+.notificationsBar {
+  padding: calc(var(--line-height-computed) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+.retryButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color: var(--nb-primary-color);
+}
+
+.default {
+  color: var(--nb-default-color);
+  background-color: var(--nb-default-bg);
+  border-color: var(--nb-default-border);
+}
+
+.primary {
+  color: var(--nb-primary-color);
+  background-color: var(--nb-primary-bg);
+  border-color: var(--nb-primary-border);
+}
+
+.success {
+  color: var(--nb-success-color);
+  background-color: var(--nb-success-bg);
+  border-color: var(--nb-success-border);
+}
+
+.danger {
+  color: var(--nb-danger-color);
+  background-color: var(--nb-danger-bg);
+  border-color: var(--nb-danger-border);
+}
+/*# sourceMappingURL=styles.css.map */

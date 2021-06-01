@@ -1,0 +1,15 @@
+.autoplayPrompt {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.button:focus {
+  outline: none !important;
+}
+
+.button span:last-child {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=styles.css.map */

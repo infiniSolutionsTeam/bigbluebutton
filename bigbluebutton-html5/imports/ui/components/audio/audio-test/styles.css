@@ -1,0 +1,28 @@
+.testAudioBtn {
+  --hover-color: #0c5cb2;
+  margin: 0 !important;
+  background-color: transparent;
+  color: var(--color-primary);
+  font-weight: normal;
+  border: none;
+}
+
+.testAudioBtn i {
+  color: var(--color-primary);
+}
+
+:global(.animationsEnabled) .testAudioBtn i {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.testAudioBtn:hover, .testAudioBtn:focus, .testAudioBtn:active {
+  border: none;
+  background-color: transparent !important;
+  color: var(--hover-color) !important;
+}
+
+.testAudioBtn:hover i, .testAudioBtn:focus i, .testAudioBtn:active i {
+  color: var(--hover-color);
+}
+/*# sourceMappingURL=styles.css.map */
