@@ -3,11 +3,11 @@
 @import "/imports/ui/stylesheets/variables/placeholders";
 
 :root {
-  --spoke-opacity: .5;
-  --talker-margin-sm: .5rem;
-  --talker-padding-lg: .75rem;
+  --spoke-opacity: 0.5;
+  --talker-margin-sm: 0.5rem;
+  --talker-padding-lg: 0.75rem;
   --talker-padding-xl: 1.62rem;
-  --talker-padding-xsm: .13rem;
+  --talker-padding-xsm: 0.13rem;
   --talker-max-width: 10rem;
   --talker-font-weight: 400;
   --talker-border-radius: 2rem;
@@ -51,7 +51,8 @@
   font-weight: var(--talker-font-weight);
   border-radius: var(--talker-border-radius) var(--talker-border-radius);
   font-size: var(--font-size-base);
-  padding: var(--talker-padding-xsm) var(--talker-padding-lg) var(--talker-padding-xsm) var(--talker-padding-lg);
+  padding: var(--talker-padding-xsm) var(--talker-padding-lg)
+    var(--talker-padding-xsm) var(--talker-padding-lg);
   margin-left: var(--border-radius);
   margin-right: var(--border-radius);
   height: var(--talker-height);
@@ -60,7 +61,7 @@
   @include mq($phone-landscape) {
     height: 1rem;
   }
-  
+
   i,
   span {
     position: relative;
@@ -78,7 +79,7 @@
       font-size: var(--font-size-xs);
     }
 
-    [dir="rtl"]  & {
+    [dir="rtl"] & {
       margin-left: var(--talker-margin-sm);
     }
   }
@@ -88,7 +89,8 @@
     width: 1rem;
     height: 1rem;
     line-height: 1rem;
-    background-color: var(--color-success);
+    background-color: transparent;
+    color: white;
     border-radius: 50%;
     position: relative;
     right: var(--talker-margin-sm);
@@ -99,7 +101,7 @@
       font-size: var(--font-size-xs);
     }
 
-    [dir="rtl"]  & {
+    [dir="rtl"] & {
       right: calc(var(--talker-margin-sm) * -1);
     }
   }
@@ -112,14 +114,14 @@
 .spoke {
   opacity: var(--spoke-opacity);
 
-  [dir="rtl"]  & {
-    padding-right: var(--talker-padding-lg)
+  [dir="rtl"] & {
+    padding-right: var(--talker-padding-lg);
   }
- }
+}
 
 .muted {
   cursor: default;
-  
+
   i {
     background-color: var(--color-danger);
   }
@@ -134,4 +136,3 @@
 .isViewer {
   cursor: default;
 }
-
