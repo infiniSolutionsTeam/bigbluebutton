@@ -171,7 +171,7 @@ export default class Button extends BaseButton {
       <BaseButton
         className={cx(this._getClassNames(), className)}
         {...remainingProps}
-      >
+      > 
         {this[renderLeftFuncName]()}
         {this[renderRightFuncName]()}
       </BaseButton>
