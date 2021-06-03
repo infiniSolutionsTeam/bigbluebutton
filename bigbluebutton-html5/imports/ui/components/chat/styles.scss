@@ -61,13 +61,14 @@
 
 .hideBtn {
   position: relative;
-  background-color: var(--color-white);
+  background-color: transparent;
   display: block;
   margin: var(--border-size-large);
   margin-bottom: var(--border-size);
   padding-left: 0;
   padding-right: inherit;
   z-index: 3;
+  color: #d2d2d2;
 
   [dir="rtl"] & {
     padding-left: inherit;
@@ -88,7 +89,8 @@
   }
 
   &:hover {
-    background-color: var(--color-white);
+    background-color: transparent;
+    color: #d2d2d2;
   }
 }
 
