@@ -73,7 +73,7 @@ class AudioControls extends PureComponent {
 
     return (
       <Button
-        className={styles.btn}
+        btnnew
         onClick={handleJoinAudio}
         disabled={disable}
         hideLabel
