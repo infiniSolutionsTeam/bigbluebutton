@@ -86,7 +86,8 @@
   }
 
   &:hover {
-    background-color: var(--color-white);
+    background-color: transparent;
+    color: #d2d2d2;
   }
 }
 
