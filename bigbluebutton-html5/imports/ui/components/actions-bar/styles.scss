@@ -32,6 +32,9 @@
   @include mq($small-only) {
     flex: 1;
   }
+  @include mq($xsmall-only) {
+    flex: 1;
+  }
 }
 
 .right {
