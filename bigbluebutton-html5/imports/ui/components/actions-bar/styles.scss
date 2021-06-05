@@ -45,7 +45,8 @@
   flex: 1;
   justify-content: center;
   @include mq($small-only) {
-    justify-content: space-between;
+    flex: 1;
+    justify-content: space-around;
   }
 }
 
