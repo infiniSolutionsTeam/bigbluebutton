@@ -103,7 +103,7 @@
   @extend %text-elipsis;
   @extend %highContrastOutline;
   outline-style: solid;
-  z-index: 4;
+  z-index: 10;
   overflow: visible;
   order: 1;
 
