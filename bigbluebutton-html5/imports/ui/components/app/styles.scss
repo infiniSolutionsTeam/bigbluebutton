@@ -143,8 +143,8 @@
   order: 2;
   height: 100%;
   @include mq($small-only) {
-    z-index: 4;
-    height: auto;
+    z-index: 10;
+    height: calc(100% - 75px);
     top: var(--navbar-height);
     overflow: visible;
   }
