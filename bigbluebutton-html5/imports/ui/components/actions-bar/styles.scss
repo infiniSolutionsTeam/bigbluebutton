@@ -81,6 +81,9 @@
     right: auto;
     left: var(--sm-padding-x);
   }
+  @include mq($small-only) {
+    display: none;
+  }
 }
 
 .quickPollBtn {

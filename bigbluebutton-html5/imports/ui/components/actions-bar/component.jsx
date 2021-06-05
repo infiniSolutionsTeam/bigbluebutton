@@ -74,7 +74,7 @@ class ActionsBar extends PureComponent {
             )
             : null}
             <Button
-              label="end"
+              label="END"
               color={currentUser.emoji === 'raiseHand' ? 'primary' : 'default'}
               data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
               className={cx(currentUser.emoji === 'raiseHand' || styles.btn)}
