@@ -68,6 +68,15 @@ class ActionsBar extends PureComponent {
         </div>
           
         <div className={styles.center}>
+          <Button
+              label="3Dot"
+              color={currentUser.emoji === 'raiseHand' ? 'primary' : 'default'}
+              data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
+              className={cx(currentUser.emoji === 'raiseHand' || styles.btn)}
+              size="lg"
+              btnnew
+              btnMobileOnly
+            />
         {enableVideo
             ? (
               <JoinVideoOptionsContainer />
@@ -85,7 +94,15 @@ class ActionsBar extends PureComponent {
             End
           </Button> */}
           <AudioControlsContainer />
-          
+          <Button
+              label="Home"
+              color={currentUser.emoji === 'raiseHand' ? 'primary' : 'default'}
+              data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
+              className={cx(currentUser.emoji === 'raiseHand' || styles.btn)}
+              size="lg"
+              btnnew
+              btnMobileOnly
+            />
           
           
         </div>

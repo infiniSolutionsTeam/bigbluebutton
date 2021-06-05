@@ -451,5 +451,12 @@
   border-bottom-right-radius: 15px;
   box-shadow: none;
   width: 70px;
-  height: 50px;
+  height: 45px;
+}
+
+.btnMobileOnly {
+  display: none;
+  @include mq($small-only) {
+    display: flex;
+  }
 }

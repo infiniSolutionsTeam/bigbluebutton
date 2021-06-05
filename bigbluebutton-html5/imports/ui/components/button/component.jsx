@@ -96,6 +96,7 @@ export default class Button extends BaseButton {
       circle,
       block,
       btnnew,
+      btnMobileOnly,
     } = this.props;
 
     const propClassNames = {};
@@ -107,6 +108,7 @@ export default class Button extends BaseButton {
     propClassNames[styles.circle] = circle;
     propClassNames[styles.block] = block;
     propClassNames[styles.btnNew] = btnnew;
+    propClassNames[styles.btnMobileOnly] = btnMobileOnly;
 
     return propClassNames;
   }
@@ -121,6 +123,7 @@ export default class Button extends BaseButton {
     delete remainingProps.circle;
     delete remainingProps.block;
     delete remainingProps.btnnew;
+    delete remainingProps.btnMobileOnly;
     delete remainingProps.hideLabel;
     delete remainingProps.tooltipLabel;
 
