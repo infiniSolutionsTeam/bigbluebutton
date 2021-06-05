@@ -69,6 +69,7 @@ class ActionsBar extends PureComponent {
           
         <div className={styles.center}>
           <Button
+
               label="3Dot"
               color={currentUser.emoji === 'raiseHand' ? 'primary' : 'default'}
               data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
@@ -86,7 +87,7 @@ class ActionsBar extends PureComponent {
               label="END"
               color={currentUser.emoji === 'raiseHand' ? 'primary' : 'default'}
               data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
-              className={cx(currentUser.emoji === 'raiseHand' || styles.btn)}
+              className={cx(styles.btnRed)}
               size="lg"
               btnnew
             />
