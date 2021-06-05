@@ -225,4 +225,7 @@
   background: rgba(51, 62, 95, 0.25);
   border-radius: 20px;
   margin: 5px;
+  @include mq($small-only) {
+    background: rgba(51, 62, 95, 1);
+  }
 }
