@@ -29,6 +29,9 @@
 .right {
   display: flex;
   flex-direction: row;
+  @include mq($small-only) {
+    flex: 1;
+  }
 }
 
 .right {
