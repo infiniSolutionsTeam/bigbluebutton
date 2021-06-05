@@ -46,7 +46,7 @@
   justify-content: flex-start;
   background-color: var(--user-list-bg);
   color: var(--user-list-text);
-  height: 100%;
+  height: calc(100% - 75px);
 }
 
 .lists {

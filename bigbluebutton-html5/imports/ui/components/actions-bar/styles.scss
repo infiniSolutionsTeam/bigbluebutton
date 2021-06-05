@@ -47,6 +47,7 @@
   @include mq($small-only) {
     flex: 1;
     justify-content: space-around;
+    z-index: 5;
   }
 }
 
@@ -123,7 +124,7 @@
   z-index: 3;
 }
 .dropdown {
-  z-index: 4;
+  z-index: 10;
 }
 .presentationItem {
   span {
