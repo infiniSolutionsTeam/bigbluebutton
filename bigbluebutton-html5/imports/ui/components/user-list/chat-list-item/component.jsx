@@ -122,12 +122,7 @@ const ChatListItem = (props) => {
           {chat.icon
             ? <ChatIcon icon={chat.icon} />
             : (
-              <ChatAvatar
-                isModerator={chat.isModerator}
-                color={chat.color}
-                avatar={chat.avatar}
-                name={chat.name.toLowerCase().slice(0, 2)}
-              />
+              <p>hi</p>
             )}
         </div>
         <div className={styles.chatName}>
