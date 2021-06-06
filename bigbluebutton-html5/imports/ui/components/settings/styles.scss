@@ -26,11 +26,11 @@
 }
 
 .icon {
-  margin: 0 .5rem 0 0;
+  margin: 0 0.5rem 0 0;
   font-size: var(--font-size-large);
 
   [dir="rtl"] & {
-     margin: 0 0 0 .5rem;
+    margin: 0 0 0 0.5rem;
   }
 }
 
@@ -41,8 +41,8 @@
   justify-content: flex-start;
   border: none !important;
   padding: var(--md-padding-y) var(--md-padding-x);
-  color: var(--color-gray-dark);
-  border-radius: .2rem;
+  color: white;
+  border-radius: 0.2rem;
   cursor: pointer;
   margin-bottom: var(--sm-padding-y);
   align-items: center;
@@ -60,7 +60,7 @@
     }
 
     [dir="rtl"] & {
-       margin: 0 0 0 var(--sm-padding-x);
+      margin: 0 0 0 var(--sm-padding-x);
     }
   }
 }
@@ -89,11 +89,10 @@
     margin-left: 1rem;
     margin-right: inherit;
 
-   [dir="rtl"] & {
-     margin-left: inherit;
-     margin-right: 1rem;
-   }
-
+    [dir="rtl"] & {
+      margin-left: inherit;
+      margin-right: 1rem;
+    }
   }
 }
 
