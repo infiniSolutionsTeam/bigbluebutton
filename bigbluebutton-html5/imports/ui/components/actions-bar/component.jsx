@@ -172,7 +172,7 @@ class ActionsBar extends PureComponent {
               ghost={currentUser.emoji !== 'raiseHand'}
               className={cx(currentUser.emoji === 'raiseHand' || styles.btn)}
               circle={false}
-              size="lg"
+              size="lgNew"
               onClick={() => {
                 setEmojiStatus(
                   currentUser.userId,
