@@ -5,20 +5,20 @@
     left: var(--user-indicators-offset);
     bottom: auto;
     right: auto;
-    border-radius: 5px;
-    background-color: var(--color-primary);
+    border-radius: 50%;
+    background-color: #3a46ee;
 
     [dir="rtl"] & {
       left: auto;
       right: var(--user-indicators-offset);
-      letter-spacing: -.33rem;
+      letter-spacing: -0.33rem;
     }
   }
 
   :global(.browser-chrome) &:before,
   :global(.browser-firefox) &:before,
   :global(.browser-edge) &:before {
-      padding: var(--indicator-padding);
+    padding: var(--indicator-padding);
   }
 }
 
