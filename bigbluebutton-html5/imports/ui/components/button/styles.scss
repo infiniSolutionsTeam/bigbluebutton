@@ -357,7 +357,7 @@
   }
 
   &.dark {
-    @include button-ghost-variant(var(--btn-dark-bg), var(--btn-dark-color));
+    @include button-ghost-variant(#7080aa, var(--btn-dark-color));
   }
 
   &.offline {
