@@ -185,11 +185,10 @@ const ScreenshareButton = ({
             </g>
           </svg>
         }
-        label={intl.formatMessage(vLabel)}
+        label="Share Screen"
         description={intl.formatMessage(vDescr)}
         color={isVideoBroadcasting ? 'primary' : 'default'}
         ghost={!isVideoBroadcasting}
-        hideLabel
         size="lg"
         onClick={isVideoBroadcasting
           ? screenshareHasEnded
