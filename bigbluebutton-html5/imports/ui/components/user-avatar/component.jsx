@@ -84,7 +84,7 @@ const UserAvatar = ({
           />
         </div>
       ) : (
-        <div className={styles.content} style={{height:"2rem !important",minWidth:"2rem !important"}}>
+        <div className={styles.content}>
           {children}
         </div>
       )
