@@ -8,32 +8,32 @@
 
 :root {
   --btn-default-color: var(--color-gray);
-  --btn-default-bg: var(--color-white);
-  --btn-default-border: var(--color-white);
+  --btn-default-bg: transparent;
+  --btn-default-border: transparent;
 
   --btn-primary-color: var(--color-white);
   --btn-primary-bg: var(--color-primary);
-  --btn-primary-border: var(--color-primary);
+  --btn-primary-border: transparent;
 
   --btn-success-color: var(--color-white);
   --btn-success-bg: var(--color-success);
-  --btn-success-border: var(--color-success);
+  --btn-success-border: transparent;
 
   --btn-warning-color: var(--color-white);
   --btn-warning-bg: var(--color-warning);
-  --btn-warning-border: var(--color-warning);
+  --btn-warning-border: transparent;
 
   --btn-danger-color: var(--color-white);
   --btn-danger-bg: var(--color-danger);
-  --btn-danger-border: var(--color-danger);
+  --btn-danger-border: transparent;
 
   --btn-dark-color: var(--color-white);
   --btn-dark-bg: var(--color-gray-dark);
-  --btn-dark-border: var(--color-danger);
+  --btn-dark-border: transparent;
 
   --btn-offline-color: var(--color-white);
   --btn-offline-bg: var(--color-offline);
-  --btn-offline-border: var(--color-offline);
+  --btn-offline-border: transparent;
 
   --btn-border-size: var(--border-size);
   --btn-border-radius: var(--border-radius);
@@ -453,6 +453,13 @@
   box-shadow: none;
   width: 70px;
   height: 45px;
+  &:active,
+  &:focus,
+  &:hover {
+    color: white !important;
+    fill: white !important;
+    filter: brightness(1.2);
+  }
   @include mq($small-only) {
     width: 60px;
     height: 45px;
@@ -462,13 +469,6 @@
     width: 45px;
     height: 45px;
     background-color: transparent;
-  }
-  &:active,
-  &:focus,
-  &:hover {
-    color: white !important;
-    fill: white !important;
-    filter: brightness(1.2);
   }
 }
 
