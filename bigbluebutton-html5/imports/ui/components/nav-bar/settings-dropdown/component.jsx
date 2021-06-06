@@ -293,7 +293,13 @@ class SettingsDropdown extends PureComponent {
         <DropdownTrigger tabIndex={0} accessKey={OPEN_OPTIONS_AK}>
           <Button
             label={intl.formatMessage(intlMessages.optionsLabel)}
-            icon="more"
+            customIcon={
+              <svg xmlns="http://www.w3.org/2000/svg" width="21.571" height="20.764" viewBox="0 0 21.571 20.764">
+                <line id="Line_33" data-name="Line 33" x2="18.571" transform="translate(1.5 1.5)" fill="none" stroke="#7586b1" stroke-linecap="round" stroke-width="3"/>
+                <line id="Line_50" data-name="Line 50" x2="18.571" transform="translate(1.5 19.264)" fill="none" stroke="#7586b1" stroke-linecap="round" stroke-width="3"/>
+                <line id="Line_51" data-name="Line 51" x2="17.99" transform="translate(1.5 10.149)" fill="none" stroke="#7586b1" stroke-linecap="round" stroke-width="3"/>
+              </svg>
+            }
             ghost
             circle
             hideLabel
