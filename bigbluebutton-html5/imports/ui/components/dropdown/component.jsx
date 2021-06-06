@@ -293,7 +293,8 @@ class Dropdown extends Component {
                       ? (
                         <Button
                           className={styles.close}
-                          label={`X`}
+                          hideLabel
+                          icon="close"
                           size="lg"
                           color="default"
                           onClick={this.handleHide}
@@ -311,7 +312,8 @@ class Dropdown extends Component {
                   ? (
                     <Button
                       className={styles.close}
-                      label={`X`}
+                      icon="close"
+                      hideLabel
                       size="lg"
                       color="default"
                       onClick={this.handleHide}
