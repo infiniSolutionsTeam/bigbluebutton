@@ -69,7 +69,10 @@
 }
 
 .chatIcon {
-  flex: 0 0 2.2rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .chatName {
