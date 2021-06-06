@@ -113,7 +113,7 @@ class ActionsBar extends PureComponent {
               size="lg"
               btnnew
               btnMobileOnly
-              onClick={this.leaveSession}
+              onClick={()=>leaveSession}
             />
           
           
