@@ -149,9 +149,12 @@
   flex-flow: row;
   margin: 0 0 10px 0px;
   padding: var(--iris-padding);
-
+  border-bottom: 1px solid rgba(172, 172, 172, 0.3);
   [dir="rtl"] & {
     padding: var(--lg-padding-y) var(--lg-padding-y) var(--lg-padding-y) 0;
+  }
+  &:nth-last-child(1) {
+    border-bottom: none;
   }
 }
 
