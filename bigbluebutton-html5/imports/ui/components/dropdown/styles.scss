@@ -108,6 +108,7 @@
   box-shadow: none !important;
   border: none !important;
   background-color: transparent;
+  color: #7080aa !important;
   @include mq($small-only) {
     display: block;
   }

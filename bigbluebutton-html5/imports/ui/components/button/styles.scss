@@ -461,6 +461,13 @@
     width: 45px;
     height: 45px;
   }
+  &:active,
+  &:focus {
+    background-color: rgba(31, 39, 61, 1) !important;
+    color: white !important;
+    fill: white !important;
+    filter: brightness(1.2);
+  }
 }
 
 .btnMobileOnly {
