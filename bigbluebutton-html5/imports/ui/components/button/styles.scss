@@ -322,10 +322,7 @@
 
 .ghost {
   &.default {
-    @include button-ghost-variant(
-      var(--btn-default-bg),
-      var(--btn-default-color)
-    );
+    @include button-ghost-variant(white, var(--btn-default-color));
   }
 
   &.primary {
