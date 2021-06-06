@@ -87,6 +87,8 @@ class ActionsBar extends PureComponent {
               size="lg"
               btnnew
               btnMobileOnly
+              icon="3dot"
+              hideLabel
             />
         {enableVideo
             ? (
@@ -113,6 +115,8 @@ class ActionsBar extends PureComponent {
               className={cx(currentUser.emoji === 'raiseHand' || styles.btn)}
               size="lg"
               btnnew
+              icon="home"
+              hideLabel
               btnMobileOnly
               
             />
