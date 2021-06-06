@@ -10,10 +10,20 @@ import ScreenshareButtonContainer from '/imports/ui/components/actions-bar/scree
 import AudioControlsContainer from '../audio/audio-controls/container';
 import JoinVideoOptionsContainer from '../video-provider/video-button/container';
 import PresentationOptionsContainer from './presentation-options/component';
-
+// added by chata start
+import { makeCall } from '/imports/ui/services/api';
+// added by chata stop
 
 
 class ActionsBar extends PureComponent {
+  leaveSession() {
+    
+    makeCall('userLeftMeeting');
+    // we don't check askForFeedbackOnLogout here,
+    // it is checked in meeting-ended component
+    Session.set('codeError', '680');
+    // mountModal(<MeetingEndedComponent code={LOGOUT_CODE} />);
+  }
   render() {
     const {
       amIPresenter,
@@ -103,6 +113,7 @@ class ActionsBar extends PureComponent {
               size="lg"
               btnnew
               btnMobileOnly
+              onClick={this.leaveSession}
             />
           
           
