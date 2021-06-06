@@ -311,7 +311,7 @@ class Dropdown extends Component {
                   ? (
                     <Button
                       className={styles.close}
-                      label={intl.formatMessage(intlMessages.close)}
+                      label={`X`}
                       size="lg"
                       color="default"
                       onClick={this.handleHide}
