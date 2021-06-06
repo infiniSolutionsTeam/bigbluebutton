@@ -176,7 +176,15 @@ const ScreenshareButton = ({
       <Button
         className={cx(isVideoBroadcasting || styles.btn)}
         disabled={(!isMeteorConnected && !isVideoBroadcasting) || !screenshareDataSavingSetting}
-        icon={isVideoBroadcasting ? 'desktop' : 'desktop_off'}
+        // customIcon={isVideoBroadcasting ? 'desktop' : 'desktop_off'}
+        customIcon={
+          <svg xmlns="http://www.w3.org/2000/svg" width="22.807" height="22.807" viewBox="0 0 22.807 22.807">
+            <g id="Icon_feather-copy" data-name="Icon feather-copy" transform="translate(1.5 1.5)">
+              <path id="Path_8" data-name="Path 8" d="M15.481,13.5h8.913a1.981,1.981,0,0,1,1.981,1.981v8.913a1.981,1.981,0,0,1-1.981,1.981H15.481A1.981,1.981,0,0,1,13.5,24.394V15.481A1.981,1.981,0,0,1,15.481,13.5Z" transform="translate(-6.568 -6.568)" fill="none" stroke="#ebebeb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+              <path id="Path_9" data-name="Path 9" d="M5.971,15.874h-.99A1.981,1.981,0,0,1,3,13.894V4.981A1.981,1.981,0,0,1,4.981,3h8.913a1.981,1.981,0,0,1,1.981,1.981v.99" transform="translate(-3 -3)" fill="none" stroke="#ebebeb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+            </g>
+          </svg>
+        }
         label={intl.formatMessage(vLabel)}
         description={intl.formatMessage(vDescr)}
         color={isVideoBroadcasting ? 'primary' : 'default'}
