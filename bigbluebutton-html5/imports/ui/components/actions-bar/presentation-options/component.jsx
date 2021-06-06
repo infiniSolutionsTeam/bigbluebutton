@@ -32,7 +32,7 @@ const PresentationOptionsContainer = ({ intl, toggleSwapLayout, isThereCurrentPr
         </svg>
       }
       data-test="restorePresentationButton"
-      label={intl.formatMessage(intlMessages.restorePresentationLabel)}
+      label="White Board"
       description={intl.formatMessage(intlMessages.restorePresentationDesc)}
       color="primary"
       circle={false}
