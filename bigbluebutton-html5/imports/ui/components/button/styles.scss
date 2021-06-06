@@ -466,7 +466,7 @@
   &:active,
   &:focus,
   &:hover {
-    background-color: rgba(31, 39, 61, 1) !important;
+    background-color: inherit;
     color: white !important;
     fill: white !important;
     filter: brightness(1.2);
