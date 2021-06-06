@@ -409,7 +409,10 @@
   padding: var(--btn-lg-padding);
 }
 .lgNew {
-  font-size: 1.5rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .jumbo {
