@@ -86,6 +86,7 @@
     right: 0;
     bottom: 0;
     z-index: 100;
+    padding-top: 4rem;
   }
 }
 
@@ -95,15 +96,15 @@
 .close {
   display: none;
   position: fixed;
-  bottom: 0.8rem;
+  top: 0.8rem;
   border-radius: 0;
-  z-index: 1011;
+  z-index: 9999;
   font-size: calc(var(--font-size-large) * 1.1);
-  width: calc(100% - (var(--line-height-computed) * 2));
+  width: auto;
   left: var(--line-height-computed);
-  box-shadow: 0 0 0 2rem var(--color-white) !important;
-  border: var(--color-white) !important;
-
+  box-shadow: none !important;
+  border: none !important;
+  background-color: transparent;
   @include mq($small-only) {
     display: block;
   }
