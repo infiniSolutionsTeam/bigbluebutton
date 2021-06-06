@@ -120,9 +120,17 @@ const ChatListItem = (props) => {
       <div className={styles.chatListItemLink}>
         <div className={styles.chatIcon}>
           {chat.icon
-            ? <ChatIcon icon={chat.icon} />
+            ? (
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                <path id="Icon_feather-message-square" data-name="Icon feather-message-square" d="M31.5,22.5a3,3,0,0,1-3,3h-18l-6,6V7.5a3,3,0,0,1,3-3h21a3,3,0,0,1,3,3Z" transform="translate(-3 -3)" fill="none" stroke="#7080aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+              </svg>
+
+            )
             : (
-              <p>hi</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                <path id="Icon_material-person" data-name="Icon material-person" d="M18.5,18.5a6.25,6.25,0,1,0-6.25-6.25A6.248,6.248,0,0,0,18.5,18.5Zm0,3.125c-4.172,0-12.5,2.094-12.5,6.25V31H31V27.875C31,23.719,22.672,21.625,18.5,21.625Z" transform="translate(-6 -6)" fill="#7080aa"/>
+              </svg>
+
             )}
         </div>
         <div className={styles.chatName}>
