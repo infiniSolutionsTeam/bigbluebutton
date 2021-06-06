@@ -456,13 +456,16 @@
   @include mq($small-only) {
     width: 60px;
     height: 45px;
+    background-color: transparent;
   }
   @include mq($xsmall-only) {
     width: 45px;
     height: 45px;
+    background-color: transparent;
   }
   &:active,
-  &:focus {
+  &:focus,
+  &:hover {
     background-color: rgba(31, 39, 61, 1) !important;
     color: white !important;
     fill: white !important;
