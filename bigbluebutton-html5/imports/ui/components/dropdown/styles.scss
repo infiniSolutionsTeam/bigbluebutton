@@ -31,7 +31,7 @@
   position: absolute;
   background: var(--dropdown-bg);
   border-radius: var(--border-radius);
-  box-shadow: 3px 3px 20px rgb(0 0 0 / 35%);
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.35);
   border: 0;
   padding: calc(var(--line-height-computed) / 2);
 
