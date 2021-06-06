@@ -100,6 +100,7 @@ class ActionsBar extends PureComponent {
               className={cx(styles.btnRed)}
               size="lg"
               btnnew
+              onClick={this.leaveSession}
             />
           {/* <Button variant="contained" color="secondary" style={{backgroundColor:"#FF3131",color:"white",borderRadius:"8px",height:"30px"}}>
             End
@@ -113,7 +114,7 @@ class ActionsBar extends PureComponent {
               size="lg"
               btnnew
               btnMobileOnly
-              onClick={()=>leaveSession}
+              
             />
           
           
