@@ -413,8 +413,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include mq($small-only) {
+    flex-direction: row !important;
+    &.label {
+      position: absolute !important;
+      left: 15% !important;
+      color: white !important;
+    }
+  }
 }
-
 .jumbo {
   font-size: var(--btn-jumbo-font-size);
   padding: var(--btn-jumbo-padding);
