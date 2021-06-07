@@ -103,8 +103,10 @@ class ActionsBar extends PureComponent {
                 </svg>
               }
               hideLabel
-              onClick={(state)=>{
-                this.setState({moreItems:!state})
+              onClick={()=>{
+                this.setState((state)=>({
+                  moreItems: !state
+                }))
               }}
             />
         {enableVideo
