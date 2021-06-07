@@ -133,7 +133,7 @@ class ActionsBar extends PureComponent {
               btnMobileOnly
               
             />
-          
+          <SettingsDropdownContainer amIModerator={amIModerator} home/>
           
         </div>
         
