@@ -79,6 +79,7 @@ class ActionsBar extends PureComponent {
         </div>
           
         <div className={styles.center}>
+          <div style={{position:"absolute",width:"100px",height:"100px",zIndex:"9999"}}>hello test</div>
           <Button
 
               label="More"
