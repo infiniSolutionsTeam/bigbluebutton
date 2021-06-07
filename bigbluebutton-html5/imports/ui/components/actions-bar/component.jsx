@@ -17,6 +17,10 @@ import { makeCall } from '/imports/ui/services/api';
 
 
 class ActionsBar extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {moreItems: false};
+  }
   leaveSession() {
     
     makeCall('userLeftMeeting');
@@ -79,7 +83,9 @@ class ActionsBar extends PureComponent {
         </div>
           
         <div className={styles.center}>
-          <div style={{position:"absolute",width:"100px",height:"100px",zIndex:"9999"}}>hello test</div>
+          {this.state.moreItems ? <div className={styles.moreContainer}>
+            h
+          </div>: null}
           <Button
 
               label="More"
@@ -97,6 +103,9 @@ class ActionsBar extends PureComponent {
                 </svg>
               }
               hideLabel
+              onClick={(state)=>{
+                this.setState({moreItems:!state})
+              }}
             />
         {enableVideo
             ? (
