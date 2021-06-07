@@ -19,7 +19,7 @@ import { makeCall } from '/imports/ui/services/api';
 class ActionsBar extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = {moreItems: false};
+    this.state = {moreItems: true};
   }
   leaveSession() {
     
@@ -28,6 +28,9 @@ class ActionsBar extends PureComponent {
     // it is checked in meeting-ended component
     Session.set('codeError', '680');
     // mountModal(<MeetingEndedComponent code={LOGOUT_CODE} />);
+  }
+  moreItemsSH(){
+    console.log("more icon btn clicked");
   }
   render() {
     const {
@@ -103,11 +106,7 @@ class ActionsBar extends PureComponent {
                 </svg>
               }
               hideLabel
-              onClick={()=>{
-                this.setState((state)=>({
-                  moreItems: !state
-                }))
-              }}
+              onClick={this.moreItemsSH}
             />
         {enableVideo
             ? (
