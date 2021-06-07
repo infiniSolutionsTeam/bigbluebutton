@@ -31,7 +31,8 @@ class ActionsBar extends PureComponent {
   }
   moreItemsSH(){
     console.log("more icon btn clicked");
-    this.setState({moreItems: !this.state.moreItems})
+    // this.setState({moreItems: !this.state.moreItems})
+    this.setState((state) => ({ moreItems: !state.moreItems}));
   }
   render() {
     const {
