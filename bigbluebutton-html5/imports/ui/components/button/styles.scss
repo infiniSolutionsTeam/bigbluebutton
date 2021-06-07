@@ -467,11 +467,13 @@
     width: 60px;
     height: 45px;
     background-color: transparent;
+    margin-left: 0px;
   }
   @include mq($xsmall-only) {
     width: 45px;
-    height: 45px;
+    height: 40px;
     background-color: transparent;
+    margin-left: 0px;
   }
 }
 
