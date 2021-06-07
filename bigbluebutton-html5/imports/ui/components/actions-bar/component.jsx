@@ -19,7 +19,7 @@ import { makeCall } from '/imports/ui/services/api';
 class ActionsBar extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = {moreItems: true};
+    this.state = {moreItems: false};
     this.moreItemsSH = this.moreItemsSH.bind(this);
   }
   leaveSession() {
@@ -90,7 +90,42 @@ class ActionsBar extends PureComponent {
           
         <div className={styles.center}>
           {this.state.moreItems ? <div className={styles.moreContainer}>
-            h
+            {isLayoutSwapped && !isPresentationDisabled
+              ? (
+                <PresentationOptionsContainer
+                  toggleSwapLayout={toggleSwapLayout}
+                  isThereCurrentPresentation={isThereCurrentPresentation}
+                />
+              )
+              : null
+            }
+            <Button
+            customIcon={
+              <svg xmlns="http://www.w3.org/2000/svg" width="18.319" height="23.053" viewBox="0 0 18.319 23.053">
+              <path id="Icon_ionic-ios-hand" data-name="Icon ionic-ios-hand" d="M23.856,7.214a1.181,1.181,0,0,0-1.208,1.141v6.061a.51.51,0,0,1-1.019,0V5.475a1.21,1.21,0,0,0-2.415,0V12.5a.51.51,0,0,1-1.019,0V4.516a1.21,1.21,0,0,0-2.415,0v8.942a.51.51,0,0,1-1.019,0V6.433a1.21,1.21,0,0,0-2.415,0V18.527L10.756,17.22c-1.494-1.258-2.759-1.8-3.789-.87C6.275,17,7.362,18.062,8.5,19.3c1.1,1.191,4.006,5.091,6.484,6.5a4.57,4.57,0,0,0,2.324.632h3.274c2.638,0,4.487-2.1,4.487-5.163V8.356A1.189,1.189,0,0,0,23.856,7.214Z" transform="translate(-6.75 -3.375)" fill="#ebebeb"/>
+              </svg>
+            }
+              label={intl.formatMessage({
+                id: `app.actionsBar.emojiMenu.${
+                  currentUser.emoji === 'raiseHand'
+                    ? 'lowerHandLabel'
+                    : 'raiseHandLabel'
+                }`,
+              })}
+              accessKey={shortcuts.raisehand}
+              color={currentUser.emoji === 'raiseHand' ? 'primary' : 'default'}
+              data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
+              ghost={currentUser.emoji !== 'raiseHand'}
+              className={cx(currentUser.emoji === 'raiseHand' || styles.btn)}
+              circle={false}
+              size="lgNew"
+              onClick={() => {
+                setEmojiStatus(
+                  currentUser.userId,
+                  currentUser.emoji === 'raiseHand' ? 'none' : 'raiseHand',
+                );
+              }}
+            />
           </div>: null}
           <Button
 
