@@ -163,7 +163,11 @@ class ActionsDropdown extends PureComponent {
       (!amIPresenter
         ? (
           <DropdownListItem
-            icon="presentation"
+            customIcon={
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27">
+                  <path id="Icon_material-present-to-all" data-name="Icon material-present-to-all" d="M31.5,4.5H4.5a2.99,2.99,0,0,0-3,3v21a2.99,2.99,0,0,0,3,3h27a2.99,2.99,0,0,0,3-3V7.5A2.99,2.99,0,0,0,31.5,4.5Zm0,24.03H4.5V7.47h27V28.53ZM15,18H12l6-6,6,6H21v6H15Z" transform="translate(-1.5 -4.5)" fill="#7080aa"/>
+                </svg>
+              }
             label={formatMessage(takePresenter)}
             description={formatMessage(takePresenterDesc)}
             key={this.takePresenterId}
@@ -175,7 +179,11 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             data-test="uploadPresentation"
-            icon="presentation"
+            customIcon={
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27">
+                <path id="Icon_material-present-to-all" data-name="Icon material-present-to-all" d="M31.5,4.5H4.5a2.99,2.99,0,0,0-3,3v21a2.99,2.99,0,0,0,3,3h27a2.99,2.99,0,0,0,3-3V7.5A2.99,2.99,0,0,0,31.5,4.5Zm0,24.03H4.5V7.47h27V28.53ZM15,18H12l6-6,6,6H21v6H15Z" transform="translate(-1.5 -4.5)" fill="#7080aa"/>
+              </svg>
+            }
             label={formatMessage(presentationLabel)}
             description={formatMessage(presentationDesc)}
             key={this.presentationItemId}
