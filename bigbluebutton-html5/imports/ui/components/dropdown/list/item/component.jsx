@@ -43,7 +43,7 @@ class DropdownListItem extends Component {
 
     return [
       (icon ? <Icon iconName={icon} key="icon" className={styles.itemIcon} /> : null),
-      (customIcon ? <p>custom icon here</p>: null),
+      (customIcon ? customIcon: null),
       (
         <span className={styles.itemLabel} key="label" accessKey={accessKey}>
           {label}
