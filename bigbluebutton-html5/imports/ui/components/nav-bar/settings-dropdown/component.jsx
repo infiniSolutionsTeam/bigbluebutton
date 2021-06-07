@@ -100,6 +100,7 @@ const propTypes = {
   shortcuts: PropTypes.string,
   isBreakoutRoom: PropTypes.bool,
   isMeteorConnected: PropTypes.bool.isRequired,
+  home: PropTypes.string,
 };
 
 const defaultProps = {
@@ -199,7 +200,7 @@ class SettingsDropdown extends PureComponent {
 
   renderMenuItems() {
     const {
-      intl, mountModal, amIModerator, isBreakoutRoom, isMeteorConnected,
+      intl, mountModal, amIModerator, isBreakoutRoom, isMeteorConnected,home,
     } = this.props;
 
     const allowedToEndMeeting = amIModerator && !isBreakoutRoom;
