@@ -20,6 +20,7 @@ class ActionsBar extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {moreItems: true};
+    this.moreItemsSH = this.moreItemsSH.bind(this);
   }
   leaveSession() {
     
