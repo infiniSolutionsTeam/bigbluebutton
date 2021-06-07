@@ -130,7 +130,7 @@ class NavBar extends Component {
           </div>
           <div className={styles.right}>
             {ConnectionStatusService.isEnabled() ? <ConnectionStatusButton /> : null}
-            <SettingsDropdownContainer amIModerator={amIModerator} />
+            <SettingsDropdownContainer amIModerator={amIModerator} home/>
           </div>
         </div>
         <div className={styles.bottom}>
