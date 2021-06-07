@@ -11,6 +11,7 @@ const propTypes = {
   label: PropTypes.string,
   description: PropTypes.string,
   accessKey: PropTypes.string,
+  customIcon: PropTypes.string,
 };
 
 const defaultProps = {
@@ -19,6 +20,7 @@ const defaultProps = {
   description: '',
   tabIndex: 0,
   accessKey: null,
+  customIcon:false,
 };
 
 const messages = defineMessages({
@@ -36,11 +38,12 @@ class DropdownListItem extends Component {
 
   renderDefault() {
     const {
-      icon, label, iconRight, accessKey,
+      icon, label, iconRight, accessKey,customIcon,
     } = this.props;
 
     return [
       (icon ? <Icon iconName={icon} key="icon" className={styles.itemIcon} /> : null),
+      (customIcon ? {customIcon}: null),
       (
         <span className={styles.itemLabel} key="label" accessKey={accessKey}>
           {label}
