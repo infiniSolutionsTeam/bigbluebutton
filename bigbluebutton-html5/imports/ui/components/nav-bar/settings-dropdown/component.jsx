@@ -295,7 +295,23 @@ class SettingsDropdown extends PureComponent {
       >
         <DropdownTrigger tabIndex={0} accessKey={OPEN_OPTIONS_AK}>
           {home ? (
-            <p>test btn</p>
+            <Button
+            label="Home"
+            color={'primary'}
+            size="lg"
+            btnnew
+            customIcon={
+              <svg xmlns="http://www.w3.org/2000/svg" width="24.883" height="27.426" viewBox="0 0 24.883 27.426">
+                <g id="Icon_feather-home" data-name="Icon feather-home" transform="translate(-3.5 -2)">
+                  <path id="Path_28" data-name="Path 28" d="M4.5,11.9,15.941,3l11.441,8.9V25.883a2.543,2.543,0,0,1-2.543,2.543H7.043A2.543,2.543,0,0,1,4.5,25.883Z" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <path id="Path_29" data-name="Path 29" d="M13.5,30.713V18h7.628V30.713" transform="translate(-1.372 -2.287)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+              </svg>
+            }
+            hideLabel
+            btnMobileOnly
+            
+          />
           ):(
               <Button
               label={intl.formatMessage(intlMessages.optionsLabel)}
