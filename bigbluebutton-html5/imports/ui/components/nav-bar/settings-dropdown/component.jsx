@@ -298,10 +298,13 @@ class SettingsDropdown extends PureComponent {
         ? (<DropdownListItem
           key="list-item-end-meeting"
           customIcon={
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32">
-              <rect id="Rectangle_58" data-name="Rectangle 58" width="48" height="32" rx="12" fill="#ff3131"/>
-              <text id="END" transform="translate(12 20)" fill="#fff" font-size="13" font-family="Calibri"><tspan x="0" y="0">END</tspan></text>
-            </svg>
+            // <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32">
+            //   <rect id="Rectangle_58" data-name="Rectangle 58" width="48" height="32" rx="12" fill="#ff3131"/>
+            //   <text id="END" transform="translate(12 20)" fill="#fff" font-size="13" font-family="Calibri"><tspan x="0" y="0">END</tspan></text>
+            // </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32.214" height="28.188" viewBox="0 0 32.214 28.188">
+            <path id="Icon_open-account-logout" data-name="Icon open-account-logout" d="M12.08,0V4.027H28.188V24.161H12.08v4.027H32.214V0ZM8.054,8.054,0,14.094l8.054,6.04V16.107H24.161V12.08H8.054Z" fill="#7080aa"/>
+          </svg>
           }
           label={intl.formatMessage(intlMessages.endMeetingLabel)}
           description={intl.formatMessage(intlMessages.endMeetingDesc)}
