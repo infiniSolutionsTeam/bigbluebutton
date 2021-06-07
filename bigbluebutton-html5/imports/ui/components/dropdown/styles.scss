@@ -350,7 +350,7 @@
 [dir="rtl"] .bottom-left {
   @extend %up-caret;
   @extend %horz-left-caret;
-  min-width: 10rem;
+  min-width: 20rem;
 
   @include mq($small-only) {
     width: auto;

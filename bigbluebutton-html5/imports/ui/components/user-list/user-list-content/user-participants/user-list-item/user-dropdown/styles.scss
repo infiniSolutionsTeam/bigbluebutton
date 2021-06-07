@@ -162,7 +162,7 @@
 .dropdownContent {
   @extend %text-elipsis;
   cursor: default;
-  min-width: 10vw;
+  min-width: 20vw;
   @include mq($medium-only) {
     min-width: 23vw;
   }

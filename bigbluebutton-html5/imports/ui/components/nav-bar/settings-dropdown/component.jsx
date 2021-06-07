@@ -257,6 +257,7 @@ class SettingsDropdown extends PureComponent {
               <circle cx="16" cy="16" r="16" stroke="none"/>
               <circle cx="16" cy="16" r="14.5" fill="none"/>
             </g>
+            <text id="i" transform="translate(14 23)" fill="#7080aa" font-size="20" font-family="Calibri"><tspan x="0" y="0">i</tspan></text>
           </svg>
         }
         label={intl.formatMessage(intlMessages.aboutLabel)}
@@ -273,6 +274,7 @@ class SettingsDropdown extends PureComponent {
                   <circle cx="16" cy="16" r="16" stroke="none"/>
                   <circle cx="16" cy="16" r="14.5" fill="none"/>
                 </g>
+                <path id="Icon_open-question-mark" data-name="Icon open-question-mark" d="M4.042,0A4.229,4.229,0,0,0,.966,1.08,3.571,3.571,0,0,0,0,3.175l1.637.213a1.983,1.983,0,0,1,.507-1.129,2.43,2.43,0,0,1,1.9-.622,2.888,2.888,0,0,1,2,.556A1.368,1.368,0,0,1,6.5,3.273c0,1.358-.556,1.735-1.375,2.455a4.665,4.665,0,0,0-1.9,3.682v.409H4.861V9.41A2.723,2.723,0,0,1,6.186,6.955,4.693,4.693,0,0,0,8.134,3.273,3.144,3.144,0,0,0,7.168.966,4.523,4.523,0,0,0,4.042,0ZM3.224,11.456v1.637H4.861V11.456Z" transform="translate(11.866 9.907)" fill="#7080aa"/>
               </svg>
             }
             iconRight="popout_window"
