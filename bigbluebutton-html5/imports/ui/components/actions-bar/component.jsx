@@ -169,9 +169,9 @@ class ActionsBar extends PureComponent {
               btnMobileOnly
               btnnew
               hideLabel
-              data-test={hasNotification ? 'hasUnreadMessages' : null}
-              // label={intl.formatMessage(intlMessages.toggleUserListLabel)}
-              aria-label={ariaLabel}
+              data-test=''
+              label="label"
+              aria-label='ari label'
               icon="user"
               customIcon={
                 <svg xmlns="http://www.w3.org/2000/svg" width="26.714" height="17" viewBox="0 0 26.714 17">
