@@ -119,7 +119,7 @@ class NavBar extends Component {
             }
           </div>
           <div  className={styles.leftMobile}>
-            <img src="logo.png" width="40" height="40" />
+            <img src="logonav.png" width="40" height="40" />
           </div>
           <div className={styles.center}>
             <div className={styles.recordDiv}>
