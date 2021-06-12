@@ -159,6 +159,7 @@
 }
 
 .connecting {
+  @extend %noselect;
   margin-top: auto;
   margin-bottom: auto;
   font-size: 2rem;
