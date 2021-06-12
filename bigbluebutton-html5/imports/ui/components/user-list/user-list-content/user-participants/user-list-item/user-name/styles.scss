@@ -1,4 +1,6 @@
+@import "/imports/ui/stylesheets/variables/placeholders";
 .userName {
+  @extend %noselect;
   display: flex;
   flex-flow: column;
   min-width: 0;
