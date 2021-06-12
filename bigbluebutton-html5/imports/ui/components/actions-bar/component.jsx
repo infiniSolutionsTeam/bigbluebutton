@@ -152,7 +152,7 @@ class ActionsBar extends PureComponent {
             )
             : null}
             <Button
-              label="END"
+              label="Leave"
               color={currentUser.emoji === 'raiseHand' ? 'primary' : 'default'}
               data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
               className={cx(styles.btnRed)}
@@ -164,7 +164,23 @@ class ActionsBar extends PureComponent {
             End
           </Button> */}
           <AudioControlsContainer />
-          <SettingsDropdownContainer amIModerator={amIModerator} home/>
+          <Button
+              // onClick={NavBar.handleToggleUserList}
+              btnMobileOnly
+              btnnew
+              hideLabel
+              data-test={hasNotification ? 'hasUnreadMessages' : null}
+              // label={intl.formatMessage(intlMessages.toggleUserListLabel)}
+              aria-label={ariaLabel}
+              icon="user"
+              customIcon={
+                
+              }
+              // className={cx(toggleBtnClasses)}
+              // aria-expanded={isExpanded}
+              // accessKey={TOGGLE_USERLIST_AK}
+            />
+          {/* <SettingsDropdownContainer amIModerator={amIModerator} home/> */}
           
         </div>
         
