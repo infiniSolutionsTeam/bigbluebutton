@@ -105,6 +105,7 @@
 }
 
 .audioBtn {
+  @extend %noselect;
   i {
     color: #3c5764;
   }
