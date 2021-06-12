@@ -147,6 +147,7 @@
   @extend %flex-column;
   justify-content: center;
   margin-left: auto;
+  margin-right: 10px;
   [dir="rtl"] & {
     margin-right: auto;
     margin-left: 0;
@@ -159,9 +160,9 @@
   justify-content: center;
   color: var(--color-white);
   line-height: calc(1rem + 1px);
-  padding: 0 0.5rem;
+  padding: 0.2rem 0.8rem;
   text-align: center;
-  border-radius: 0.5rem/50%;
+  border-radius: 1rem/48%;
   font-size: 0.8rem;
   background-color: var(--unread-messages-bg);
 }
