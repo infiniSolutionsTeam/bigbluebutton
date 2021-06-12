@@ -274,7 +274,7 @@
 .success {
   @include button-variant(
     var(--btn-success-color),
-    var(--btn-success-bg),
+    transparent,
     var(--btn-success-border)
   );
 }
@@ -290,7 +290,7 @@
 .danger {
   @include button-variant(
     var(--btn-danger-color),
-    var(--btn-danger-bg),
+    transparent,
     var(--btn-danger-border)
   );
 }
