@@ -160,6 +160,7 @@
 }
 
 .itemLabel {
+  @extend %noselect;
   color: white;
   font-size: 90%;
   flex: 1;
