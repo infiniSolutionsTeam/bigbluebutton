@@ -282,7 +282,7 @@
 .warning {
   @include button-variant(
     var(--btn-warning-color),
-    var(--btn-warning-bg),
+    transparent,
     var(--btn-warning-border)
   );
 }
