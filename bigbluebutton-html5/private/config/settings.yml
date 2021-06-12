@@ -16,12 +16,12 @@ public:
     # "media.setsinkid.enabled" to make it work properly
     # enableDynamicAudioDeviceSelection: true
     #
-    clientTitle: BigBlueButton
-    appName: BigBlueButton HTML5 Client
+    clientTitle: Iris Meet
+    appName: Iris Meet HTML5 Client
     bbbServerVersion: 2.3-dev
-    copyright: "©2021 BigBlueButton Inc."
+    copyright: "©2021 Iris Inc."
     html5ClientBuild: HTML5_CLIENT_VERSION
-    helpLink: https://bigbluebutton.org/html5/
+    helpLink: http://irisincorp.com/
     lockOnJoin: true
     cdn: ""
     basename: "/html5client"
