@@ -1,5 +1,6 @@
 @import "/imports/ui/stylesheets/variables/breakpoints";
 @import "/imports/ui/components/modal/simple/styles";
+@import "/imports/ui/stylesheets/variables/placeholders";
 
 :root {
   --audioDial-margin-left: 2rem;
@@ -143,6 +144,7 @@
 }
 
 .title {
+  @extend %noselect;
   text-align: center;
   font-weight: 400;
   font-size: 1.3rem;
