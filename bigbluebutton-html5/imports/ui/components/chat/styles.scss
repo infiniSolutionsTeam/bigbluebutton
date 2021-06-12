@@ -38,6 +38,7 @@
 
   @include mq($small-only) {
     transform: none !important;
+    margin: 5px !important;
   }
 }
 
