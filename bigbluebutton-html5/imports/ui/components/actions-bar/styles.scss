@@ -54,6 +54,7 @@
     flex: 1;
     justify-content: space-around;
     z-index: 11;
+    align-items: center;
   }
 }
 
@@ -190,7 +191,7 @@
   height: 250px;
   z-index: 9999;
   background-color: #333e5f;
-  bottom: 80px;
+  bottom: 65px;
   margin-right: 10px;
   margin-left: 10px;
   border-radius: 10px;

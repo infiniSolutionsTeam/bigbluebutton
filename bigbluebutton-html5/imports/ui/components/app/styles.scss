@@ -230,11 +230,13 @@
     display: flex;
     flex-direction: row;
     flex: 1;
+    padding: 5px;
   }
   @include mq($xsmall-only) {
     background: rgba(51, 62, 95, 1);
     display: flex;
     flex-direction: row;
     flex: 1;
+    padding: 5px;
   }
 }
