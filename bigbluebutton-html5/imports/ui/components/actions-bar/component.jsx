@@ -12,6 +12,7 @@ import JoinVideoOptionsContainer from '../video-provider/video-button/container'
 import PresentationOptionsContainer from './presentation-options/component';
 import SettingsDropdownContainer from '../nav-bar/settings-dropdown/container';
 // added by chata start
+import { Session } from 'meteor/session';
 import { makeCall } from '/imports/ui/services/api';
 // added by chata stop
 
@@ -22,6 +23,19 @@ class ActionsBar extends PureComponent {
     this.state = {moreItems: false};
     this.moreItemsSH = this.moreItemsSH.bind(this);
   }
+
+  static handleToggleUserList() {
+    Session.set(
+      'openPanel',
+      Session.get('openPanel') !== ''
+        ? ''
+        : 'userlist',
+    );
+    Session.set('idChatOpen', '');
+
+    window.dispatchEvent(new Event('panelChanged'));
+  }
+
   leaveSession() {
     
     makeCall('userLeftMeeting');
@@ -166,6 +180,7 @@ class ActionsBar extends PureComponent {
           <AudioControlsContainer />
           <Button
               // onClick={NavBar.handleToggleUserList}
+              onClick={ActionsBar.handleToggleUserList}
               btnMobileOnly
               btnnew
               hideLabel
