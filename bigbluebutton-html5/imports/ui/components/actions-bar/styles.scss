@@ -179,6 +179,9 @@
 .btnRed {
   background-color: #ff3131 !important;
   font-size: 1.2rem !important;
+  @include mq($small-only) {
+    font-size: 0.8rem !important;
+  }
 }
 
 .moreContainer {
