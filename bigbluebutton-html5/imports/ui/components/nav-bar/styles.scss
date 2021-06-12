@@ -35,6 +35,12 @@
   align-items: center;
 }
 
+.left {
+  @include mq($small-only) {
+    display: none;
+  }
+}
+
 .right {
   flex: 0;
 }
