@@ -76,6 +76,7 @@
 }
 
 .chatName {
+  @extend %noselect;
   display: flex;
   align-items: center;
   flex-grow: 1;
