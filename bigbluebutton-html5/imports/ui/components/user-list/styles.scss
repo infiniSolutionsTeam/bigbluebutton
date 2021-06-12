@@ -48,17 +48,11 @@
   background-color: var(--user-list-bg);
   color: var(--user-list-text);
   height: 100%;
-  animation: slide-in 0.5s forwards;
   @include mq($small-only) {
     height: calc(100% - 80px);
   }
 }
 
-@keyframes slide-in {
-  100% {
-    transform: translateY(0%);
-  }
-}
 .lists {
   @extend %flex-column;
   @extend %no-margin;
