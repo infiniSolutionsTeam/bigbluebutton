@@ -6,7 +6,7 @@
   background-color: var(--color-tip-bg);
   text-align: center;
   line-height: 1;
-  font-size: var(--font-size-xl);
+  font-size: 1rem;
   padding: var(--md-padding-x);
   border-radius: var(--border-radius);
   top: -50%;
@@ -20,7 +20,7 @@
   }
 
   @include mq($small-only) {
-    font-size: var(--font-size-md);;
+    font-size: var(--font-size-md);
   }
 }
 
