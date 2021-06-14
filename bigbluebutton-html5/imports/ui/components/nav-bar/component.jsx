@@ -104,6 +104,7 @@ class NavBar extends Component {
             <Button
               onClick={NavBar.handleToggleUserList}
               ghost
+              circle
               hideLabel
               data-test={hasNotification ? 'hasUnreadMessages' : null}
               label={intl.formatMessage(intlMessages.toggleUserListLabel)}
