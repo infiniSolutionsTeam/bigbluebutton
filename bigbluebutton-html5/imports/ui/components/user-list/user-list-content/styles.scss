@@ -71,7 +71,7 @@
 }
 
 .list {
-  margin: 10px;
+  margin: var(--iris-margin);
   background-color: var(--color-iris-secondary);
   border-radius: var(--iris-border-radius);
   [dir="rtl"] & {
