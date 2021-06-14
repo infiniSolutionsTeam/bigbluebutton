@@ -6,17 +6,11 @@
 %list-item {
   display: flex;
   flex-flow: row;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: var(--iris-border-radius);
   cursor: pointer;
 
   [dir="rtl"] & {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: var(--iris-border-radius);
   }
 
   &:first-child {
