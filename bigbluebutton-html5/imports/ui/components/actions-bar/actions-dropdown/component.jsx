@@ -145,7 +145,7 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="31.5" viewBox="0 0 31.5 31.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                 <path id="Icon_awesome-poll" data-name="Icon awesome-poll" d="M28.125,2.25H3.375A3.376,3.376,0,0,0,0,5.625v24.75A3.376,3.376,0,0,0,3.375,33.75h24.75A3.376,3.376,0,0,0,31.5,30.375V5.625A3.376,3.376,0,0,0,28.125,2.25ZM11.25,25.875A1.125,1.125,0,0,1,10.125,27H7.875A1.125,1.125,0,0,1,6.75,25.875v-9A1.125,1.125,0,0,1,7.875,15.75h2.25a1.125,1.125,0,0,1,1.125,1.125Zm6.75,0A1.125,1.125,0,0,1,16.875,27h-2.25A1.125,1.125,0,0,1,13.5,25.875V10.125A1.125,1.125,0,0,1,14.625,9h2.25A1.125,1.125,0,0,1,18,10.125Zm6.75,0A1.125,1.125,0,0,1,23.625,27h-2.25a1.125,1.125,0,0,1-1.125-1.125v-4.5a1.125,1.125,0,0,1,1.125-1.125h2.25a1.125,1.125,0,0,1,1.125,1.125Z" transform="translate(0 -2.25)" fill="#7080aa"/>
               </svg>
             }
@@ -168,7 +168,7 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27">
                   <path id="Icon_material-present-to-all" data-name="Icon material-present-to-all" d="M31.5,4.5H4.5a2.99,2.99,0,0,0-3,3v21a2.99,2.99,0,0,0,3,3h27a2.99,2.99,0,0,0,3-3V7.5A2.99,2.99,0,0,0,31.5,4.5Zm0,24.03H4.5V7.47h27V28.53ZM15,18H12l6-6,6,6H21v6H15Z" transform="translate(-1.5 -4.5)" fill="#7080aa"/>
                 </svg>
               }
@@ -184,7 +184,7 @@ class ActionsDropdown extends PureComponent {
           <DropdownListItem
             data-test="uploadPresentation"
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27">
                 <path id="Icon_material-present-to-all" data-name="Icon material-present-to-all" d="M31.5,4.5H4.5a2.99,2.99,0,0,0-3,3v21a2.99,2.99,0,0,0,3,3h27a2.99,2.99,0,0,0,3-3V7.5A2.99,2.99,0,0,0,31.5,4.5Zm0,24.03H4.5V7.47h27V28.53ZM15,18H12l6-6,6,6H21v6H15Z" transform="translate(-1.5 -4.5)" fill="#7080aa"/>
               </svg>
             }
@@ -199,7 +199,7 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 36 24">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
                 <g id="Icon_feather-video" data-name="Icon feather-video" transform="translate(0 -6)">
                   <path id="Path_30" data-name="Path 30" d="M34.5,10.5,24,18l10.5,7.5Z" fill="none" stroke="#7080aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
                   <path id="Path_31" data-name="Path 31" d="M4.5,7.5H21a3,3,0,0,1,3,3v15a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3v-15a3,3,0,0,1,3-3Z" fill="none" stroke="#7080aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
@@ -218,7 +218,7 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                 <path id="Icon_material-person" data-name="Icon material-person" d="M18.5,18.5a6.25,6.25,0,1,0-6.25-6.25A6.248,6.248,0,0,0,18.5,18.5Zm0,3.125c-4.172,0-12.5,2.094-12.5,6.25V31H31V27.875C31,23.719,22.672,21.625,18.5,21.625Z" transform="translate(-6 -6)" fill="#7080aa"/>
               </svg>
             }
