@@ -118,8 +118,8 @@
   outline-style: none;
   background-color: var(--list-item-bg-hover);
   box-shadow: none;
-  border-top-left-radius: var(--sm-padding-y);
-  border-bottom-left-radius: var(--sm-padding-y);
+  border-radius: var(--iris-border-radius);
+  margin: 0 0 10px 0px;
 
   &:focus {
     outline-style: none;
@@ -141,7 +141,7 @@
   flex-grow: 0;
   display: flex;
   flex-flow: row;
-
+  margin: 0 0 10px 0px;
   padding: var(--iris-padding);
   [dir="rtl"] & {
     padding: var(--lg-padding-y) var(--lg-padding-y) var(--lg-padding-y) 0;
