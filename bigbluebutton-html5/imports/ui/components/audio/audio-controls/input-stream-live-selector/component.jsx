@@ -314,7 +314,7 @@ class InputStreamLiveSelector extends Component {
             color="primary"
             icon={isListenOnly ? 'listen' : 'audio_on'}
             size="lg"
-            circle
+            btnnew
             onClick={() => {}}
           />
         </DropdownTrigger>
