@@ -10,10 +10,7 @@
   cursor: pointer;
 
   [dir="rtl"] & {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: var(--iris-border-radius);
   }
 
   &:first-child {
@@ -28,9 +25,9 @@
   &:active,
   &:focus {
     // @extend %highContrastOutline;
-    outline-style: none;
+    // outline-style: none;
     background-color: var(--list-item-bg-hover);
-    box-shadow: none;
+    // box-shadow: none;
   }
 }
 
