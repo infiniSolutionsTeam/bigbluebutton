@@ -405,7 +405,7 @@
 }
 
 .lg {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: var(--btn-lg-padding);
 }
 .lgNew {
@@ -420,6 +420,9 @@
       left: 15% !important;
       color: white !important;
     }
+  }
+  &:hover {
+    background-color: transparent;
   }
 }
 .jumbo {
