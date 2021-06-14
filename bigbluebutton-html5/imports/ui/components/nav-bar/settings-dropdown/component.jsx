@@ -184,7 +184,7 @@ class SettingsDropdown extends PureComponent {
         key="list-item-fullscreen"
         // icon={fullscreenIcon}
         customIcon={
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <path id="Icon_material-fullscreen" data-name="Icon material-fullscreen" d="M12.071,28.071H7.5V39.5H18.929V34.929H12.071ZM7.5,18.929h4.571V12.071h6.857V7.5H7.5Zm27.429,16H28.071V39.5H39.5V28.071H34.929ZM28.071,7.5v4.571h6.857v6.857H39.5V7.5Z" transform="translate(-7.5 -7.5)" fill="#7080aa"/>
           </svg>
         }
@@ -221,7 +221,7 @@ class SettingsDropdown extends PureComponent {
         key="list-item-logout"
         data-test="logout"
         customIcon={
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32.214" height="28.188" viewBox="0 0 32.214 28.188">
             <path id="Icon_open-account-logout" data-name="Icon open-account-logout" d="M12.08,0V4.027H28.188V24.161H12.08v4.027H32.214V0ZM8.054,8.054,0,14.094l8.054,6.04V16.107H24.161V12.08H8.054Z" fill="#7080aa"/>
           </svg>
         }
@@ -240,7 +240,7 @@ class SettingsDropdown extends PureComponent {
       (<DropdownListItem
         key="list-item-settings"
         customIcon={
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <path id="Icon_ionic-ios-settings" data-name="Icon ionic-ios-settings" d="M33.858,20.5A4.117,4.117,0,0,1,36.5,16.655,16.315,16.315,0,0,0,34.525,11.9a4.174,4.174,0,0,1-1.675.358,4.108,4.108,0,0,1-3.758-5.782A16.275,16.275,0,0,0,24.342,4.5a4.115,4.115,0,0,1-7.683,0A16.324,16.324,0,0,0,11.9,6.474a4.108,4.108,0,0,1-3.758,5.782A4.038,4.038,0,0,1,6.467,11.9,16.676,16.676,0,0,0,4.5,16.663a4.115,4.115,0,0,1,.008,7.681A16.315,16.315,0,0,0,6.483,29.1a4.11,4.11,0,0,1,5.425,5.424A16.42,16.42,0,0,0,16.667,36.5a4.107,4.107,0,0,1,7.667,0,16.324,16.324,0,0,0,4.758-1.974A4.114,4.114,0,0,1,34.517,29.1a16.411,16.411,0,0,0,1.975-4.757A4.136,4.136,0,0,1,33.858,20.5ZM20.575,27.152a6.665,6.665,0,1,1,6.667-6.665A6.664,6.664,0,0,1,20.575,27.152Z" transform="translate(-4.5 -4.5)" fill="#7080aa"/>
           </svg>
         }
@@ -252,7 +252,7 @@ class SettingsDropdown extends PureComponent {
       (<DropdownListItem
         key="list-item-about"
         customIcon={
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <g id="Ellipse_43" data-name="Ellipse 43" fill="none" stroke="#7080aa" stroke-width="3">
               <circle cx="16" cy="16" r="16" stroke="none"/>
               <circle cx="16" cy="16" r="14.5" fill="none"/>
@@ -269,7 +269,7 @@ class SettingsDropdown extends PureComponent {
           <DropdownListItem
             key="list-item-help"
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                 <g id="Ellipse_44" data-name="Ellipse 44" fill="none" stroke="#7080aa" stroke-width="3">
                   <circle cx="16" cy="16" r="16" stroke="none"/>
                   <circle cx="16" cy="16" r="14.5" fill="none"/>
@@ -285,7 +285,7 @@ class SettingsDropdown extends PureComponent {
       (<DropdownListItem
         key="list-item-shortcuts"
         customIcon={
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21.5" viewBox="0 0 25 21.5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32.25" height="21.5" viewBox="0 0 32.25 21.5">
             <path id="Icon_awesome-keyboard" data-name="Icon awesome-keyboard" d="M29.562,26H2.687A2.687,2.687,0,0,1,0,23.312V7.187A2.687,2.687,0,0,1,2.687,4.5H29.562A2.687,2.687,0,0,1,32.25,7.187V23.312A2.687,2.687,0,0,1,29.562,26ZM7.167,10.995V8.755a.672.672,0,0,0-.672-.672H4.255a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,7.167,10.995Zm5.375,0V8.755a.672.672,0,0,0-.672-.672H9.63a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,12.542,10.995Zm5.375,0V8.755a.672.672,0,0,0-.672-.672h-2.24a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,17.917,10.995Zm5.375,0V8.755a.672.672,0,0,0-.672-.672H20.38a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,23.292,10.995Zm5.375,0V8.755a.672.672,0,0,0-.672-.672h-2.24a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,28.667,10.995ZM9.854,16.37V14.13a.672.672,0,0,0-.672-.672H6.943a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,9.854,16.37Zm5.375,0V14.13a.672.672,0,0,0-.672-.672h-2.24a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,15.229,16.37Zm5.375,0V14.13a.672.672,0,0,0-.672-.672h-2.24a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,20.6,16.37Zm5.375,0V14.13a.672.672,0,0,0-.672-.672h-2.24a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,25.979,16.37ZM7.167,21.745v-2.24a.672.672,0,0,0-.672-.672H4.255a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,7.167,21.745Zm16.125,0v-2.24a.672.672,0,0,0-.672-.672H9.63a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672H22.62A.672.672,0,0,0,23.292,21.745Zm5.375,0v-2.24a.672.672,0,0,0-.672-.672h-2.24a.672.672,0,0,0-.672.672v2.24a.672.672,0,0,0,.672.672h2.24A.672.672,0,0,0,28.667,21.745Z" transform="translate(0 -4.5)" fill="#7080aa"/>
           </svg>
         }
@@ -302,7 +302,7 @@ class SettingsDropdown extends PureComponent {
             //   <rect id="Rectangle_58" data-name="Rectangle 58" width="48" height="32" rx="12" fill="#ff3131"/>
             //   <text id="END" transform="translate(12 20)" fill="#fff" font-size="13" font-family="Calibri"><tspan x="0" y="0">END</tspan></text>
             // </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32.214" height="28.188" viewBox="0 0 32.214 28.188">
             <path id="Icon_open-account-logout" data-name="Icon open-account-logout" d="M12.08,0V4.027H28.188V24.161H12.08v4.027H32.214V0ZM8.054,8.054,0,14.094l8.054,6.04V16.107H24.161V12.08H8.054Z" fill="#7080aa"/>
           </svg>
           }
