@@ -468,7 +468,6 @@
   &:hover {
     color: white !important;
     fill: white !important;
-    filter: brightness(1.2);
   }
   @include mq($small-only) {
     width: 60px;
