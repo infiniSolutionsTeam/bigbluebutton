@@ -187,8 +187,7 @@ const ScreenshareButton = ({
         }
         label="Share Screen"
         description={intl.formatMessage(vDescr)}
-        color={isVideoBroadcasting ? 'primary' : 'default'}
-        ghost={!isVideoBroadcasting}
+        color={'default'}
         size="lgNew"
         onClick={isVideoBroadcasting
           ? screenshareHasEnded
