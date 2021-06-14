@@ -245,7 +245,7 @@
     color: $color;
     background-color: $variant;
     background-clip: padding-box;
-    box-shadow: 0 0 0 var(--border-size-large) $color;
+    box-shadow: none;
   }
 
   &:hover,
