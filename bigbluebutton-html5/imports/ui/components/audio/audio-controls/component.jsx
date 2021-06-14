@@ -125,9 +125,10 @@ class AudioControls extends PureComponent {
           : intl.formatMessage(intlMessages.joinAudio)}
         label={inAudio ? intl.formatMessage(intlMessages.leaveAudio)
           : intl.formatMessage(intlMessages.joinAudio)}
-        color={inAudio ? 'primary' : 'default'}
+        color="default"
         icon={joinIcon}
         size="lg"
+        btnnew
         accessKey={inAudio ? shortcuts.leaveaudio : shortcuts.joinaudio}
       />
     );
