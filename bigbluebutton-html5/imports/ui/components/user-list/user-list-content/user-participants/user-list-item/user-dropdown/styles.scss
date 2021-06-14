@@ -8,7 +8,7 @@
   flex-flow: row;
   border-radius: var(--iris-border-radius);
   cursor: pointer;
-  margin: 0 0 10px 0px;
+  margin: 0 0 10px 0;
 
   [dir="rtl"] & {
     border-radius: var(--iris-border-radius);
@@ -120,7 +120,7 @@
   background-color: var(--list-item-bg-hover);
   box-shadow: none;
   border-radius: var(--iris-border-radius);
-  margin: 0 0 10px 0px;
+  margin: 0;
 
   &:focus {
     outline-style: none;
@@ -142,7 +142,7 @@
   flex-grow: 0;
   display: flex;
   flex-flow: row;
-  margin: 0 0 10px 0px;
+  margin: 0 0 10px 0;
   padding: var(--iris-padding);
   [dir="rtl"] & {
     padding: var(--lg-padding-y) var(--lg-padding-y) var(--lg-padding-y) 0;
