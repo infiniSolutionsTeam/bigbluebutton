@@ -199,17 +199,12 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 40 43">
-                <g id="smart_display_black_24dp" transform="translate(0 0.153)">
-                  <g id="Group_44" data-name="Group 44" transform="translate(0 -0.153)">
-                    <rect id="Rectangle_85" data-name="Rectangle 85" width="40" height="43" fill="none"/>
-                  </g>
-                  <g id="Group_45" data-name="Group 45" transform="translate(3.333 8.09)">
-                    <path id="Path_37" data-name="Path 37" d="M31.743,4H5.3A3.329,3.329,0,0,0,2,7.333v20a3.329,3.329,0,0,0,3.3,3.333H31.743a3.329,3.329,0,0,0,3.3-3.333v-20A3.329,3.329,0,0,0,31.743,4ZM14.393,24.833v-15l11.567,7.5Z" transform="translate(-2 -4)" fill="#7080aa"/>
-                  </g>
+              <svg xmlns="http://www.w3.org/2000/svg" width="39" height="32" viewBox="0 0 39 32">
+                <g id="Group_44" data-name="Group 44" transform="translate(-922 -794)">
+                  <rect id="Rectangle_85" data-name="Rectangle 85" width="39" height="32" rx="4" transform="translate(922 794)" fill="#7080aa"/>
+                  <path id="Polygon_3" data-name="Polygon 3" d="M11.5,0,23,18H0Z" transform="translate(953 798.5) rotate(90)" fill="#1f273d"/>
                 </g>
               </svg>
-
              }
             label={!isSharingVideo ? intl.formatMessage(intlMessages.startExternalVideoLabel)
               : intl.formatMessage(intlMessages.stopExternalVideoLabel)}
