@@ -3,10 +3,7 @@
 
 .panel {
   background-color: var(--color-white);
-  padding:
-    var(--md-padding-x)
-    var(--md-padding-y)
-    var(--md-padding-x)
+  padding: var(--md-padding-x) var(--md-padding-y) var(--md-padding-x)
     var(--md-padding-x);
 
   display: flex;
@@ -38,7 +35,8 @@
   @extend %text-elipsis;
   flex: 1;
 
-  & > button, button:hover {
+  & > button,
+  button:hover {
     max-width: var(--toast-content-width);
   }
 }
@@ -77,8 +75,8 @@
 
 .customBtn {
   width: 100%;
-  padding: .75rem;
-  margin: .3rem 0;
+  padding: 0.75rem;
+  margin: 0.3rem 0;
   font-weight: 400;
   font-size: var(--font-size-base);
 }
@@ -89,7 +87,7 @@
 
 .userAvatar {
   min-width: 2.25rem;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .listItem {
@@ -100,7 +98,7 @@
   border-radius: 5px;
   cursor: pointer;
   :global(.animationsEnabled) & {
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   &:first-child {
@@ -109,7 +107,7 @@
 
   &:focus {
     background-color: var(--list-item-bg-hover);
-    box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border), inset 1px 0 0 1px var(--item-focus-border);
+    box-shadow: none;
     outline: none;
   }
 
@@ -125,7 +123,7 @@
   align-items: center;
   color: var(--color-primary);
   & > button {
-    padding: 0 .25rem 0 .25rem;
+    padding: 0 0.25rem 0 0.25rem;
   }
 }
 
@@ -142,7 +140,8 @@
 
   &:focus {
     background-color: var(--list-item-bg-hover) !important;
-    box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border), inset 1px 0 0 1px var(--item-focus-border) ;
+    box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border),
+      inset 1px 0 0 1px var(--item-focus-border);
     outline: none;
   }
 
@@ -207,11 +206,11 @@
     height: fit-content;
     padding: 0;
     margin: 0;
-    margin-left: .7rem;
+    margin-left: 0.7rem;
 
     [dir="rtl"] & {
       margin: 0;
-      margin-right: .7rem;
+      margin-right: 0.7rem;
     }
   }
 }
