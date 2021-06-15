@@ -199,7 +199,7 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="39" height="32" viewBox="0 0 39 32">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 39 32">
                 <g id="Group_44" data-name="Group 44" transform="translate(-922 -794)">
                   <rect id="Rectangle_85" data-name="Rectangle 85" width="39" height="32" rx="4" transform="translate(922 794)" fill="#7080aa"/>
                   <path id="Polygon_3" data-name="Polygon 3" d="M11.5,0,23,18H0Z" transform="translate(953 798.5) rotate(90)" fill="#1f273d"/>
