@@ -22,7 +22,10 @@
   @include scrollbox-vertical(var(--user-list-bg));
 
   outline: none;
-
+  overflow-x: hidden;
+  background-color: var(--color-iris-secondary);
+  margin: var(--iris-margin);
+  border-radius: var(--iris-border-radius) !important;
   &:hover {
     @extend %highContrastOutline;
   }
@@ -31,11 +34,6 @@
   &:active {
     box-shadow: none;
   }
-
-  overflow-x: hidden;
-  background-color: var(--color-iris-secondary);
-  margin: var(--iris-margin);
-  border-radius: var(--iris-border-radius);
 }
 
 .virtulizedScrollableList {
