@@ -145,7 +145,7 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="31.5" viewBox="0 0 31.5 31.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 31.5 31.5">
                 <path id="Icon_awesome-poll" data-name="Icon awesome-poll" d="M28.125,2.25H3.375A3.376,3.376,0,0,0,0,5.625v24.75A3.376,3.376,0,0,0,3.375,33.75h24.75A3.376,3.376,0,0,0,31.5,30.375V5.625A3.376,3.376,0,0,0,28.125,2.25ZM11.25,25.875A1.125,1.125,0,0,1,10.125,27H7.875A1.125,1.125,0,0,1,6.75,25.875v-9A1.125,1.125,0,0,1,7.875,15.75h2.25a1.125,1.125,0,0,1,1.125,1.125Zm6.75,0A1.125,1.125,0,0,1,16.875,27h-2.25A1.125,1.125,0,0,1,13.5,25.875V10.125A1.125,1.125,0,0,1,14.625,9h2.25A1.125,1.125,0,0,1,18,10.125Zm6.75,0A1.125,1.125,0,0,1,23.625,27h-2.25a1.125,1.125,0,0,1-1.125-1.125v-4.5a1.125,1.125,0,0,1,1.125-1.125h2.25a1.125,1.125,0,0,1,1.125,1.125Z" transform="translate(0 -2.25)" fill="#7080aa"/>
               </svg>
             }
@@ -168,7 +168,7 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 27">
                   <path id="Icon_material-present-to-all" data-name="Icon material-present-to-all" d="M31.5,4.5H4.5a2.99,2.99,0,0,0-3,3v21a2.99,2.99,0,0,0,3,3h27a2.99,2.99,0,0,0,3-3V7.5A2.99,2.99,0,0,0,31.5,4.5Zm0,24.03H4.5V7.47h27V28.53ZM15,18H12l6-6,6,6H21v6H15Z" transform="translate(-1.5 -4.5)" fill="#7080aa"/>
                 </svg>
               }
@@ -199,12 +199,7 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 36 24">
-                <g id="Icon_feather-video" data-name="Icon feather-video" transform="translate(0 -6)">
-                  <path id="Path_30" data-name="Path 30" d="M34.5,10.5,24,18l10.5,7.5Z" fill="none" stroke="#7080aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                  <path id="Path_31" data-name="Path 31" d="M4.5,7.5H21a3,3,0,0,1,3,3v15a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3v-15a3,3,0,0,1,3-3Z" fill="none" stroke="#7080aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                </g>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24" y="0"/></g><g><path d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M9.5,16.5v-9l7,4.5L9.5,16.5z"/></g></svg>
             }
             label={!isSharingVideo ? intl.formatMessage(intlMessages.startExternalVideoLabel)
               : intl.formatMessage(intlMessages.stopExternalVideoLabel)}
