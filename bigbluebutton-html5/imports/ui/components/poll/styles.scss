@@ -31,7 +31,7 @@
   margin-bottom: var(--border-size);
   padding-left: 0;
   padding-right: inherit;
-  color: #d2d2d2;
+  color: #d2d2d2 !important;
   margin-top: 10px;
   [dir="rtl"] & {
     padding-left: inherit;
@@ -53,7 +53,7 @@
 
   &:hover {
     background-color: transparent;
-    color: #d2d2d2;
+    color: #d2d2d2 !important;
   }
 }
 
