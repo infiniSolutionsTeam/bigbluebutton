@@ -1,7 +1,7 @@
 @mixin elementFocus($color: var(--color-primary)) {
   &:focus {
     outline: none;
-    box-shadow: inset 0 0 0 var(--border-size-large) $color;
+    box-shadow: none;
     border-radius: var(--border-size);
   }
 }
