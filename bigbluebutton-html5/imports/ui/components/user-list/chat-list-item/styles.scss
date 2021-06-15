@@ -2,6 +2,7 @@
 @import "/imports/ui/stylesheets/variables/placeholders";
 
 %list-item {
+  @extend %noselect;
   display: flex;
   flex-flow: row;
   border-top-left-radius: 10px;
