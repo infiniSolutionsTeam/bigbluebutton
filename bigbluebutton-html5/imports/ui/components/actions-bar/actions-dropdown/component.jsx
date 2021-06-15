@@ -184,7 +184,7 @@ class ActionsDropdown extends PureComponent {
           <DropdownListItem
             data-test="uploadPresentation"
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 27">
                 <path id="Icon_material-present-to-all" data-name="Icon material-present-to-all" d="M31.5,4.5H4.5a2.99,2.99,0,0,0-3,3v21a2.99,2.99,0,0,0,3,3h27a2.99,2.99,0,0,0,3-3V7.5A2.99,2.99,0,0,0,31.5,4.5Zm0,24.03H4.5V7.47h27V28.53ZM15,18H12l6-6,6,6H21v6H15Z" transform="translate(-1.5 -4.5)" fill="#7080aa"/>
               </svg>
             }
@@ -199,8 +199,18 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24" y="0"/></g><g><path d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M9.5,16.5v-9l7,4.5L9.5,16.5z"/></g></svg>
-            }
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 40 43">
+                <g id="smart_display_black_24dp" transform="translate(0 0.153)">
+                  <g id="Group_44" data-name="Group 44" transform="translate(0 -0.153)">
+                    <rect id="Rectangle_85" data-name="Rectangle 85" width="40" height="43" fill="none"/>
+                  </g>
+                  <g id="Group_45" data-name="Group 45" transform="translate(3.333 8.09)">
+                    <path id="Path_37" data-name="Path 37" d="M31.743,4H5.3A3.329,3.329,0,0,0,2,7.333v20a3.329,3.329,0,0,0,3.3,3.333H31.743a3.329,3.329,0,0,0,3.3-3.333v-20A3.329,3.329,0,0,0,31.743,4ZM14.393,24.833v-15l11.567,7.5Z" transform="translate(-2 -4)" fill="#7080aa"/>
+                  </g>
+                </g>
+              </svg>
+
+             }
             label={!isSharingVideo ? intl.formatMessage(intlMessages.startExternalVideoLabel)
               : intl.formatMessage(intlMessages.stopExternalVideoLabel)}
             description="External Video"
@@ -213,7 +223,7 @@ class ActionsDropdown extends PureComponent {
         ? (
           <DropdownListItem
             customIcon={
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28 28">
                 <path id="Icon_material-person" data-name="Icon material-person" d="M18.5,18.5a6.25,6.25,0,1,0-6.25-6.25A6.248,6.248,0,0,0,18.5,18.5Zm0,3.125c-4.172,0-12.5,2.094-12.5,6.25V31H31V27.875C31,23.719,22.672,21.625,18.5,21.625Z" transform="translate(-6 -6)" fill="#7080aa"/>
               </svg>
             }
