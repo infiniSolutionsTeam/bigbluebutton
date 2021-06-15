@@ -160,9 +160,18 @@
 }
 
 .poll {
-  background-color: var(--color-iris-primary);
-  min-width: var(--poll-pane-min-width);
-  padding: 1rem;
+  background-color: var(--color-iris-secondary);
+  padding: var(--md-padding-x) var(--md-padding-y) var(--md-padding-x)
+    var(--md-padding-x);
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  overflow: hidden;
+  height: calc(100vh - 10px);
+  border-radius: var(--iris-border-radius);
+  margin-left: 0px !important;
+  margin: 5px;
 
   @include mq($small-only) {
     overflow: auto;
