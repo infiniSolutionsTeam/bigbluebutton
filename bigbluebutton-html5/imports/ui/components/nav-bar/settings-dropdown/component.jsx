@@ -221,7 +221,7 @@ class SettingsDropdown extends PureComponent {
         key="list-item-logout"
         data-test="logout"
         customIcon={
-          <svg xmlns="http://www.w3.org/2000/svg" width="32.214" height="28.188" viewBox="0 0 32.214 28.188">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32.214 28.188">
             <path id="Icon_open-account-logout" data-name="Icon open-account-logout" d="M12.08,0V4.027H28.188V24.161H12.08v4.027H32.214V0ZM8.054,8.054,0,14.094l8.054,6.04V16.107H24.161V12.08H8.054Z" fill="#7080aa"/>
           </svg>
         }
