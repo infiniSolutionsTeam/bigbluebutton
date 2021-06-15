@@ -303,7 +303,7 @@ class MessageForm extends PureComponent {
             type="submit"
             disabled={disabled || partnerIsLoggedOut}
             label={intl.formatMessage(messages.submitLabel)}
-            color="primary"
+            color="default"
             icon="send"
             onClick={() => {}}
             data-test="sendMessageButton"
