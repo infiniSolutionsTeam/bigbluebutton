@@ -263,6 +263,12 @@
   );
 }
 
+.chatButtonColor {
+  color: var(--btn-default-color);
+  background-color: var(--btn-default-bg);
+  border: none;
+}
+
 .primary {
   @include button-variant(
     var(--color-iris-primary),
