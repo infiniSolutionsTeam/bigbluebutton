@@ -1,6 +1,7 @@
 @import "/imports/ui/stylesheets/mixins/focus";
 @import "/imports/ui/stylesheets/mixins/_indicators";
 @import "/imports/ui/stylesheets/variables/placeholders";
+@import "/imports/ui/stylesheets/mixins/_scrollable";
 
 :root {
   --poll-column-amount: 2;
@@ -375,4 +376,8 @@
 .dragAndDropPollContainer {
   width: 200px !important;
   height: 200px !important;
+}
+
+.pollScrollDiv {
+  @include scrollbox-vertical();
 }

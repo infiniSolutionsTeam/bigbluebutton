@@ -411,7 +411,7 @@ class Poll extends Component {
     const { startPoll, startCustomPoll, intl } = this.props;
     const defaultPoll = type === 'TF' || type === 'A-' || type === 'YNA';
     return (
-      <div>
+      <div className={styles.pollScrollDiv}>
         <div className={styles.instructions}>
           {intl.formatMessage(intlMessages.pollPanelDesc)}
         </div>
