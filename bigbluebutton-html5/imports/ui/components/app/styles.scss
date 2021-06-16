@@ -1,5 +1,6 @@
 @import "/imports/ui/stylesheets/variables/_all";
 @import "/imports/ui/stylesheets/mixins/_indicators";
+@import "/imports/ui/stylesheets/mixins/_scrollable";
 
 :root {
   --navbar-height: 3.9375rem; // TODO: Change to NavBar real height
@@ -160,6 +161,7 @@
 }
 
 .poll {
+  @include scrollbox-vertical();
   background-color: var(--color-iris-secondary);
   padding: var(--md-padding-x) var(--md-padding-y) var(--md-padding-x)
     var(--md-padding-x);
@@ -167,7 +169,8 @@
   flex-grow: 1;
   flex-direction: column;
   /* justify-content: space-around; */
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   height: calc(100vh - 10px);
   border-radius: var(--iris-border-radius);
   margin-left: 0px !important;
