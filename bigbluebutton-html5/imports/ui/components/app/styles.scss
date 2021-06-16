@@ -160,6 +160,7 @@
 }
 
 .poll {
+  @include scrollbox-vertical();
   background-color: var(--color-iris-secondary);
   padding: var(--md-padding-x) var(--md-padding-y) var(--md-padding-x)
     var(--md-padding-x);
