@@ -1,6 +1,6 @@
 @import "/imports/ui/stylesheets/variables/_all";
 @import "/imports/ui/stylesheets/mixins/_indicators";
-
+@import "/imports/ui/stylesheets/mixins/_scrollable";
 :root {
   --navbar-height: 3.9375rem; // TODO: Change to NavBar real height
   --actionsbar-height: 75px; // TODO: Change to ActionsBar real height
