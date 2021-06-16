@@ -300,12 +300,7 @@
   padding-left: var(--md-padding-y);
   padding-right: var(--md-padding-y);
   font-size: var(--font-size-base);
-
-  &:hover {
-    span {
-      opacity: 1;
-    }
-  }
+  color: white;
 }
 
 .startPollBtn {
