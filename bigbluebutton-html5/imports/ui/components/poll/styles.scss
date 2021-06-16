@@ -93,7 +93,7 @@
 
 .instructions {
   margin-bottom: var(--lg-padding-x);
-  color: var(--color-text);
+  color: #7080aa;
 }
 
 .grid {
@@ -322,7 +322,9 @@
 }
 
 .pBtn {
-  border: solid var(--color-gray-light) 1px;
+  // border: solid white 1px;
+  background-color: white;
+  border-radius: var(--iris-border-radius);
   height: var(--poll-input-height);
   font-size: var(--font-size-base);
   span {
@@ -361,7 +363,7 @@
   &:hover,
   &:focus,
   &:active {
-    background-color: var(--poll-blue) !important;
+    background-color: var(--list-item-bg-hover) !important;
     box-shadow: none !important;
     color: var(--color-white) !important;
   }
