@@ -353,17 +353,15 @@
 
 .selectedBtnWhite {
   background-color: var(--color-white);
-  color: var(--poll-blue);
   font-size: var(--font-size-base);
-  border-color: var(--poll-blue);
   border-width: medium;
 
   &:hover,
   &:focus,
   &:active {
-    background-color: var(--color-white) !important;
+    background-color: var(--list-item-bg-hover) !important;
     box-shadow: none !important;
-    color: var(--poll-blue) !important;
+    color: white !important;
     border-width: medium;
   }
 }
