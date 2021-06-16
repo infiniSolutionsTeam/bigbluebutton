@@ -67,7 +67,7 @@
   padding: var(--sm-padding-y);
   margin-top: var(--poll-sm-margin);
   margin-bottom: var(--poll-sm-margin);
-  color: var(--color-text);
+  color: white;
 }
 
 .left,
@@ -85,7 +85,7 @@
   display: flex;
   flex-direction: column;
   border: 1px solid var(--poll-stats-border-color);
-  border-radius: var(--border-size-large);
+  border-radius: var(--iris-border-radius);
   padding: var(--md-padding-x);
 
   > div {
