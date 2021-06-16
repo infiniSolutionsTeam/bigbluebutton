@@ -327,11 +327,6 @@
   border-radius: var(--iris-border-radius);
   height: var(--poll-input-height);
   font-size: var(--font-size-base);
-  span {
-    &:hover {
-      opacity: 1;
-    }
-  }
 }
 
 .btnML {

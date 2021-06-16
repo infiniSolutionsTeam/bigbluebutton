@@ -357,7 +357,7 @@ class Poll extends Component {
                   data-test="deletePollOption"
                   hideLabel
                   circle
-                  color="default"
+                  color="delWhite"
                   onClick={() => {
                     this.handleRemoveOption(i);
                   }}

@@ -263,6 +263,12 @@
   );
 }
 
+.delWhite {
+  color: #ffffff;
+  background-color: var(--btn-default-bg);
+  border: var(--border-size-large) solid transparent;
+}
+
 .chatButtonColor {
   color: var(--btn-default-color);
   background-color: var(--btn-default-bg);
