@@ -358,14 +358,6 @@
 .selectedBtnBlue {
   background-color: var(--list-item-bg-hover) !important;
   color: var(--color-white);
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: var(--list-item-bg-hover) !important;
-    box-shadow: none !important;
-    color: var(--color-white) !important;
-  }
 }
 
 .selectedBtnWhite {
