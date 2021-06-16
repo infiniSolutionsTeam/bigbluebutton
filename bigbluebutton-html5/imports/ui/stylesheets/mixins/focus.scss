@@ -9,7 +9,6 @@
 @mixin inputFocus($shadow, $color: var(--color-primary)) {
   &:focus {
     outline: none;
-    border-radius: var(--border-size);
     box-shadow: none;
   }
 }
