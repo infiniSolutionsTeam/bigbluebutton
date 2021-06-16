@@ -235,7 +235,7 @@ class TimeWindowChatItem extends PureComponent {
               lastReadMessageTime={lastReadMessageTime}
               handleReadMessage={handleReadMessage}
               scrollArea={scrollArea}
-              color={color}
+              color="#7080aa"
               isDefaultPoll={isDefaultPoll(messages[0].text.replace('bbb-published-poll-<br/>', ''))}
               extractPollQuestion={extractPollQuestion}
             />

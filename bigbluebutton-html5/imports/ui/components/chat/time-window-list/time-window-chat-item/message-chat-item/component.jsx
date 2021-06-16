@@ -172,7 +172,7 @@ class MessageChatItem extends PureComponent {
       extractPollQuestion,
     } = this.props;
 
-    const formatBoldBlack = s => s.bold().fontcolor('black');
+    const formatBoldBlack = s => s.bold().fontcolor('#7080aa');
 
     // Sanitize. See: https://gist.github.com/sagewall/47164de600df05fb0f6f44d48a09c0bd
     const sanitize = (value) => {
