@@ -13,6 +13,10 @@
 }
 
 .avatarUserList {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: 3.5rem;
   min-width: 3.5rem;
@@ -256,7 +260,7 @@
 .content {
   @extend %noselect;
   color: #3a46ee;
-  top: 50%;
+  // top: 50%;
   position: absolute;
   text-align: center;
   left: 0;
