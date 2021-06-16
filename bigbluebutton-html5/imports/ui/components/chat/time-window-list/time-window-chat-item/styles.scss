@@ -169,7 +169,7 @@
 
 .pollWrapper {
   background: var(--systemMessage-background-color);
-  border: solid 1px var(--color-gray-lighter);
+  border: none;
   border-radius: var(--iris-border-radius);
   padding: var(--chat-poll-margin-sm);
   padding-left: 1rem;

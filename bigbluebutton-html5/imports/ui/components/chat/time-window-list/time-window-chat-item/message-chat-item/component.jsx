@@ -228,7 +228,6 @@ class MessageChatItem extends PureComponent {
     return (
       <p
         className={className}
-        style={{ borderLeft: `3px ${color} solid` }}
         ref={(ref) => { this.text = ref; }}
         dangerouslySetInnerHTML={{ __html: _text }}
         data-test="chatPollMessageText"
