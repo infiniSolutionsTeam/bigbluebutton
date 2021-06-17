@@ -31,6 +31,7 @@
 
   @include mq($small-only) {
     transform: none !important;
+    margin-left: 5px !important;
   }
 }
 
@@ -55,20 +56,20 @@
 
 .hideBtn {
   position: relative;
-  background-color: var(--color-white);
+  background-color: transparent;
   display: block;
   margin: var(--border-size-large);
   margin-bottom: var(--border-size);
   padding-left: 0;
   padding-right: inherit;
-
+  color: #d2d2d2;
   [dir="rtl"] & {
     padding-left: inherit;
     padding-right: 0;
   }
 
   > i {
-    color: var(--color-gray-dark);
+    color: #d2d2d2;
     font-size: smaller;
 
     [dir="rtl"] & {
@@ -81,7 +82,8 @@
   }
 
   &:hover {
-    background-color: var(--color-white);
+    background-color: transparent;
+    color: #d2d2d2;
   }
 }
 

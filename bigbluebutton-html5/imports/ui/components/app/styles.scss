@@ -176,6 +176,7 @@
 
   @include mq($small-only) {
     overflow: auto;
+    margin-left: 5px !important;
   }
 }
 
