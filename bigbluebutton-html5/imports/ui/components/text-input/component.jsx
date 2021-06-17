@@ -66,7 +66,7 @@ class TextInput extends PureComponent {
           className={styles.button}
           color="primary"
           hideLabel
-          icon="send"
+          icon="user"
           label={intl.formatMessage(messages.sendLabel)}
           onClick={() => this.handleOnClick()}
         />
