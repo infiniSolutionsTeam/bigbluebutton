@@ -101,7 +101,7 @@ const renderGuestUserItem = (name, color, handleAccept, handleDeny, role, sequen
       <Button
         key={`userbtn-accept-${userId}`}
         className={styles.button}
-        color="primary"
+        color="delWhite"
         size="lg"
         ghost
         label={intl.formatMessage(intlMessages.accept)}
@@ -111,7 +111,7 @@ const renderGuestUserItem = (name, color, handleAccept, handleDeny, role, sequen
       <Button
         key={`userbtn-deny-${userId}`}
         className={styles.button}
-        color="primary"
+        color="delWhite"
         size="lg"
         ghost
         label={intl.formatMessage(intlMessages.deny)}
