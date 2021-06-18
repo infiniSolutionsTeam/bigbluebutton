@@ -430,10 +430,10 @@
 
   @include mq($small-only) {
     flex-direction: row !important;
-    &.label {
-      position: absolute !important;
-      left: 15% !important;
-      color: white !important;
+    width: 100%;
+    & span {
+      position: relative !important;
+      left: 20% !important;
     }
   }
   &:hover {

@@ -49,11 +49,11 @@
 .recordingControlOFF {
   @extend %recordingControl;
 
-  padding: 7px;
+  padding: 0px;
   border: none;
 
   &:focus {
-    padding: 5px;
+    padding: 0px;
     border: none;
     box-shadow: none;
   }
