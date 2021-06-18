@@ -103,7 +103,7 @@ class ActionsBar extends PureComponent {
         </div>
           
         <div className={styles.center}>
-          {this.state.moreItems ? <div className={styles.moreContainer}>
+          {this.state.moreItems ? <div className={styles.outThreeDotBack} onClick={this.moreItemsSH}> <div className={styles.moreContainer}>
             {isLayoutSwapped && !isPresentationDisabled
               ? (
                 <PresentationOptionsContainer
@@ -138,7 +138,7 @@ class ActionsBar extends PureComponent {
                 );
               }}
             />
-          </div>: null}
+          </div> </div>: null}
           <Button
 
               label="More"
