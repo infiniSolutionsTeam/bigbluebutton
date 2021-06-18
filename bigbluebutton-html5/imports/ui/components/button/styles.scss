@@ -432,8 +432,9 @@
     flex-direction: row !important;
     width: 100%;
     & span {
-      position: relative !important;
-      left: 20% !important;
+      position: absolute !important;
+      left: 18% !important;
+      font-size: 1rem;
     }
   }
   &:hover {
