@@ -1,5 +1,6 @@
 @import "/imports/ui/stylesheets/mixins/focus";
 @import "/imports/ui/stylesheets/variables/_all";
+@import "/imports/ui/stylesheets/mixins/_scrollable";
 
 .panel {
   // background-color: var(--color-white);
@@ -183,6 +184,7 @@
 }
 
 .users {
+  @include scrollbox-vertical();
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
