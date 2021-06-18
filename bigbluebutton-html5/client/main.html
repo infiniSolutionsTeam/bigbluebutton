@@ -102,4 +102,11 @@ with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
   <span id="destination"></span>
   <audio id="remote-media" autoplay>
   </audio>
+
+  <script type="text/javascript">
+    window.addEventListener('beforeunload', function (e) {
+        e.preventDefault();
+        e.returnValue = '';
+    });
+</script>
 </body>
