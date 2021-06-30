@@ -14,8 +14,10 @@
   @extend %flex-column;
   @extend %no-margin;
   border: none;
-  padding: 0;
   width: calc(100% / 3);
+  background-color: var(--color-iris-secondary);
+  padding: 5px !important;
+  border-radius: 10px;
 
   @include mq($small-only) {
     width: 100%;

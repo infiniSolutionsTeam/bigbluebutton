@@ -180,6 +180,8 @@
 .btnRed {
   background-color: #ff3131 !important;
   font-size: 1.2rem !important;
+  font-weight: 100;
+  letter-spacing: 1px;
   @include mq($small-only) {
     font-size: 0.8rem !important;
   }
