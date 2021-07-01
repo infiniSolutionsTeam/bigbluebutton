@@ -102,7 +102,7 @@ class TypingIndicator extends PureComponent {
     style[styles.spacer] = !!typingElement;
 
     return (
-      <div className={cx(style)}>
+      <div className={cx(style)} styles={{marginBottom:"5px"}}>
         <span className={styles.typingIndicator}>{error || typingElement}</span>
       </div>
     );
