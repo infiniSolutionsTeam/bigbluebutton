@@ -174,7 +174,7 @@ const ScreenshareButton = ({
   return shouldAllowScreensharing
     ? (
       <Button
-        className={cx(isVideoBroadcasting || styles.navBtnHover)}
+        className={cx(!isVideoBroadcasting || styles.navBtnHover)}
         disabled={(!isMeteorConnected && !isVideoBroadcasting) || !screenshareDataSavingSetting}
         // customIcon={isVideoBroadcasting ? 'desktop' : 'desktop_off'}
         customIcon={

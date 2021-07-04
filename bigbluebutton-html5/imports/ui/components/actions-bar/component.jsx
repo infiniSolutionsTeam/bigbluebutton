@@ -232,7 +232,7 @@ class ActionsBar extends PureComponent {
               color={'nabBarDefault'}
               data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
               
-              className={cx(currentUser.emoji === 'raiseHand' || styles.navBtnHover)}
+              className={cx(currentUser.emoji != 'raiseHand' || styles.navBtnHover)}
               size="lgNew"
               onClick={() => {
                 setEmojiStatus(
