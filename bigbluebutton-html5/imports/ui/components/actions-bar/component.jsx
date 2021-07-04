@@ -229,7 +229,7 @@ class ActionsBar extends PureComponent {
                 }`,
               })}
               accessKey={shortcuts.raisehand}
-              color={'default'}
+              color={'nabBarDefault'}
               data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
               
               
