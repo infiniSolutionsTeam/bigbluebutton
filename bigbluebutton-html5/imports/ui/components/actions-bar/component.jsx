@@ -231,7 +231,7 @@ class ActionsBar extends PureComponent {
               accessKey={shortcuts.raisehand}
               color={'default'}
               data-test={currentUser.emoji === 'raiseHand' ? 'lowerHandLabel' : 'raiseHandLabel'}
-              className={cx(currentUser.emoji === 'raiseHand' || styles.btn)}
+              
               
               size="lgNew"
               onClick={() => {
