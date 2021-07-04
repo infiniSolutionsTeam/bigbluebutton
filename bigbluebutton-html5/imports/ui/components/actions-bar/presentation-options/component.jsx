@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cx from 'classnames';
 import { defineMessages, injectIntl } from 'react-intl';
 import Button from '/imports/ui/components/button/component';
 import MediaService from '/imports/ui/components/media/service';
@@ -34,7 +35,8 @@ const PresentationOptionsContainer = ({ intl, toggleSwapLayout, isThereCurrentPr
       data-test="restorePresentationButton"
       label="White Board"
       description={intl.formatMessage(intlMessages.restorePresentationDesc)}
-      color="default"
+      color={'nabBarDefault'}
+      className={cx(styles.navBtnHover)}
       size="lgNew"
       onClick={toggleSwapLayout}
       id="restore-presentation"
