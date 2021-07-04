@@ -110,7 +110,6 @@ const renderGuestUserItem = (name, color, handleAccept, handleDeny, role, sequen
       |
       <Button
         key={`userbtn-deny-${userId}`}
-        className={styles.button}
         color="denyBtn"
         size="lg"
         ghost
