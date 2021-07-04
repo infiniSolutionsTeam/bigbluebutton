@@ -4,7 +4,7 @@ import cx from 'classnames';
 import { defineMessages, injectIntl } from 'react-intl';
 import Button from '/imports/ui/components/button/component';
 import MediaService from '/imports/ui/components/media/service';
-
+import { styles } from '../styles';
 const propTypes = {
   intl: PropTypes.object.isRequired,
   toggleSwapLayout: PropTypes.func.isRequired,
