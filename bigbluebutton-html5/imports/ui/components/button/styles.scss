@@ -279,6 +279,9 @@
   color: #ffffff;
   background-color: red;
   border: var(--border-size-large) solid transparent;
+  &:hover {
+    background-color: red !important;
+  }
 }
 
 .chatButtonColor {
