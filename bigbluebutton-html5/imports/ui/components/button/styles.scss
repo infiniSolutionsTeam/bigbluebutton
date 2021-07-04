@@ -269,6 +269,18 @@
   border: var(--border-size-large) solid transparent;
 }
 
+.acceptBtn {
+  color: #ffffff;
+  background-color: #1f273d;
+  border: var(--border-size-large) solid transparent;
+}
+
+.denyBtn {
+  color: #ffffff;
+  background-color: red;
+  border: var(--border-size-large) solid transparent;
+}
+
 .chatButtonColor {
   color: var(--btn-default-color);
   background-color: var(--btn-default-bg);

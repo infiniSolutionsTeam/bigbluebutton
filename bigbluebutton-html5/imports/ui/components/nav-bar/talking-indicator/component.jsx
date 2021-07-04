@@ -61,7 +61,8 @@ class TalkingIndicator extends PureComponent {
       });
 
       let icon = talking ? 'unmute' : 'blank';
-      icon = muted ? 'mute' : icon;
+      icon = muted ? '' : icon;
+      //TODO sachitha
 
       return (
         <Button
