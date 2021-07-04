@@ -174,7 +174,7 @@ const ScreenshareButton = ({
   return shouldAllowScreensharing
     ? (
       <Button
-        className={cx(isVideoBroadcasting || styles.btn)}
+        className={cx(isVideoBroadcasting || styles.navBtnHover)}
         disabled={(!isMeteorConnected && !isVideoBroadcasting) || !screenshareDataSavingSetting}
         // customIcon={isVideoBroadcasting ? 'desktop' : 'desktop_off'}
         customIcon={
@@ -187,7 +187,7 @@ const ScreenshareButton = ({
         }
         label={isVideoBroadcasting ? "Stop Share":"Share Screen"}
         description={intl.formatMessage(vDescr)}
-        color={'default'}
+        color={'nabBarDefault'}
         size="lgNew"
         onClick={isVideoBroadcasting
           ? screenshareHasEnded
