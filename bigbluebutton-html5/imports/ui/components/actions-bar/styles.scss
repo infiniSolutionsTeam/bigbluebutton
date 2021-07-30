@@ -75,7 +75,7 @@
   flex: 1;
   @include mq($small-only) {
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
     right: 10px;
 
     [dir="rtl"] & {
